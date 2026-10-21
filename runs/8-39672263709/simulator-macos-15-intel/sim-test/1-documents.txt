@@ -1,0 +1,4 @@
+total 8
+drwxr-xr-x  3 runner  staff   96 Oct 21 20:59 .
+drwxr-xr-x@ 7 runner  staff  224 Oct 21 20:58 ..
+-rw-r--r--@ 1 runner  staff  654 Oct 21 20:59 HOW TO ADD GAME FILES.txt

@@ -19,16 +19,14 @@ env:
 jobs:
   ipa:
     name: IPA (${{ matrix.runner }})
-    # GitHub's Apple Silicon runners are sometimes out of capacity, so the IPA is built on
-    # both runner types; the release takes whichever finished. Intel Macs cross-compile
-    # the arm64 iPhone build just fine.
+    # Built on GitHub's Intel Macs: the Apple Silicon runners were often out of capacity
+    # and never picked jobs up. Intel cross-compiles the arm64 iPhone build fine. When
+    # GitHub retires the Intel images, change this to macos-latest (the scripts handle both).
     strategy:
       fail-fast: false
       matrix:
-        runner: [ macos-15-intel, macos-latest ]
+        runner: [ macos-15-intel ]
     runs-on: ${{ matrix.runner }}
-    # best effort on Apple Silicon: those runners are often out of capacity
-    continue-on-error: ${{ matrix.runner == 'macos-latest' }}
     timeout-minutes: 75
     steps:
       - uses: actions/checkout@v6
@@ -99,10 +97,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        runner: [ macos-15-intel, macos-latest ]
+        runner: [ macos-15-intel ]
     runs-on: ${{ matrix.runner }}
-    # best effort on Apple Silicon: those runners are often out of capacity
-    continue-on-error: ${{ matrix.runner == 'macos-latest' }}
     timeout-minutes: 75
     steps:
       - uses: actions/checkout@v6

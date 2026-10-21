@@ -78,6 +78,10 @@ for path in machos:
                 if lines[j].strip().startswith('path '):
                     rpaths.append(lines[j].strip().split()[1])
 
+    # a dylib's own install name is listed by otool -L as well, it isn't a dependency
+    own_id = run('otool', '-D', path).splitlines()[1:]
+    own_id = own_id[0].strip() if own_id else None
+
     deps = []
     for line in run('otool', '-L', path).splitlines()[1:]:
         line = line.strip()
@@ -91,7 +95,7 @@ for path in machos:
     loader_dir = os.path.dirname(path)
     exec_dir = app
     for dep in deps:
-        if dep.startswith(('/usr/lib/', '/System/')):
+        if dep == own_id or dep.startswith(('/usr/lib/', '/System/')):
             continue
         candidates = []
         if dep.startswith('@rpath/'):

@@ -105,6 +105,11 @@ cp "$CS_OUT/dlls/cs_$LIBARCH.dylib"        "$APP/cstrike/dlls/cs_$LIBARCH.dylib"
 cp "$CS_OUT/dlls/cs_$LIBARCH.dylib"        "$APP/cstrike/dlls/cs_ios_$LIBARCH.dylib" # used when started without bots (-dll @cs)
 python3 "$ROOT/scripts/repack_extras.py" "$CS_OUT/extras.pk3" "$APP/cstrike/extras.pk3"
 
+# keep each library's install name in line with its new file name
+for lib in "$APP"/cstrike/cl_dlls/*.dylib "$APP"/cstrike/dlls/*.dylib; do
+	install_name_tool -id "@rpath/$(basename "$lib")" "$lib" 2>/dev/null
+done
+
 # SDL2 sits next to the executable, which links it through @rpath = @loader_path
 cp -R "$SDL_FW" "$APP/SDL2.framework"
 rm -rf "$APP/SDL2.framework/Headers" "$APP/SDL2.framework/PrivateHeaders" "$APP/SDL2.framework/Modules"

@@ -1,0 +1,133 @@
+name: Build iOS
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  SDL_VERSION: 2.32.10
+  # upstream sources, pinned so builds are reproducible
+  XASH3D_REF: d6b54aaf6c1d8518e08404a842f3f6ee02cef3cc   # FWGS/xash3d-fwgs master, 2026-10-21
+  CS16_REF: e0da56ebd3d27c2a06538ac34b025b1dd7de4ccb     # Velaron/cs16-client main, 2026-10-18
+
+jobs:
+  ipa:
+    name: IPA (iPhone / iPad)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Fetch Xash3D FWGS
+        uses: actions/checkout@v6
+        with:
+          repository: FWGS/xash3d-fwgs
+          ref: ${{ env.XASH3D_REF }}
+          path: xash3d-fwgs
+          submodules: recursive
+
+      - name: Fetch cs16-client
+        uses: actions/checkout@v6
+        with:
+          repository: Velaron/cs16-client
+          ref: ${{ env.CS16_REF }}
+          path: cs16-client
+          submodules: recursive
+
+      - name: Cache SDL2
+        uses: actions/cache@v4
+        with:
+          path: deps/SDL2.xcframework
+          key: sdl2-xcframework-${{ env.SDL_VERSION }}-${{ runner.os }}-${{ runner.arch }}
+
+      - name: Build
+        env:
+          BUILD_NUMBER: ${{ github.run_number }}
+        run: bash scripts/build.sh device
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v7
+        with:
+          name: CS16-iOS-ipa
+          path: out/device/CS16-iOS.ipa
+          if-no-files-found: error
+
+  simulator:
+    name: Simulator smoke test
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Fetch Xash3D FWGS
+        uses: actions/checkout@v6
+        with:
+          repository: FWGS/xash3d-fwgs
+          ref: ${{ env.XASH3D_REF }}
+          path: xash3d-fwgs
+          submodules: recursive
+
+      - name: Fetch cs16-client
+        uses: actions/checkout@v6
+        with:
+          repository: Velaron/cs16-client
+          ref: ${{ env.CS16_REF }}
+          path: cs16-client
+          submodules: recursive
+
+      - name: Cache SDL2
+        uses: actions/cache@v4
+        with:
+          path: deps/SDL2.xcframework
+          key: sdl2-xcframework-${{ env.SDL_VERSION }}-${{ runner.os }}-${{ runner.arch }}
+
+      - name: Build for the simulator
+        env:
+          BUILD_NUMBER: ${{ github.run_number }}
+        run: bash scripts/build.sh simulator
+
+      - name: Run in the simulator
+        run: bash scripts/sim_test.sh
+
+      - name: Upload screenshots and logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: simulator-test
+          path: out/sim-test
+          if-no-files-found: warn
+
+  release:
+    name: Publish release
+    needs: ipa
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload the IPA to the "latest" release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh run download "${{ github.run_id }}" -R "$REPO" -n CS16-iOS-ipa -D dist
+          ls -la dist
+          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
+            TAG="${{ github.ref_name }}"
+            TITLE="CS 1.6 for iOS ${{ github.ref_name }}"
+          else
+            TAG=latest
+            TITLE="CS 1.6 for iOS (build ${{ github.run_number }})"
+            gh release delete latest -R "$REPO" --cleanup-tag -y || true
+          fi
+          cat > notes.md <<'EOF'
+          Unsigned IPA of the Counter-Strike 1.6 iOS port (Xash3D FWGS + cs16-client + ReGameDLL_CS + YaPB bots).
+
+          **Install** with Sideloadly, AltStore or TrollStore, then copy your own `valve` and `cstrike`
+          folders into *Files > On My iPhone > CS 1.6*. Full steps in the README.
+
+          This build contains no game data from Valve.
+          EOF
+          gh release create "$TAG" dist/CS16-iOS.ipa -R "$REPO" --target "${{ github.sha }}" --title "$TITLE" --notes-file notes.md

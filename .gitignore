@@ -1,0 +1,7 @@
+/out/
+/deps/
+/xash3d-fwgs/
+/cs16-client/
+*.ipa
+.DS_Store
+__pycache__/

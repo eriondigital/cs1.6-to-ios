@@ -7,10 +7,13 @@ iOS Simulator without any of Valve's data:
 Everything else (textures, sounds, models) will be reported missing by the engine,
 which is expected; the point is to exercise the code, libraries and file layout.
 
-usage: make_stub_data.py <Documents dir>           write the two folders
-       make_stub_data.py --zips <Documents dir>    write them as zips the way players might:
-                                                     valve.zip      -> valve/gfx.wad (top folder)
-                                                     cstrike_2.zip  -> liblist.gam   (no top folder, odd name)
+usage: make_stub_data.py [--zips] [--delta <delta.lst>] <Documents dir>
+       default   write the two folders
+       --zips    write them as zips the way players might:
+                   valve.zip      -> valve/gfx.wad (top folder)
+                   cstrike_2.zip  -> liblist.gam   (no top folder, odd name)
+       --delta   also add this delta.lst (network field layout the engine needs to start a game;
+                 CI passes the one shipped with ReGameDLL_CS)
 """
 import os
 import struct
@@ -38,6 +41,12 @@ LIBLIST = ('game "Counter-Strike"\n'
 
 args = sys.argv[1:]
 as_zips = '--zips' in args
+delta = None
+if '--delta' in args:
+    i = args.index('--delta')
+    with open(args[i + 1], 'rb') as f:
+        delta = f.read()
+    del args[i:i + 2]
 root = [a for a in args if a != '--zips'][0]
 os.makedirs(root, exist_ok=True)
 
@@ -47,6 +56,8 @@ if as_zips:
         z.writestr('valve/gfx.wad', gfx_wad())
     with zipfile.ZipFile(os.path.join(root, 'cstrike_2.zip'), 'w', zipfile.ZIP_DEFLATED) as z:
         z.writestr('liblist.gam', LIBLIST)
+        if delta:
+            z.writestr('delta.lst', delta)
         z.writestr('__MACOSX/._liblist.gam', b'macOS metadata that must be skipped')
     print('placeholder game zips written to', root)
 else:
@@ -56,4 +67,7 @@ else:
         f.write(gfx_wad())
     with open(os.path.join(root, 'cstrike', 'liblist.gam'), 'wb') as f:
         f.write(LIBLIST)
+    if delta:
+        with open(os.path.join(root, 'cstrike', 'delta.lst'), 'wb') as f:
+            f.write(delta)
     print('placeholder game data written to', root)

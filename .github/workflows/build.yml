@@ -27,6 +27,8 @@ jobs:
       matrix:
         runner: [ macos-15-intel, macos-latest ]
     runs-on: ${{ matrix.runner }}
+    # best effort on Apple Silicon: those runners are often out of capacity
+    continue-on-error: ${{ matrix.runner == 'macos-latest' }}
     timeout-minutes: 75
     steps:
       - uses: actions/checkout@v6
@@ -99,6 +101,8 @@ jobs:
       matrix:
         runner: [ macos-15-intel, macos-latest ]
     runs-on: ${{ matrix.runner }}
+    # best effort on Apple Silicon: those runners are often out of capacity
+    continue-on-error: ${{ matrix.runner == 'macos-latest' }}
     timeout-minutes: 75
     steps:
       - uses: actions/checkout@v6
@@ -172,7 +176,7 @@ jobs:
   release:
     name: Publish release
     needs: ipa
-    if: always() && github.event_name == 'push'
+    if: ${{ !cancelled() && github.event_name == 'push' }}
     runs-on: ubuntu-latest
     steps:
       - name: Upload the IPA to the release

@@ -44,16 +44,17 @@ keep_log() { [ -f "$DOCS/engine.log" ] && cp "$DOCS/engine.log" "$ART/$1-engine.
 
 echo "== 1. no game files"
 xcrun simctl launch "$UDID" "$BUNDLE_ID"
-sleep 15
+sleep 40   # a cold first launch on CI simulators can take 20 s before the app shows up
 shot 1-no-game-files
 keep_log 1
 stop
 
 echo "== 2. placeholder game files as zips -> unpacked by the app, then the main menu"
-python3 "$ROOT/scripts/make_stub_data.py" --zips "$DOCS"
+DELTA="$ROOT/cs16-client/3rdparty/ReGameDLL_CS/dist/delta.lst"
+python3 "$ROOT/scripts/make_stub_data.py" --zips --delta "$DELTA" "$DOCS"
 echo "-dev 2" > "$DOCS/commandline.txt"
 xcrun simctl launch "$UDID" "$BUNDLE_ID"
-sleep 30
+sleep 45
 shot 2-menu
 keep_log 2
 stop
@@ -71,7 +72,7 @@ mkdir -p "$DOCS/cstrike/maps"
 unzip -o -j -q "$ROOT/out/simulator/cs16-install/cstrike/extras.pk3" maps/tr_1.bsp -d "$DOCS/cstrike/maps" || echo "could not extract tr_1.bsp"
 echo "-dev 2 +maxplayers 6 +map tr_1" > "$DOCS/commandline.txt"
 xcrun simctl launch "$UDID" "$BUNDLE_ID"
-sleep 50
+sleep 75
 shot 3-map
 keep_log 3
 stop

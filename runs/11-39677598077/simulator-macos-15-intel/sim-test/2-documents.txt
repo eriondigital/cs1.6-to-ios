@@ -1,0 +1,100 @@
+total 64
+drwxr-xr-x  7 runner  staff    224 Oct 21 21:38 .
+drwxr-xr-x@ 8 runner  staff    256 Oct 21 21:38 ..
+-rw-r--r--  1 runner  staff      7 Oct 21 21:37 commandline.txt
+drwxr-xr-x  9 runner  staff    288 Oct 21 21:38 cstrike
+-rw-r--r--  1 runner  staff  22792 Oct 21 21:38 engine.log
+-rw-r--r--@ 1 runner  staff    654 Oct 21 21:36 HOW TO ADD GAME FILES.txt
+drwxr-xr-x  3 runner  staff     96 Oct 21 21:38 valve
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike:
+total 48
+drwxr-xr-x   9 runner  staff    288 Oct 21 21:38 .
+drwxr-xr-x   7 runner  staff    224 Oct 21 21:38 ..
+drwxr-xr-x  11 runner  staff    352 Oct 21 21:38 .fontcache
+-rw-r--r--   1 runner  staff     16 Oct 21 21:38 .xash_id
+drwxr-xr-x   3 runner  staff     96 Oct 21 21:38 addons
+-rw-r--r--   1 runner  staff  11900 Oct 21 21:38 delta.lst
+-rw-r--r--   1 runner  staff    149 Oct 21 21:38 liblist.gam
+drwxr-xr-x   4 runner  staff    128 Oct 21 21:38 media
+-rw-r--r--   1 runner  staff     10 Oct 21 21:38 valve.rc
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/.fontcache:
+total 52512
+drwxr-xr-x  11 runner  staff      352 Oct 21 21:38 .
+drwxr-xr-x   9 runner  staff      288 Oct 21 21:38 ..
+-rw-r--r--   1 runner  staff  2111490 Oct 21 21:38 Tahoma_28_500_o1_stb_font.bmp
+-rw-r--r--   1 runner  staff   538626 Oct 21 21:38 Trebuchet MS_18_500_stb_font.bmp
+-rw-r--r--   1 runner  staff  1062914 Oct 21 21:38 Trebuchet MS_25_500_stb_font.bmp
+-rw-r--r--   1 runner  staff  2111490 Oct 21 21:38 Trebuchet MS_31_500_stb_font.bmp
+-rw-r--r--   1 runner  staff  2111490 Oct 21 21:38 Trebuchet MS_40_1000_stb_font.bmp
+-rw-r--r--   1 runner  staff  8402946 Oct 21 21:38 Trebuchet MS_40_500_g122.00_stb_font.bmp
+-rw-r--r--   1 runner  staff  4208642 Oct 21 21:38 Trebuchet MS_40_500_g31.25_stb_font.bmp
+-rw-r--r--   1 runner  staff  2111490 Oct 21 21:38 Trebuchet MS_40_500_stb_font.bmp
+-rw-r--r--   1 runner  staff  4208642 Oct 21 21:38 Trebuchet MS_62_500_stb_font.bmp
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/addons:
+total 0
+drwxr-xr-x  3 runner  staff   96 Oct 21 21:38 .
+drwxr-xr-x  9 runner  staff  288 Oct 21 21:38 ..
+drwxr-xr-x  4 runner  staff  128 Oct 21 21:38 yapb
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/addons/yapb:
+total 0
+drwxr-xr-x  4 runner  staff  128 Oct 21 21:38 .
+drwxr-xr-x  3 runner  staff   96 Oct 21 21:38 ..
+drwxr-xr-x  3 runner  staff   96 Oct 21 21:38 conf
+drwxr-xr-x  6 runner  staff  192 Oct 21 21:38 data
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/addons/yapb/conf:
+total 0
+drwxr-xr-x  3 runner  staff   96 Oct 21 21:38 .
+drwxr-xr-x  4 runner  staff  128 Oct 21 21:38 ..
+drwxr-xr-x  2 runner  staff   64 Oct 21 21:38 lang
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/addons/yapb/conf/lang:
+total 0
+drwxr-xr-x  2 runner  staff  64 Oct 21 21:38 .
+drwxr-xr-x  3 runner  staff  96 Oct 21 21:38 ..
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/addons/yapb/data:
+total 0
+drwxr-xr-x  6 runner  staff  192 Oct 21 21:38 .
+drwxr-xr-x  4 runner  staff  128 Oct 21 21:38 ..
+drwxr-xr-x  2 runner  staff   64 Oct 21 21:38 graph
+drwxr-xr-x  2 runner  staff   64 Oct 21 21:38 logs
+drwxr-xr-x  2 runner  staff   64 Oct 21 21:38 pwf
+drwxr-xr-x  2 runner  staff   64 Oct 21 21:38 train
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/addons/yapb/data/graph:
+total 0
+drwxr-xr-x  2 runner  staff   64 Oct 21 21:38 .
+drwxr-xr-x  6 runner  staff  192 Oct 21 21:38 ..
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/addons/yapb/data/logs:
+total 0
+drwxr-xr-x  2 runner  staff   64 Oct 21 21:38 .
+drwxr-xr-x  6 runner  staff  192 Oct 21 21:38 ..
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/addons/yapb/data/pwf:
+total 0
+drwxr-xr-x  2 runner  staff   64 Oct 21 21:38 .
+drwxr-xr-x  6 runner  staff  192 Oct 21 21:38 ..
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/addons/yapb/data/train:
+total 0
+drwxr-xr-x  2 runner  staff   64 Oct 21 21:38 .
+drwxr-xr-x  6 runner  staff  192 Oct 21 21:38 ..
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/cstrike/media:
+total 16
+drwxr-xr-x  4 runner  staff  128 Oct 21 21:38 .
+drwxr-xr-x  9 runner  staff  288 Oct 21 21:38 ..
+-rw-r--r--  1 runner  staff  428 Oct 21 21:38 cdaudio.txt
+-rw-r--r--  1 runner  staff   33 Oct 21 21:38 StartupVids.txt
+
+/Users/runner/Library/Developer/CoreSimulator/Devices/0923C001-8BBD-486E-B6E7-BCEFEBE7CA6F/data/Containers/Data/Application/7FB4BB4B-1DC8-4CEC-BDC0-D5D22C3B476B/Documents/valve:
+total 40
+drwxr-xr-x  3 runner  staff     96 Oct 21 21:38 .
+drwxr-xr-x  7 runner  staff    224 Oct 21 21:38 ..
+-rw-r--r--  1 runner  staff  17208 Oct 21 21:38 gfx.wad

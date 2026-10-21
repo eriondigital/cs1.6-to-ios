@@ -4,6 +4,7 @@ Writes placeholder "game files" for automated tests, so the engine can boot in t
 iOS Simulator without any of Valve's data:
   valve/gfx.wad          one blank 'conchars' lump (the only file the engine refuses to start without)
   cstrike/liblist.gam    minimal game description
+  cstrike/valve.rc       just "stuffcmds", so +map in the launch options runs
 Everything else (textures, sounds, models) will be reported missing by the engine,
 which is expected; the point is to exercise the code, libraries and file layout.
 
@@ -31,6 +32,9 @@ def gfx_wad():
     return b'WAD3' + struct.pack('<ii', 1, dir_ofs) + pic + entry
 
 
+# the engine only runs "+command" launch options once a valve.rc calls stuffcmds
+VALVE_RC = b'stuffcmds\n'
+
 LIBLIST = ('game "Counter-Strike"\n'
            'type "multiplayer_only"\n'
            'cldll "1"\n'
@@ -56,6 +60,7 @@ if as_zips:
         z.writestr('valve/gfx.wad', gfx_wad())
     with zipfile.ZipFile(os.path.join(root, 'cstrike_2.zip'), 'w', zipfile.ZIP_DEFLATED) as z:
         z.writestr('liblist.gam', LIBLIST)
+        z.writestr('valve.rc', VALVE_RC)
         if delta:
             z.writestr('delta.lst', delta)
         z.writestr('__MACOSX/._liblist.gam', b'macOS metadata that must be skipped')
@@ -67,6 +72,8 @@ else:
         f.write(gfx_wad())
     with open(os.path.join(root, 'cstrike', 'liblist.gam'), 'wb') as f:
         f.write(LIBLIST)
+    with open(os.path.join(root, 'cstrike', 'valve.rc'), 'wb') as f:
+        f.write(VALVE_RC)
     if delta:
         with open(os.path.join(root, 'cstrike', 'delta.lst'), 'wb') as f:
             f.write(delta)

@@ -80,7 +80,7 @@ Put a file named `commandline.txt` in the CS 1.6 folder with extra engine option
 -ref gles3compat
 ```
 
-Without bots: `-dll @cs`.
+Without bots: `-dll dlls/cs_ios_arm64.dylib`.
 
 ### Something went wrong?
 

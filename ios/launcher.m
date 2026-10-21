@@ -6,7 +6,7 @@
 
  What it does differently from the stock Xash3D FWGS dialog:
   - no "launch options" prompt, the game starts straight into Counter-Strike
-    with YaPB bots enabled (-game cstrike -dll @yapb);
+    with YaPB bots enabled (-game cstrike -dll dlls/yapb_ios_<arch>.dylib);
   - gets the player's own game files in with as little effort as possible:
       * a "Choose Game Files" button to pick valve/cstrike zips from anywhere
         (Downloads, iCloud Drive, AirDrop...),
@@ -634,6 +634,22 @@ static void WriteHelpFile( NSString *docs )
 	[text writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
 }
 
+// YaPB (which loads the CS game library) lives in the app bundle. Its path is passed explicitly:
+// with "-dll @yapb" the engine builds the path from liblist.gam's gamedll folder, and many packs
+// point that at metamod (addons/metamod/dlls/...), where our library isn't.
+static NSString *ServerLibraryArg( void )
+{
+	NSString *dlls = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"cstrike/dlls"];
+
+	for( NSString *name in [[NSFileManager defaultManager] contentsOfDirectoryAtPath:dlls error:nil] )
+	{
+		if( [name hasPrefix:@"yapb_ios_"] && [name hasSuffix:@".dylib"] )
+			return [@"dlls" stringByAppendingPathComponent:name];
+	}
+
+	return @"@yapb";
+}
+
 static NSArray *ReadExtraArgs( NSString *docs )
 {
 	NSMutableArray *args = [NSMutableArray array];
@@ -701,7 +717,7 @@ void IOS_LaunchDialog( void )
 
 	// user arguments go first, the engine uses the first occurrence of a parameter
 	args = [NSMutableArray arrayWithArray:ReadExtraArgs( docs )];
-	[args addObjectsFromArray:@[ @"-game", @"cstrike", @"-dll", @"@yapb", @"-log" ]];
+	[args addObjectsFromArray:@[ @"-game", @"cstrike", @"-dll", ServerLibraryArg(), @"-log" ]];
 
 	count = (int)[args count];
 	szArgv = calloc( count + 2, sizeof( char * ));

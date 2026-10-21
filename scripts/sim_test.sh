@@ -62,8 +62,10 @@ echo "-- import result:"
 ls -la "$DOCS" "$DOCS/valve" "$DOCS/cstrike" 2>&1 | sed 's/^/   /'
 if [ -f "$DOCS/valve/gfx.wad" ] && [ -f "$DOCS/cstrike/liblist.gam" ] && [ ! -e "$DOCS/valve.zip" ] && [ ! -e "$DOCS/cstrike_2.zip" ]; then
 	echo "IMPORT OK: zips unpacked into valve/ and cstrike/ and removed"
+	IMPORT_OK=1
 else
 	echo "IMPORT FAILED"
+	IMPORT_OK=0
 fi
 
 echo "== 3. map with bots"
@@ -85,8 +87,32 @@ xcrun simctl delete "$UDID" || true
 
 echo "== results"
 ls -la "$ART"
-for f in "$ART"/*-engine.log; do
-	[ -f "$f" ] || continue
-	echo "---- $f (errors/warnings/bots)"
-	grep -a -i -E "error|crash|fatal|signal|yapb|regamedll|connecting bot|loaded|renderer|ref_" "$f" | head -60
-done
+
+# Milestones that must be reached. With placeholder data the game stops later on missing
+# HUD sprites ("Check your game data"), which is expected: real players have those files.
+fail=0
+check() {
+	if grep -a -q -- "$2" "$ART/$1" 2>/dev/null; then
+		echo "PASS  $3"
+	else
+		echo "FAIL  $3"
+		fail=1
+	fi
+}
+check 1-documents.txt "HOW TO ADD GAME FILES" "first launch: launcher ran and created the help file"
+if [ "$IMPORT_OK" = 1 ]; then
+	echo "PASS  game zips unpacked into valve/ and cstrike/"
+else
+	echo "FAIL  game zips unpacked into valve/ and cstrike/"
+	fail=1
+fi
+check 2-engine.log "Loading renderer: gles" "OpenGL ES renderer loaded"
+check 2-engine.log "CS16Client ver" "CS client library initialized"
+check 2-engine.log "YaPB v" "YaPB bots loaded the ReGameDLL server library"
+check 3-engine.log "Spawn Server: tr_1" "map started on the server"
+
+if [ $fail -ne 0 ]; then
+	echo "SMOKE TEST FAILED"
+	exit 1
+fi
+echo "SMOKE TEST PASSED"

@@ -92,6 +92,16 @@ Without bots: `-dll dlls/cs_ios_arm64.dylib`.
 - **Crashes or missing textures:** the engine writes `engine.log` into the CS 1.6 folder on every start.
   Open an issue with it attached.
 
+## What's been tested
+
+- **iOS Simulator (iOS 26.2), on every build:** first launch shows the setup screen; game zips (also oddly named
+  ones without a top folder) are unpacked automatically; the engine starts with the OpenGL ES renderer and loads
+  the CS client, menu, server (ReGameDLL) and YaPB bots; the CS main menu renders. Placeholder data is used there,
+  since CI can't contain Valve's files.
+- **Gameplay with real game files:** de_dust2 with a full set of YaPB bots, on a Linux build of the same engine and
+  game code, including a `cstrike` folder from a Metamod-based pack.
+- **Not yet:** a physical iPhone. Please open an issue with `engine.log` if something doesn't work on yours.
+
 ## How the port works
 
 The engine already ships with iOS support. This repo adds what was missing to get Counter-Strike running
@@ -102,11 +112,15 @@ on it, and a pipeline that builds an IPA:
   zips it finds in its folder, and moves the `valve` / `cstrike` folders into place, recognizing them by content.
 - **`ios/zipimport.c`** is a small streaming zip extractor (stored/deflate, zip64, CRC-checked, path-traversal safe)
   built on the engine's zlib.
-- **`scripts/apply_patches.py`** applies two small fixes to the upstream code:
+- **`scripts/apply_patches.py`** applies small fixes to the upstream code:
   - *YaPB* looks for the CS game library in the app bundle (`XASH3D_GAMELIBDIR`), as it already did on Android.
     On iOS, code can only load from the signed bundle, while the working directory is Documents.
   - *ReGameDLL_CS* only searched the working directory for the engine's `filesystem_stdio`. When that failed
     it continued with a null pointer and crashed on every map load. It now also searches next to the executable.
+  - *waf* (the engine's build system) detected the host CPU instead of the target, so builds on Intel Macs
+    configured the iPhone build as x86_64. The target triple is now part of the compiler command.
+- The launcher passes the bot library's path explicitly (`-dll dlls/yapb_ios_arm64.dylib`). With `@yapb` the
+  engine takes the folder from `liblist.gam`, and packs that run through Metamod point that somewhere else.
 - **`scripts/build.sh`** builds SDL2, the engine and the CS libraries for iOS. It installs the libraries under
   the names the engine expects on iOS (`client_ios_arm64.dylib`, ...), and assembles and ad-hoc signs `CS16.app`.
 - **`scripts/verify_bundle.py`** checks that every library is present and arm64, and that all dynamic-library
@@ -116,7 +130,9 @@ on it, and a pipeline that builds an IPA:
 
 ### Building it yourself
 
-GitHub Actions does it on every push (see `.github/workflows/build.yml`). On a Mac with Xcode, CMake and Python 3:
+GitHub Actions does it on every push (see `.github/workflows/build.yml`), on Intel Mac runners because the Apple
+Silicon ones kept running out of capacity. When GitHub retires the Intel images, switch the runner to `macos-latest`;
+the scripts handle both. On a Mac with Xcode, CMake and Python 3:
 
 ```sh
 git clone https://github.com/eriondigital/cs1.6-to-ios && cd cs1.6-to-ios

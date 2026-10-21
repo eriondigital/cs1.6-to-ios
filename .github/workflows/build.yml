@@ -46,9 +46,12 @@ jobs:
           key: sdl2-xcframework-${{ env.SDL_VERSION }}-${{ runner.os }}-${{ runner.arch }}
 
       - name: Build
+        shell: bash
         env:
           BUILD_NUMBER: ${{ github.run_number }}
-        run: bash scripts/build.sh device
+        run: |
+          mkdir -p ci-files
+          bash scripts/build.sh device 2>&1 | tee ci-files/build-device.log
 
       - name: Upload IPA
         uses: actions/upload-artifact@v7
@@ -56,6 +59,16 @@ jobs:
           name: CS16-iOS-ipa
           path: out/device/CS16-iOS.ipa
           if-no-files-found: error
+
+      - name: Publish logs to the ci-logs branch
+        if: always() && github.event_name != 'pull_request'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p ci-files
+          cp out/device/CS16-iOS.ipa ci-files/ 2>/dev/null || true
+          bash scripts/publish_ci_logs.sh device ci-files
 
   simulator:
     name: Simulator smoke test
@@ -86,12 +99,16 @@ jobs:
           key: sdl2-xcframework-${{ env.SDL_VERSION }}-${{ runner.os }}-${{ runner.arch }}
 
       - name: Build for the simulator
+        shell: bash
         env:
           BUILD_NUMBER: ${{ github.run_number }}
-        run: bash scripts/build.sh simulator
+        run: |
+          mkdir -p ci-files
+          bash scripts/build.sh simulator 2>&1 | tee ci-files/build-simulator.log
 
       - name: Run in the simulator
-        run: bash scripts/sim_test.sh
+        shell: bash
+        run: bash scripts/sim_test.sh 2>&1 | tee ci-files/sim-test.log
 
       - name: Upload screenshots and logs
         if: always()
@@ -100,6 +117,16 @@ jobs:
           name: simulator-test
           path: out/sim-test
           if-no-files-found: warn
+
+      - name: Publish logs to the ci-logs branch
+        if: always() && github.event_name != 'pull_request'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p ci-files
+          cp -R out/sim-test ci-files/ 2>/dev/null || true
+          bash scripts/publish_ci_logs.sh simulator ci-files
 
   release:
     name: Publish release

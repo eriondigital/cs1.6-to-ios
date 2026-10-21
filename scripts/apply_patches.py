@@ -58,6 +58,15 @@ def main():
           "\t\tself.target = '--target=%s-apple-ios' % os.environ.get('IOS_TARGET_ARCH', 'aarch64')",
           'waf: configurable iOS target architecture')
 
+    # 1c. waf detects the target CPU by asking the compiler for its predefined macros,
+    #     without CFLAGS, so it reports the host CPU. On an Intel Mac the arm64 iPhone
+    #     build was treated as x86_64 and got x86 SIMD code (opus). Putting the target
+    #     triple into the compiler command makes the detection see the real target.
+    patch(os.path.join(xash, 'scripts', 'waifulib', 'xcompile.py'),
+          "\tdef cc(self):\n\t\treturn 'clang'\n\n\tdef cxx(self):\n\t\treturn 'clang++'",
+          "\tdef cc(self):\n\t\treturn 'clang ' + self.target\n\n\tdef cxx(self):\n\t\treturn 'clang++ ' + self.target",
+          'waf: detect the iOS target CPU, not the host one')
+
     # 2. YaPB: look for the CS server library in XASH3D_GAMELIBDIR on iOS too, not
     #    only on Android. On iOS the libraries live in the signed app bundle while
     #    the current directory is Documents.

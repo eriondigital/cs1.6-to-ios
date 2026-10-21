@@ -155,6 +155,6 @@ jobs:
           **Install** with Sideloadly, AltStore or TrollStore, then copy your own `valve` and `cstrike`
           folders into *Files > On My iPhone > CS 1.6*. Full steps in the README.
 
-          This build contains no game data from Valve.
+          The game's maps, models, sounds and textures are not included: you need your own copy of Counter-Strike 1.6.
           EOF
           gh release create "$TAG" dist/CS16-iOS.ipa -R "$REPO" --target "${{ github.sha }}" --title "$TITLE" --notes-file notes.md

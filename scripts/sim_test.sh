@@ -59,6 +59,9 @@ keep_log 2
 stop
 
 echo "== 3. map with bots"
+# the published extras.pk3 has no maps; borrow the training map from the build tree for this test only
+mkdir -p "$DOCS/cstrike/maps"
+unzip -o -j -q "$ROOT/out/simulator/cs16-install/cstrike/extras.pk3" maps/tr_1.bsp -d "$DOCS/cstrike/maps" || echo "could not extract tr_1.bsp"
 echo "-dev 2 +maxplayers 6 +map tr_1" > "$DOCS/commandline.txt"
 xcrun simctl launch "$UDID" "$BUNDLE_ID"
 sleep 50

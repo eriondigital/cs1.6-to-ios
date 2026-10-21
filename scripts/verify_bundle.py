@@ -117,9 +117,11 @@ if os.path.exists(pk3):
     print(f'\ncstrike/extras.pk3: {len(names)} files, {len(graphs)} YaPB graphs')
     if not graphs:
         warnings.append('no YaPB waypoint graphs in extras.pk3, bots will build them on first map load')
-    for wanted in ('touch.cfg', 'BotProfile.db'):
-        if wanted not in names:
-            warnings.append(f'{wanted} not found in cstrike/extras.pk3')
+    if 'touch.cfg' not in names:
+        errors.append('touch.cfg not found in cstrike/extras.pk3 (touch controls)')
+    leftovers = [n for n in names if n.startswith(('sound/', 'maps/', 'media/'))]
+    if leftovers:
+        errors.append(f'game content left in extras.pk3: {leftovers[:5]}')
 
 for w in warnings:
     print(f'WARNING: {w}')

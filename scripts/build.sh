@@ -91,7 +91,7 @@ cp "$CS_OUT/cl_dlls/menu_arm64.dylib"   "$APP/cstrike/cl_dlls/menu_ios_arm64.dyl
 cp "$CS_OUT/dlls/yapb_arm64.dylib"      "$APP/cstrike/dlls/yapb_ios_arm64.dylib"
 cp "$CS_OUT/dlls/cs_arm64.dylib"        "$APP/cstrike/dlls/cs_arm64.dylib"
 cp "$CS_OUT/dlls/cs_arm64.dylib"        "$APP/cstrike/dlls/cs_ios_arm64.dylib" # used when started without bots (-dll @cs)
-cp "$CS_OUT/extras.pk3"                 "$APP/cstrike/extras.pk3"
+python3 "$ROOT/scripts/repack_extras.py" "$CS_OUT/extras.pk3" "$APP/cstrike/extras.pk3"
 
 # SDL2 sits next to the executable, which links it through @rpath = @loader_path
 cp -R "$SDL_FW" "$APP/SDL2.framework"

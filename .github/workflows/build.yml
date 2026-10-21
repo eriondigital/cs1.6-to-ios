@@ -18,8 +18,16 @@ env:
 
 jobs:
   ipa:
-    name: IPA (iPhone / iPad)
-    runs-on: macos-latest
+    name: IPA (${{ matrix.runner }})
+    # GitHub's Apple Silicon runners are sometimes out of capacity, so the IPA is built on
+    # both runner types; the release takes whichever finished. Intel Macs cross-compile
+    # the arm64 iPhone build just fine.
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ macos-15-intel, macos-latest ]
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v6
 
@@ -56,7 +64,7 @@ jobs:
       - name: Upload IPA
         uses: actions/upload-artifact@v7
         with:
-          name: CS16-iOS-ipa
+          name: CS16-iOS-ipa-${{ matrix.runner }}
           path: out/device/CS16-iOS.ipa
           if-no-files-found: error
 
@@ -68,11 +76,16 @@ jobs:
         run: |
           mkdir -p ci-files
           cp out/device/CS16-iOS.ipa ci-files/ 2>/dev/null || true
-          bash scripts/publish_ci_logs.sh device ci-files
+          bash scripts/publish_ci_logs.sh device-${{ matrix.runner }} ci-files
 
   simulator:
-    name: Simulator smoke test
-    runs-on: macos-latest
+    name: Simulator test (${{ matrix.runner }})
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ macos-15-intel, macos-latest ]
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v6
 
@@ -114,7 +127,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: simulator-test
+          name: simulator-test-${{ matrix.runner }}
           path: out/sim-test
           if-no-files-found: warn
 
@@ -126,21 +139,26 @@ jobs:
         run: |
           mkdir -p ci-files
           cp -R out/sim-test ci-files/ 2>/dev/null || true
-          bash scripts/publish_ci_logs.sh simulator ci-files
+          bash scripts/publish_ci_logs.sh simulator-${{ matrix.runner }} ci-files
 
   release:
     name: Publish release
     needs: ipa
-    if: github.event_name == 'push'
+    if: always() && github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
-      - name: Upload the IPA to the "latest" release
+      - name: Upload the IPA to the release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
         run: |
-          gh run download "${{ github.run_id }}" -R "$REPO" -n CS16-iOS-ipa -D dist
-          ls -la dist
+          for runner in macos-latest macos-15-intel; do
+            if gh run download "${{ github.run_id }}" -R "$REPO" -n "CS16-iOS-ipa-$runner" -D dist; then
+              echo "using the IPA built on $runner"
+              break
+            fi
+          done
+          test -f dist/CS16-iOS.ipa || { echo "no IPA was built"; exit 1; }
           if [[ "${{ github.ref }}" == refs/tags/* ]]; then
             TAG="${{ github.ref_name }}"
             TITLE="CS 1.6 for iOS ${{ github.ref_name }}"
@@ -152,8 +170,8 @@ jobs:
           cat > notes.md <<'EOF'
           Unsigned IPA of the Counter-Strike 1.6 iOS port (Xash3D FWGS + cs16-client + ReGameDLL_CS + YaPB bots).
 
-          **Install** with Sideloadly, AltStore or TrollStore, then copy your own `valve` and `cstrike`
-          folders into *Files > On My iPhone > CS 1.6*. Full steps in the README.
+          **Install** with Sideloadly, AltStore or TrollStore. On first launch, tap **Choose Game Files** and pick
+          zips of your own `valve` and `cstrike` folders; the app unpacks them and starts. Full steps in the README.
 
           The game's maps, models, sounds and textures are not included: you need your own copy of Counter-Strike 1.6.
           EOF

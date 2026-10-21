@@ -7,7 +7,7 @@ Sanity checks for the assembled CS16.app before it is signed and zipped:
   - the CS extras pack carries the YaPB waypoint graphs
 Exits non-zero on hard failures.
 
-usage: verify_bundle.py <path to CS16.app>
+usage: verify_bundle.py <path to CS16.app> [library arch suffix: arm64|amd64] [Mach-O arch: arm64|x86_64]
 """
 import glob
 import os
@@ -16,6 +16,8 @@ import sys
 import zipfile
 
 app = os.path.abspath(sys.argv[1])
+libarch = sys.argv[2] if len(sys.argv) > 2 else 'arm64'
+macho_arch = sys.argv[3] if len(sys.argv) > 3 else 'arm64'
 errors, warnings = [], []
 
 
@@ -36,10 +38,10 @@ need('xash', 'main executable')
 need('Info.plist', 'bundle info')
 need('SDL2.framework/SDL2', 'SDL2')
 need('filesystem_stdio.dylib', 'engine filesystem, also loaded by ReGameDLL')
-need('cstrike/cl_dlls/client_ios_arm64.dylib', 'CS client')
-need('cstrike/cl_dlls/menu_ios_arm64.dylib', 'CS menu')
-need('cstrike/dlls/yapb_ios_arm64.dylib', 'YaPB, loaded with -dll @yapb')
-need('cstrike/dlls/cs_arm64.dylib', 'ReGameDLL, loaded by YaPB')
+need(f'cstrike/cl_dlls/client_ios_{libarch}.dylib', 'CS client')
+need(f'cstrike/cl_dlls/menu_ios_{libarch}.dylib', 'CS menu')
+need(f'cstrike/dlls/yapb_ios_{libarch}.dylib', 'YaPB, loaded with -dll @yapb')
+need(f'cstrike/dlls/cs_{libarch}.dylib', 'ReGameDLL, loaded by YaPB')
 need('cstrike/extras.pk3', 'CS16 client extras: touch layouts, menu art, bot data')
 need('valve/extras.pk3', 'engine extras: fonts, touch icons')
 
@@ -83,8 +85,8 @@ for path in machos:
             deps.append(line.split(' (')[0])
 
     print(f'  {rel}: archs={",".join(archs)} platform={",".join(sorted(platforms)) or "?"} rpaths={rpaths}')
-    if 'arm64' not in archs:
-        errors.append(f'{rel} has no arm64 slice ({archs})')
+    if macho_arch not in archs:
+        errors.append(f'{rel} has no {macho_arch} slice ({archs})')
 
     loader_dir = os.path.dirname(path)
     exec_dir = app

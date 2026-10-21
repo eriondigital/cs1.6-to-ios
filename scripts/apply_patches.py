@@ -42,10 +42,21 @@ def patch(path, old, new, what):
 def main():
     xash, cs16, repo = sys.argv[1:4]
 
-    # 1. Our launcher replaces the stock "launch options" dialog.
-    shutil.copyfile(os.path.join(repo, 'ios', 'launcher.m'),
-                    os.path.join(xash, 'engine', 'platform', 'ios', 'launchdialog.m'))
-    print('[ok]   engine: iOS launcher replaced')
+    # 1. Our launcher replaces the stock "launch options" dialog. The engine's
+    #    build compiles every .c/.m file in platform/ios, so the zip importer
+    #    only needs to be dropped next to it.
+    ios_dir = os.path.join(xash, 'engine', 'platform', 'ios')
+    shutil.copyfile(os.path.join(repo, 'ios', 'launcher.m'), os.path.join(ios_dir, 'launchdialog.m'))
+    for name in ('zipimport.c', 'zipimport.h'):
+        shutil.copyfile(os.path.join(repo, 'ios', name), os.path.join(ios_dir, name))
+    print('[ok]   engine: iOS launcher and zip importer added')
+
+    # 1b. waf always targets arm64 for iOS; let the simulator build target the host
+    #     architecture (x86_64 on Intel Macs) through IOS_TARGET_ARCH.
+    patch(os.path.join(xash, 'scripts', 'waifulib', 'xcompile.py'),
+          "\t\tself.target = '--target=aarch64-apple-ios'",
+          "\t\tself.target = '--target=%s-apple-ios' % os.environ.get('IOS_TARGET_ARCH', 'aarch64')",
+          'waf: configurable iOS target architecture')
 
     # 2. YaPB: look for the CS server library in XASH3D_GAMELIBDIR on iOS too, not
     #    only on Android. On iOS the libraries live in the signed app bundle while

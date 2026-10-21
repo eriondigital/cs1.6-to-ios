@@ -30,16 +30,24 @@ and on iOS 16+ turn on Developer Mode (Settings > Privacy & Security > Developer
 
 ## Add your game files
 
-1. **Open the app once.** It will say the game files are missing. That's expected: this creates the
-   app's folder in the Files app.
-2. On your computer, find the Counter-Strike 1.6 install. With Steam it's
-   `C:\Program Files (x86)\Steam\steamapps\common\Half-Life\` on Windows.
-3. Copy the **`valve`** and **`cstrike`** folders to the iPhone, into
-   **Files > On My iPhone > CS 1.6**. Some easy ways:
-   - Zip both folders, send the zip to the phone (AirDrop, iCloud Drive, Google Drive, a USB cable with
-     Finder / iTunes file sharing), move it into the CS 1.6 folder and tap it to unzip.
-   - On a Mac, drag the folders onto the app in Finder > your iPhone > Files.
-4. Open the app again and tap **Check Again** if the message is still showing.
+The app needs your own Counter-Strike 1.6 files: the `valve` and `cstrike` folders of your PC install
+(with Steam: `C:\Program Files (x86)\Steam\steamapps\common\Half-Life\` on Windows).
+
+1. On your computer, **zip the two folders**: one zip each, or one zip with both
+   (Windows: right-click > *Send to* > *Compressed (zipped) folder*).
+2. **Get the zip(s) onto your iPhone**, anywhere the Files app can see: AirDrop, iCloud Drive, Google Drive,
+   sending them to yourself in a chat app and choosing *Save to Files*, a USB cable...
+3. **Open CS 1.6 and tap Choose Game Files**, then pick the zip(s). The app unpacks them (about half a minute)
+   and the game starts. The zips are deleted afterwards to save space.
+
+That's the only setup. The files stay in the app, including when you re-install it to renew a free signing.
+
+Other ways that work too:
+
+- Put the zips (or the unzipped folders) in **Files > On My iPhone > CS 1.6** and open the app. Zips there are
+  unpacked automatically.
+- Folder names don't matter: `cstrike 2`, `Counter-Strike 1.6/valve`, or a zip without a top folder are all
+  recognized by what's inside them.
 
 You should end up with:
 
@@ -54,8 +62,6 @@ On My iPhone
         ├── maps
         └── ...
 ```
-
-It's fine if the two folders sit inside one extra folder, for example `CS 1.6/Counter-Strike 1.6/valve`. The app finds them.
 
 ## Playing
 
@@ -79,8 +85,10 @@ Without bots: `-dll @cs`.
 ### Something went wrong?
 
 - **No sound:** check the silent switch / Action button. The game follows the phone's silent mode.
-- **"Game files needed" even though you copied them:** make sure both `valve` and `cstrike` are folders (not zips)
-  inside *On My iPhone > CS 1.6*, and that the copy has finished.
+- **"Add your game files" keeps showing up:** the message says which folder is still missing. Check that the copy
+  or download of that zip finished, then tap *Check Again*.
+- **"Couldn't unpack the game files":** the zip is incomplete or damaged (often a download that didn't finish).
+  Copy it again; zips made by Windows, macOS or 7-Zip all work, but not password-protected ones.
 - **Crashes or missing textures:** the engine writes `engine.log` into the CS 1.6 folder on every start.
   Open an issue with it attached.
 
@@ -90,7 +98,10 @@ The engine already ships with iOS support. This repo adds what was missing to ge
 on it, and a pipeline that builds an IPA:
 
 - **`ios/launcher.m`** replaces the engine's "launch options" dialog. It starts straight into Counter-Strike with
-  bots, checks for the game files and explains what to do when they're missing, and finds them in a subfolder too.
+  bots. When the game files are missing it offers *Choose Game Files* (a document picker for zips), unpacks
+  zips it finds in its folder, and moves the `valve` / `cstrike` folders into place, recognizing them by content.
+- **`ios/zipimport.c`** is a small streaming zip extractor (stored/deflate, zip64, CRC-checked, path-traversal safe)
+  built on the engine's zlib.
 - **`scripts/apply_patches.py`** applies two small fixes to the upstream code:
   - *YaPB* looks for the CS game library in the app bundle (`XASH3D_GAMELIBDIR`), as it already did on Android.
     On iOS, code can only load from the signed bundle, while the working directory is Documents.

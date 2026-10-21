@@ -49,14 +49,21 @@ shot 1-no-game-files
 keep_log 1
 stop
 
-echo "== 2. placeholder game files"
-python3 "$ROOT/scripts/make_stub_data.py" "$DOCS"
+echo "== 2. placeholder game files as zips -> unpacked by the app, then the main menu"
+python3 "$ROOT/scripts/make_stub_data.py" --zips "$DOCS"
 echo "-dev 2" > "$DOCS/commandline.txt"
 xcrun simctl launch "$UDID" "$BUNDLE_ID"
 sleep 30
 shot 2-menu
 keep_log 2
 stop
+echo "-- import result:"
+ls -la "$DOCS" "$DOCS/valve" "$DOCS/cstrike" 2>&1 | sed 's/^/   /'
+if [ -f "$DOCS/valve/gfx.wad" ] && [ -f "$DOCS/cstrike/liblist.gam" ] && [ ! -e "$DOCS/valve.zip" ] && [ ! -e "$DOCS/cstrike_2.zip" ]; then
+	echo "IMPORT OK: zips unpacked into valve/ and cstrike/ and removed"
+else
+	echo "IMPORT FAILED"
+fi
 
 echo "== 3. map with bots"
 # the published extras.pk3 has no maps; borrow the training map from the build tree for this test only

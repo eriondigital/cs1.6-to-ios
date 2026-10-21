@@ -29,6 +29,17 @@ case "$TARGET" in
 	*) echo "usage: $0 device|simulator" >&2; exit 1 ;;
 esac
 
+# Devices are arm64. The simulator runs the host's architecture, which is x86_64 on Intel Macs.
+ARCH=arm64
+if [ "$TARGET" = simulator ] && [ "$(uname -m)" = x86_64 ]; then
+	ARCH=x86_64
+fi
+case "$ARCH" in
+	arm64)  LIBARCH=arm64; export IOS_TARGET_ARCH=aarch64 ;;
+	x86_64) LIBARCH=amd64; export IOS_TARGET_ARCH=x86_64 ;;
+esac
+echo "target: $TARGET ($ARCH), host: $(uname -m)"
+
 log() { printf '\n==> %s\n' "$*"; }
 
 log "Toolchain"
@@ -69,7 +80,8 @@ log "Building cs16-client: client, menu, ReGameDLL_CS, YaPB ($TARGET)"
 cmake -S "$CS16" -B "$OUT/cs16-build" -G "Unix Makefiles" \
 	-DCMAKE_SYSTEM_NAME=iOS \
 	-DCMAKE_OSX_SYSROOT="$SDK" \
-	-DCMAKE_OSX_ARCHITECTURES=arm64 \
+	-DCMAKE_OSX_ARCHITECTURES="$ARCH" \
+	-DCMAKE_SYSTEM_PROCESSOR="$ARCH" \
 	-DCMAKE_OSX_DEPLOYMENT_TARGET=12.0 \
 	-DCMAKE_BUILD_TYPE=Release \
 	-DXASH_COMPAT=ON \
@@ -81,16 +93,16 @@ cmake --install "$OUT/cs16-build"
 # ---------------------------------------------------------------- bundle
 log "Assembling CS16.app"
 
-# The engine names game libraries <name>_ios_arm64.dylib on iOS, cs16-client's CMake
-# names them <name>_arm64.dylib (it doesn't know about iOS). YaPB looks the CS server
-# library up by its own rule (cs_arm64.dylib), so that one keeps its name as well.
+# The engine names game libraries <name>_ios_<arch>.dylib on iOS, cs16-client's CMake
+# names them <name>_<arch>.dylib (it doesn't know about iOS). YaPB looks the CS server
+# library up by its own rule (cs_<arch>.dylib), so that one keeps its name as well.
 CS_OUT="$OUT/cs16-install/cstrike"
 mkdir -p "$APP/cstrike/cl_dlls" "$APP/cstrike/dlls"
-cp "$CS_OUT/cl_dlls/client_arm64.dylib" "$APP/cstrike/cl_dlls/client_ios_arm64.dylib"
-cp "$CS_OUT/cl_dlls/menu_arm64.dylib"   "$APP/cstrike/cl_dlls/menu_ios_arm64.dylib"
-cp "$CS_OUT/dlls/yapb_arm64.dylib"      "$APP/cstrike/dlls/yapb_ios_arm64.dylib"
-cp "$CS_OUT/dlls/cs_arm64.dylib"        "$APP/cstrike/dlls/cs_arm64.dylib"
-cp "$CS_OUT/dlls/cs_arm64.dylib"        "$APP/cstrike/dlls/cs_ios_arm64.dylib" # used when started without bots (-dll @cs)
+cp "$CS_OUT/cl_dlls/client_$LIBARCH.dylib" "$APP/cstrike/cl_dlls/client_ios_$LIBARCH.dylib"
+cp "$CS_OUT/cl_dlls/menu_$LIBARCH.dylib"   "$APP/cstrike/cl_dlls/menu_ios_$LIBARCH.dylib"
+cp "$CS_OUT/dlls/yapb_$LIBARCH.dylib"      "$APP/cstrike/dlls/yapb_ios_$LIBARCH.dylib"
+cp "$CS_OUT/dlls/cs_$LIBARCH.dylib"        "$APP/cstrike/dlls/cs_$LIBARCH.dylib"
+cp "$CS_OUT/dlls/cs_$LIBARCH.dylib"        "$APP/cstrike/dlls/cs_ios_$LIBARCH.dylib" # used when started without bots (-dll @cs)
 python3 "$ROOT/scripts/repack_extras.py" "$CS_OUT/extras.pk3" "$APP/cstrike/extras.pk3"
 
 # SDL2 sits next to the executable, which links it through @rpath = @loader_path
@@ -133,7 +145,7 @@ plutil -lint "$APP/Info.plist"
 
 # ---------------------------------------------------------------- checks
 log "Checking bundle"
-python3 "$ROOT/scripts/verify_bundle.py" "$APP"
+python3 "$ROOT/scripts/verify_bundle.py" "$APP" "$LIBARCH" "$ARCH"
 
 # ---------------------------------------------------------------- signing
 # Ad-hoc signature only. Sideloadly / AltStore / TrollStore re-sign the app

@@ -78,7 +78,11 @@ Without bots: `-dll @cs`.
 
 ### Something went wrong?
 
-The engine writes `engine.log` into the CS 1.6 folder on every start. Open an issue with it attached.
+- **No sound:** check the silent switch / Action button. The game follows the phone's silent mode.
+- **"Game files needed" even though you copied them:** make sure both `valve` and `cstrike` are folders (not zips)
+  inside *On My iPhone > CS 1.6*, and that the copy has finished.
+- **Crashes or missing textures:** the engine writes `engine.log` into the CS 1.6 folder on every start.
+  Open an issue with it attached.
 
 ## How the port works
 

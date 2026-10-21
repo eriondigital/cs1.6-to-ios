@@ -1,0 +1,181 @@
+================================================================================
+Xash3D FWGS 0.21 (4221, d6b54aa-dirty, HEAD, ios-amd64)
+Game started at Oct21 2026 [20:36.04]
+================================================================================
+Console initialized.
+SDL: [Error] Unknown pixel format
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+filesystem_stdio: custom pool allocation functions found
+filesystem_stdio: custom memory allocation functions found
+filesystem_stdio: custom platform-specific functions found
+FS_LoadProgs: filesystem_stdio successfully loaded
+/Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Data/Application/0A11BD20-A9E4-4448-8E1C-0271ABEABF85/Documents is working directory now
+Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/
+Adding directory: ./
+FS_InitStdio: done
+Program args: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/xash -dev 2 +maxplayers 6 +map tr_1 -game cstrike -dll @yapb -log 
+Developer level: 2
+execing cstrike/vfs.cfg
+couldn't exec cstrike/vfs.cfg
+FS_LoadGameInfo( cstrike, 0x0, english )
+FS_Rescan( Counter-Strike, 0x0, english )
+Adding ZIP: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/valve/extras.pk3 (146 files)
+FS_AddGameHierarchy( valve )
+Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/valve/
+Adding WAD: valve/gfx.wad (1 files)
+Adding directory: valve/
+FS_AddGameHierarchy( cstrike )
+Adding ZIP: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/cstrike/extras.pk3 (217 files)
+Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/cstrike/
+Adding directory: cstrike_downloads/
+Adding directory: cstrike/
+Adding directory: cstrike/custom/
+Warning: FS_LoadImage: couldn't load "gfx/palette"
+Host_InitDecals: 0 decals
+Joystick: SDL GameController API
+Touch_Init()
+Base networking initialized.
+Cannot load xashcomm.lst
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_auto_start"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_auto_save"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_distance"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_max_jump_height"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_fps"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_clean_paths_on_finish"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_optimize_nodes_on_finish"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_mark_goals_on_finish"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_debug"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_debug_goal"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_user_follow_percent"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_user_max_followers"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_jasonmode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_radio_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_economics_rounds"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_economics_disrespect_percent"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_darkness"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_avoid_grenades"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_tkpunish"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_freeze_bots"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_spraypaints"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botbuy"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_destroy_breakables_around"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_object_pickup_radius"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_object_destroy_radius"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chatter_path"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_attack_monsters"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_custom_items"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_ammo_and_kits"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_best"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_objectives"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chat"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chat_percent"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_shoots_thru_walls"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_enemies"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_enemy_rendering"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_enemy_invincibility"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_stab_close_enemies"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_use_engine_pvs_check"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_use_hitbox_enemy_targeting"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_aim_trace_consider_glass"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_bind_menu_key"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_cvars_on_changelevel"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_password"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_password_key"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_bots_kill_on_endround"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_csdm_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_map_prefix_game_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_threadpool_workers"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_grenadier_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_enemies_after_spawn_time"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_breakable_health_limit"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_base_min"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_base_max"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_count_real_players"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_updater_interval"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_fixcamp"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_url"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_url_upload"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_auto_save_count"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_draw_distance"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_auto_collect_db"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_version"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autovacate"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autovacate_keep_slots"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_kick_after_player_connect"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_match"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_think_fps"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autokill_delay"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_first_human_restart"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_after_player"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_team"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_delay"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_name_prefix"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_min"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_max"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_auto"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_auto_balance_interval"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_show_avatars"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_show_latency"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_save_bots_names"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botskin_t"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botskin_ct"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_preferred_personality"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_language"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_bots"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_stay_min"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_stay_max"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_restricted_weapons"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_has_team_semiclip"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_slope_height"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_heuristic_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_floyd_memory_limit"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_dijkstra_simple_distance"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_astar_post_smooth"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_randomize_on_round_start"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_display_welcome_text"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_enable_query_hook"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_enable_fake_steamids"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_smoke_grenade_checks"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_smoke_grenade_radius"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_walking_allowed"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_allowed"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_time_min"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_time_max"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_random_knife_attacks"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_max_nodes_for_predict"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_whose_your_daddy"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "sv_use_steam_networking"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "build"
+SV_LoadProgs: initailized legacy EntityAPI ver. 140
+Mod_InitStudioAPI: initailized Server Blending interface ver. 1
+SV_InitPhysicsAPI: initailized extended PhysicAPI ver. 6
+SV_AllocStringPool()
+Dll loaded for game "Counter-Strike"
+
+YaPB v4.5.1 successfully loaded for game: Counter-Strike v1.6 @ Xash3D FWGS.
+	Flags: BotVoice, ReGameDLL, SIMD: 4.1 & 4.2.
+
+ReGameDLL version: 5.30.0.1-dev+m
+Warning: Unknown command "yb_quota_adding_interval"
+Warning: Unknown command "yb_quota_maintain_interval"
+execing game_init.cfg
+couldn't exec game_init.cfg
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "voice_serverdebug"
+SV: hull0, player_mins: -16 -16 -36, player_maxs: 16 16 36
+SV: hull1, player_mins: -16 -16 -18, player_maxs: 16 16 32
+SV: hull2, player_mins: 0 0 0, player_maxs: 0 0 0
+Delta_InitFields: couldn't load file delta.lst

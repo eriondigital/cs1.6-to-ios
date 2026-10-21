@@ -1,0 +1,986 @@
+getpwuid_r did not find a match for uid 501
+Timestamp               Ty Process[PID:TID]
+2026-10-21 20:33:28.621 Df xash[31219:17985] [com.apple.xpc:connection] [0x104505980] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-10-21 20:33:28.626 A  xash[31219:17985] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-10-21 20:33:28.627 Df xash[31219:17986] [com.apple.BoardServices:XPCErrors] [C:1] Alloc com.apple.frontboard.systemappservices
+2026-10-21 20:33:28.628 Df xash[31219:17986] [com.apple.xpc:connection] [0x106005480] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-10-21 20:33:29.054 Df xash[31219:17976] (libMobileGestalt.dylib) No persisted cache on this platform.
+2026-10-21 20:33:29.063 Df xash[31219:17976] [com.apple.UIKit:Application] Deactivation reason added: 10; deactivation reasons: 0 -> 1024; animating application lifecycle event: 0
+2026-10-21 20:33:29.065 Df xash[31219:17976] [com.apple.runningboard:connection] Initializing connection
+2026-10-21 20:33:29.065 Df xash[31219:17976] [com.apple.runningboard:process] Removing all cached process handles
+2026-10-21 20:33:29.065 Df xash[31219:17986] [com.apple.runningboard:connection] Sending handshake request attempt #1 to server
+2026-10-21 20:33:29.065 Df xash[31219:17986] [com.apple.runningboard:connection] Creating connection to com.apple.runningboard
+2026-10-21 20:33:29.065 Df xash[31219:17986] [com.apple.xpc:connection] [0x106006f80] activating connection: mach=true listener=false peer=false name=com.apple.runningboard
+2026-10-21 20:33:29.065 Df xash[31219:17976] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.open
+2026-10-21 20:33:29.067 Df xash[31219:17976] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.workspace-service
+2026-10-21 20:33:29.070 Df xash[31219:17976] [com.apple.FrontBoard:Common] FBSWorkspace registering source: com.apple.frontboard.systemappservices
+2026-10-21 20:33:29.071 A  xash[31219:17988] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:33:29.075 Df xash[31219:17986] [com.apple.runningboard:connection] Handshake succeeded
+2026-10-21 20:33:29.076 Df xash[31219:17986] [com.apple.runningboard:connection] Identity resolved as app<com.eriondigital.cs16((null))>
+2026-10-21 20:33:30.141 Df xash[31219:17984] [com.apple.UIKit:BackgroundTask] Creating new assertion because there is no existing background assertion.
+2026-10-21 20:33:30.141 Df xash[31219:17984] [com.apple.UIKit:BackgroundTask] Creating new background assertion
+2026-10-21 20:33:30.142 Df xash[31219:17984] [com.apple.UIKit:BackgroundTask] Created new background assertion <BKSProcessAssertion: 0x600002105b30>
+2026-10-21 20:33:30.143 Df xash[31219:17984] [com.apple.UIKit:BackgroundTask] Incrementing reference count for background assertion <BKSProcessAssertion: 0x600002105b30>
+2026-10-21 20:33:30.143 Df xash[31219:17984] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x600001700cc0>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1612 (elapsed = 0).
+2026-10-21 20:33:30.144 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UIApplicationSceneKeyboardSettings on FBSSceneSettings
+2026-10-21 20:33:30.146 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneOcclusionSettings> on FBSSceneSettings
+2026-10-21 20:33:30.147 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneInterfaceProtectionSettings> on FBSSceneSettings
+2026-10-21 20:33:30.148 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferencesHostSettingsExtension on FBSSceneSettings
+2026-10-21 20:33:30.148 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneSafeAreaSettingsExtension on FBSSceneSettings
+2026-10-21 20:33:30.153 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferenceClientSettingsExtension on FBSSceneClientSettings
+2026-10-21 20:33:30.154 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UIHomeAffordanceHostSceneSettings> on FBSSceneSettings
+2026-10-21 20:33:30.154 Df xash[31219:17976] [com.apple.FrontBoard:Common] FBSWorkspace connected to endpoint : <BSServiceConnectionEndpoint: 0x600000209a00; target: com.apple.frontboard.systemappservices; service: com.apple.frontboard.workspace-service>
+2026-10-21 20:33:30.155 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISystemShellSceneHostingEnvironmentSettings on FBSSceneSettings
+2026-10-21 20:33:30.155 Df xash[31219:17976] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x600003004000 com.apple.frontboard.systemappservices> attempting immediate handshake from activate
+2026-10-21 20:33:30.157 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneRenderingEnvironmentSettings on FBSSceneSettings
+2026-10-21 20:33:30.157 Df xash[31219:17976] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x600003004000 com.apple.frontboard.systemappservices> sent handshake
+2026-10-21 20:33:30.158 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneRenderingEnvironmentClientSettings> on FBSSceneClientSettings
+2026-10-21 20:33:30.158 Df xash[31219:17976] [com.apple.runningboard:general] Added observer for process assertions expiration warning: <_RBSExpirationWarningClient: 0x60000020f320>
+2026-10-21 20:33:30.160 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneTransitioningHostSettings> on FBSSceneSettings
+2026-10-21 20:33:30.160 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneFocusSystemSettings> on FBSSceneSettings
+2026-10-21 20:33:30.161 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationSettingsExtension on FBSSceneSettings
+2026-10-21 20:33:30.162 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationClientSettingsExtension on FBSSceneClientSettings
+2026-10-21 20:33:30.163 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneWindowingControlClientSettings on FBSSceneClientSettings
+2026-10-21 20:33:30.164 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingContentSizePreferenceClientSettings> on FBSSceneClientSettings
+2026-10-21 20:33:30.165 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneHostingTraitCollectionPropagationSettings on FBSSceneSettings
+2026-10-21 20:33:30.167 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationSettings> on FBSSceneSettings
+2026-10-21 20:33:30.168 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationClientSettings> on FBSSceneClientSettings
+2026-10-21 20:33:30.168 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingEventDeferringSettings> on FBSSceneSettings
+2026-10-21 20:33:30.170 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneSettings
+2026-10-21 20:33:30.170 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneClientSettings
+2026-10-21 20:33:30.172 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingViewControllerPreferencePropagationClientSettings> on FBSSceneClientSettings
+2026-10-21 20:33:30.174 Df xash[31219:17984] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneZoomTransitionSettings> on FBSSceneSettings
+2026-10-21 20:33:30.369 Df xash[31219:17976] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x104604bf0> for initial
+2026-10-21 20:33:30.370 Df xash[31219:17976] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x104604bf0> for CADisplay KVO
+2026-10-21 20:33:30.373 Df xash[31219:17976] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 1, category name = (null)
+2026-10-21 20:33:30.374 Df xash[31219:17976] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 0, category name = (null)
+2026-10-21 20:33:30.389 Df xash[31219:17976] [com.apple.dt.xctest:Default] Registering for test daemon availability notify post.
+2026-10-21 20:33:30.390 Df xash[31219:17976] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-21 20:33:30.391 Df xash[31219:17976] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-21 20:33:30.391 Df xash[31219:17976] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-21 20:33:30.393 Df xash[31219:17976] [com.apple.UIKit:UpdateScheduler] Selected display: name=LCD (PurpleMain), id=1
+2026-10-21 20:33:30.912 Df xash[31219:17976] [com.apple.Accessibility:AXCommon] Read Per-App on Init: Smart invert = (null)
+2026-10-21 20:33:31.187 Df xash[31219:179bd] [com.apple.UIKit:BackgroundTask] Ending background task with UIBackgroundTaskIdentifier: 1
+2026-10-21 20:33:31.187 Df xash[31219:179bd] [com.apple.UIKit:BackgroundTask] Ending task with identifier 1 and description: <_UIBackgroundTaskInfo: 0x600001700cc0>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1612 (elapsed = 1), _expireHandler: (null)
+2026-10-21 20:33:31.187 Df xash[31219:179bd] [com.apple.UIKit:BackgroundTask] Decrementing reference count for assertion <BKSProcessAssertion: 0x600002105b30> (used by background task with identifier 1: <_UIBackgroundTaskInfo: 0x600001700cc0>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1612 (elapsed = 1))
+2026-10-21 20:33:31.187 Df xash[31219:179bd] [com.apple.UIKit:BackgroundTask] Will invalidate assertion: <BKSProcessAssertion: 0x600002105b30> for task identifier: 1
+2026-10-21 20:33:45.553 A  xash[31219:179ab] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:33:45.555 A  xash[31219:17ec8] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:33:45.558 A  xash[31219:17ec8] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:33:45.562 A  xash[31219:17ec8] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:33:45.573 Df xash[31219:17ec8] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneSettingsCore on FBSSceneSettings
+2026-10-21 20:33:45.576 Df xash[31219:17ec8] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneClientSettingsCore on FBSSceneClientSettings
+2026-10-21 20:33:45.584 Df xash[31219:17ec8] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneSettings setting counterpart class: UIApplicationSceneSettings
+2026-10-21 20:33:45.585 Df xash[31219:17ec8] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneClientSettings setting counterpart class: UIApplicationSceneClientSettings
+2026-10-21 20:33:45.585 Df xash[31219:17ec8] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneTransitionContextCore on FBSSceneTransitionContext
+2026-10-21 20:33:45.592 Df xash[31219:17976] [com.apple.UIKit:BackgroundTask] Will add backgroundTask with taskName: Persistent SceneSession Map Update, expirationHandler: <__NSGlobalBlock__: 0x7ff840854ae0>
+2026-10-21 20:33:45.593 Df xash[31219:17976] [com.apple.UIKit:BackgroundTask] Creating new assertion because there is no existing background assertion.
+2026-10-21 20:33:45.593 Df xash[31219:17976] [com.apple.UIKit:BackgroundTask] Creating new background assertion
+2026-10-21 20:33:45.593 Df xash[31219:17976] [com.apple.UIKit:BackgroundTask] Created new background assertion <BKSProcessAssertion: 0x600002105220>
+2026-10-21 20:33:45.603 Df xash[31219:17976] [com.apple.UIKit:BackgroundTask] Incrementing reference count for background assertion <BKSProcessAssertion: 0x600002105220>
+2026-10-21 20:33:45.603 Df xash[31219:17976] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x60000170f140>: taskID = 2, taskName = Persistent SceneSession Map Update, creationTime = 1628 (elapsed = 0).
+2026-10-21 20:33:45.604 Df xash[31219:17976] [com.apple.UIKit:Application] Deactivation reason added: 5; deactivation reasons: 1024 -> 1056; animating application lifecycle event: 1
+2026-10-21 20:33:45.606 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:45.606 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Should send trait collection or coordinate space update, interface style 1 -> 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:45.607 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:45.608 Df xash[31219:17976] [com.apple.UIKit:HomeAffordanceObservation] Initializing: <_UIHomeAffordanceSceneNotifier: 0x600002902370>; with scene: <UIWindowScene: 0x10450b1d0>
+2026-10-21 20:33:45.609 Df xash[31219:17976] [com.apple.BacklightServices:scenes] 0x600000c13f30 setDelegate:<0x600000c13c00 _UIBacklightEnvironment> hasDelegate:YES for environment:sceneID:com.eriondigital.cs16-default
+2026-10-21 20:33:45.610 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:45.611 Df xash[31219:17976] [com.apple.UIKit:EventDeferring] [0x6000029023e0] Initialized with scene: <UIWindowScene: 0x10450b1d0>; behavior: <_UIEventDeferringBehavior_iOS: 0x600000214820>; availableForProcess: 1, systemShellManagesKeyboardFocus: 1
+2026-10-21 20:33:45.613 Df xash[31219:17976] [com.apple.BoardServices:XPCErrors] [C:2] Alloc com.apple.backboard.hid-services.xpc
+2026-10-21 20:33:45.614 Df xash[31219:17976] [com.apple.xpc:connection] [0x106005800] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-10-21 20:33:45.618 Df xash[31219:179ab] [com.apple.BackBoard:EventDelivery] BKSHIDEventObserver - connection activation
+2026-10-21 20:33:45.618 Df xash[31219:17976] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x6000026043c0; process scope; status: target> was:none
+2026-10-21 20:33:45.619 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to LastOneWins
+2026-10-21 20:33:45.620 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Scene target of keyboard event deferring environment did change: 1; scene: UIWindowScene: 0x10450b1d0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:33:45.622 Df xash[31219:17976] [com.apple.UIKit:EventDeferring] [0x6000029023e0] Scene target of event deferring environments did update: scene: 0x10450b1d0; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-21 20:33:45.623 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10450b1d0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:33:45.624 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Stack[KeyWindow] 0x600000c06340: Taking no further action for migration from LastOneWins -> SystemShellManaged as there are no scenes
+2026-10-21 20:33:45.625 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to SystemShellManaged
+2026-10-21 20:33:45.627 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Key window needs update: 0; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x10450b1d0; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x0; reason: UIWindowScene: 0x10450b1d0: Window scene became target of keyboard environment
+2026-10-21 20:33:45.629 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:45.630 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:45.636 F  xash[31219:17976] [com.apple.runtime-issues:UIKit App Config] `UIScene` lifecycle will soon be required. Failure to adopt will result in an assert in the future.
+2026-10-21 20:33:45.636 A  xash[31219:17976] (libsystem_trace.dylib) Activity for state dumps
+2026-10-21 20:33:45.637 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:45.638 Df xash[31219:17976] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:33:45.639 Df xash[31219:17976] [com.apple.UIKit:Application] Ignoring already applied deactivation reason: 5; deactivation reasons: 1056
+2026-10-21 20:33:45.640 Df xash[31219:17976] [com.apple.UIKit:Application] Deactivation reason added: 11; deactivation reasons: 1056 -> 3104; animating application lifecycle event: 1
+2026-10-21 20:33:45.643 Df xash[31219:17976] [com.apple.KeyboardArbiter:Client] startConnection
+2026-10-21 20:33:45.645 Df xash[31219:17976] [com.apple.xpc:connection] [0x104607370] activating connection: mach=true listener=false peer=false name=com.apple.UIKit.KeyboardManagement.hosted
+2026-10-21 20:33:45.680 Df xash[31219:17976] [com.apple.UIKit:Application] Deactivation reason removed: 10; deactivation reasons: 3104 -> 2080; animating application lifecycle event: 1
+2026-10-21 20:33:45.682 Df xash[31219:17976] [com.apple.UIKit:Application] Deactivation reason added: 12; deactivation reasons: 2080 -> 6176; animating application lifecycle event: 1
+2026-10-21 20:33:45.683 Df xash[31219:17976] [com.apple.UIKit:Application] Deactivation reason removed: 11; deactivation reasons: 6176 -> 4128; animating application lifecycle event: 1
+2026-10-21 20:33:45.684 Df xash[31219:17976] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneIntelligenceSupportSettings> on FBSSceneSettings
+2026-10-21 20:33:45.686 Df xash[31219:17ecd] [com.apple.UIIntelligenceSupport:xpc] establishing connection to agent
+2026-10-21 20:33:45.687 Df xash[31219:17ecd] [com.apple.xpc:session] [0x6000021128f0] Session created.
+2026-10-21 20:33:45.687 Df xash[31219:17ecd] [com.apple.xpc:session] [0x6000021128f0] Session created from connection [0x10460a080]
+2026-10-21 20:33:45.688 Df xash[31219:17ecd] [com.apple.xpc:connection] [0x10460a080] activating connection: mach=true listener=false peer=false name=com.apple.uiintelligencesupport.agent
+2026-10-21 20:33:45.688 Df xash[31219:17ecd] [com.apple.xpc:session] [0x6000021128f0] Session activated
+2026-10-21 20:33:45.688 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:45.797 Df xash[31219:17976] [com.apple.xpc:connection] [0x10460b8a0] activating connection: mach=true listener=false peer=false name=com.apple.lsd.mapdb
+2026-10-21 20:33:46.127 Df xash[31219:17ecd] [com.apple.UIKit:BackgroundTask] Ending background task with UIBackgroundTaskIdentifier: 2
+2026-10-21 20:33:46.127 Df xash[31219:17ecd] [com.apple.UIKit:BackgroundTask] Ending task with identifier 2 and description: <_UIBackgroundTaskInfo: 0x60000170f140>: taskID = 2, taskName = Persistent SceneSession Map Update, creationTime = 1628 (elapsed = 0), _expireHandler: <__NSGlobalBlock__: 0x7ff840854ae0>
+2026-10-21 20:33:46.128 Df xash[31219:17ecd] [com.apple.UIKit:BackgroundTask] Decrementing reference count for assertion <BKSProcessAssertion: 0x600002105220> (used by background task with identifier 2: <_UIBackgroundTaskInfo: 0x60000170f140>: taskID = 2, taskName = Persistent SceneSession Map Update, creationTime = 1628 (elapsed = 0))
+2026-10-21 20:33:46.128 Df xash[31219:17ecd] [com.apple.UIKit:BackgroundTask] Will invalidate assertion: <BKSProcessAssertion: 0x600002105220> for task identifier: 2
+2026-10-21 20:33:46.505 Df xash[31219:17ecd] [com.apple.BackBoard:EventDelivery] BKSHIDEventDeliveryManager - connection activation
+2026-10-21 20:33:46.731 A  xash[31219:17ecd] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:33:46.789 Df xash[31219:17976] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:1 [B716ED1F-E2B5-4AC0-8E5A-E1A5F739474C] (reporting strategy default)>
+2026-10-21 20:33:46.789 Df xash[31219:17976] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:2 [A6F2EDF1-4C78-4006-A998-1B528CC61673] (reporting strategy default)>
+2026-10-21 20:33:46.789 Df xash[31219:17976] [com.apple.network:activity] Set activity <nw_activity 50:1 [B716ED1F-E2B5-4AC0-8E5A-E1A5F739474C] (reporting strategy default)> as the global parent
+2026-10-21 20:33:46.790 Df xash[31219:17976] [com.apple.UIKit:EventBus] Event Timing Profile for Touch: not found, path="/System/Library/EventTimingProfiles/Sim.Touch.plist"
+2026-10-21 20:33:46.790 Df xash[31219:17976] [com.apple.UIKit:EventBus] Event Timing Profile for Pencil: not found, path="/System/Library/EventTimingProfiles/Sim.Pencil.plist"
+2026-10-21 20:33:46.790 Df xash[31219:17976] [com.apple.KeyboardArbiter:Client] startConnection
+2026-10-21 20:33:46.790 Df xash[31219:17976] [com.apple.KeyboardArbiter:Client] handleKeyboardChange: set currentKeyboard:N (wasKeyboard:N)
+2026-10-21 20:33:46.919 Df xash[31219:17976] [com.apple.UIKit:KeyboardArbiterClientLog] isWritingToolsHandlingKeyboardTracking:Y (WT ready:Y, Arbiter ready:Y)
+2026-10-21 20:33:46.921 Df xash[31219:17976] System Version is 26.2
+2026-10-21 20:33:46.924 A  xash[31219:17976] (TCC) tcc_send_request_authorization() IPC
+2026-10-21 20:33:46.924 Df xash[31219:17976] [com.apple.xpc:connection] [0x10470e740] activating connection: mach=true listener=false peer=false name=com.apple.tccd
+2026-10-21 20:33:46.929 Df xash[31219:17976] [com.apple.xpc:connection] [0x10470e740] invalidated after the last release of the connection object
+2026-10-21 20:33:46.956 Df xash[31219:17976] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UIApplicationSceneDisplaySettings> on FBSSceneSettings
+2026-10-21 20:33:47.188 Df xash[31219:17976] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: none -> ( Ll Lr )
+2026-10-21 20:33:47.189 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Key window API is scene-level: YES
+2026-10-21 20:33:47.189 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] UIWindowScene: 0x10450b1d0: Window became key in scene: UIWindow: 0x10470ee20; contextId: 0x1241700F: reason: UIWindowScene: 0x10450b1d0: Window requested to become key in scene: 0x10470ee20
+2026-10-21 20:33:47.189 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Key window needs update: 1; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x10450b1d0; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x10470ee20; reason: UIWindowScene: 0x10450b1d0: Window requested to become key in scene: 0x10470ee20
+2026-10-21 20:33:47.189 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Window did become application key: UIWindow: 0x10470ee20; contextId: 0x1241700F; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:33:47.189 Df xash[31219:17976] [com.apple.UIKit:EventDeferring] [0x6000029023e0] Begin local event deferring requested for token: 0x600002605f20; environments: 1; reason: UIWindowScene: 0x10450b1d0: Begin event deferring in keyboardFocus for window: 0x10470ee20
+2026-10-21 20:33:47.194 Df xash[31219:17ec8] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x6000026043c0; token: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default; status: ancestor> was:target
+2026-10-21 20:33:47.237 Df xash[31219:17976] [PrototypeTools:domain] Not observing PTDefaults on customer install.
+2026-10-21 20:33:47.396 Df xash[31219:17ecc] [com.apple.xpc:connection] [0x1060166c0] activating connection: mach=true listener=false peer=false name=com.apple.fontservicesd
+2026-10-21 20:33:47.423 Df xash[31219:17976] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Ll Lr ) -> ( Lr )
+2026-10-21 20:33:47.426 Df xash[31219:17976] [com.apple.UIKit:UpdateScheduler] Target list changed: <CADisplay:LCD PurpleMain>
+2026-10-21 20:33:47.432 Df xash[31219:17976] [com.apple.UIKit:UIFocusSystemSceneComponent] Override focusSystemState: (ENABLED) for reason(s): {(
+    "<_UIAlertControllerPhoneTVMacView 0x10500fa00>"
+)}
+2026-10-21 20:33:47.434 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:47.439 Df xash[31219:17976] [com.apple.UIKit:UIFocus] Failed to update focus with context <UIFocusUpdateContext: 0x600003008b40; previouslyFocusedItem: (nil); nextFocusedItem: (nil); focusHeading: None>. No additional info available.
+2026-10-21 20:33:50.973 Df xash[31219:17976] [com.apple.UIKit:UIAlertControllerStackManager] _willShowAlertController: <UIAlertController: 0x10581ac00>
+2026-10-21 20:33:50.973 Df xash[31219:17976] [com.apple.UIKit:UIAlertControllerStackManager] _addAlertControllerToStack: Adding Alert to stack : <UIAlertController: 0x10581ac00>
+2026-10-21 20:33:51.065 Df xash[31219:17976] [com.apple.UIKit:EventDeferring] [0x6000029023e0] Scene target of event deferring environments did update: scene: 0x10450b1d0; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-21 20:33:51.065 Df xash[31219:17976] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10450b1d0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:33:51.078 Df xash[31219:17976] [com.apple.UIKit:UIFocus] Deferring focus update to item <_UIInterfaceActionCustomViewRepresentationView: 0x104718e20>. No additional info available.
+2026-10-21 20:33:51.123 Df xash[31219:17976] [com.apple.network:activity] <nw_activity 50:1 [B716ED1F-E2B5-4AC0-8E5A-E1A5F739474C] (global parent) (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 23378ms
+2026-10-21 20:33:51.123 Df xash[31219:17976] [com.apple.network:activity] <nw_activity 50:2 [A6F2EDF1-4C78-4006-A998-1B528CC61673] (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 23378ms
+2026-10-21 20:33:51.123 Df xash[31219:17976] [com.apple.network:activity] Unsetting the global parent activity <nw_activity 50:1 [B716ED1F-E2B5-4AC0-8E5A-E1A5F739474C] (global parent) (reporting strategy default) complete (reason success)>
+2026-10-21 20:33:51.123 Df xash[31219:17976] [com.apple.network:activity] Unset the global parent activity
+2026-10-21 20:33:51.300 Df xash[31219:17976] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:33:51.301 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Should not send trait collection or coordinate space update, interface style 1 -> 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:51.469 Df xash[31219:17976] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Lr ) -> ( Ll Lr )
+2026-10-21 20:33:51.481 Df xash[31219:17976] [com.apple.UIKit:UIFocus] Deferring focus update to item <_UIInterfaceActionCustomViewRepresentationView: 0x104718e20>. No additional info available.
+2026-10-21 20:33:53.707 Df xash[31219:17976] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:33:53.708 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:53.721 Df xash[31219:17976] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10450b1d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:33:53.721 Df xash[31219:17976] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:33:53.722 Df xash[31219:17976] [com.apple.UIKit:Application] Deactivation reason removed: 12; deactivation reasons: 4128 -> 32; animating application lifecycle event: 1
+2026-10-21 20:33:53.722 Df xash[31219:17976] [com.apple.KeyboardArbiter:Client] Send setDeactivating: N (-DeactivationReason:SuspendedEventsOnly)
+2026-10-21 20:33:53.723 Df xash[31219:17976] [com.apple.UIKit:Application] Deactivation reason removed: 5; deactivation reasons: 32 -> 0; animating application lifecycle event: 0
+2026-10-21 20:33:53.730 Df xash[31219:17976] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:33:53.787 Df xash[31219:17976] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:33:53.795 A  xash[31219:17ec8] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:33:53.809 Df xash[31219:17976] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:33:53.823 A  xash[31219:17ecc] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:34:51.592 Df xash[33165:18db3] (libMobileGestalt.dylib) No persisted cache on this platform.
+2026-10-21 20:34:51.592 Df xash[33165:18dd5] [com.apple.xpc:connection] [0x10d2057b0] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-10-21 20:34:51.594 Df xash[33165:18dd6] [com.apple.BoardServices:XPCErrors] [C:1] Alloc com.apple.frontboard.systemappservices
+2026-10-21 20:34:51.595 Df xash[33165:18dd6] [com.apple.xpc:connection] [0x10d407040] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-10-21 20:34:51.598 A  xash[33165:18dd5] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-10-21 20:34:51.618 Df xash[33165:18db3] [com.apple.UIKit:Application] Deactivation reason added: 10; deactivation reasons: 0 -> 1024; animating application lifecycle event: 0
+2026-10-21 20:34:51.618 Df xash[33165:18db3] [com.apple.runningboard:connection] Initializing connection
+2026-10-21 20:34:51.618 Df xash[33165:18db3] [com.apple.runningboard:process] Removing all cached process handles
+2026-10-21 20:34:51.619 Df xash[33165:18dd5] [com.apple.runningboard:connection] Sending handshake request attempt #1 to server
+2026-10-21 20:34:51.619 Df xash[33165:18db3] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.open
+2026-10-21 20:34:51.619 Df xash[33165:18dd5] [com.apple.runningboard:connection] Creating connection to com.apple.runningboard
+2026-10-21 20:34:51.619 Df xash[33165:18dd5] [com.apple.xpc:connection] [0x10d2065c0] activating connection: mach=true listener=false peer=false name=com.apple.runningboard
+2026-10-21 20:34:51.620 Df xash[33165:18db3] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.workspace-service
+2026-10-21 20:34:51.621 A  xash[33165:18dd7] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:34:51.624 Df xash[33165:18dd5] [com.apple.runningboard:connection] Handshake succeeded
+2026-10-21 20:34:51.624 Df xash[33165:18dd5] [com.apple.runningboard:connection] Identity resolved as app<com.eriondigital.cs16((null))>
+2026-10-21 20:34:51.624 Df xash[33165:18db3] [com.apple.FrontBoard:Common] FBSWorkspace registering source: com.apple.frontboard.systemappservices
+2026-10-21 20:34:51.628 Df xash[33165:18db3] [com.apple.FrontBoard:Common] FBSWorkspace connected to endpoint : <BSServiceConnectionEndpoint: 0x600000206ee0; target: com.apple.frontboard.systemappservices; service: com.apple.frontboard.workspace-service>
+2026-10-21 20:34:51.629 Df xash[33165:18db3] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x600003000360 com.apple.frontboard.systemappservices> attempting immediate handshake from activate
+2026-10-21 20:34:51.630 Df xash[33165:18db3] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x600003000360 com.apple.frontboard.systemappservices> sent handshake
+2026-10-21 20:34:51.631 Df xash[33165:18db3] [com.apple.runningboard:general] Added observer for process assertions expiration warning: <_RBSExpirationWarningClient: 0x6000002097a0>
+2026-10-21 20:34:51.632 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UIApplicationSceneKeyboardSettings on FBSSceneSettings
+2026-10-21 20:34:51.634 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneOcclusionSettings> on FBSSceneSettings
+2026-10-21 20:34:51.635 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneInterfaceProtectionSettings> on FBSSceneSettings
+2026-10-21 20:34:51.636 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferencesHostSettingsExtension on FBSSceneSettings
+2026-10-21 20:34:51.637 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneSafeAreaSettingsExtension on FBSSceneSettings
+2026-10-21 20:34:51.638 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferenceClientSettingsExtension on FBSSceneClientSettings
+2026-10-21 20:34:51.639 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UIHomeAffordanceHostSceneSettings> on FBSSceneSettings
+2026-10-21 20:34:51.640 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISystemShellSceneHostingEnvironmentSettings on FBSSceneSettings
+2026-10-21 20:34:51.640 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneRenderingEnvironmentSettings on FBSSceneSettings
+2026-10-21 20:34:51.641 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneRenderingEnvironmentClientSettings> on FBSSceneClientSettings
+2026-10-21 20:34:51.641 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneTransitioningHostSettings> on FBSSceneSettings
+2026-10-21 20:34:51.642 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneFocusSystemSettings> on FBSSceneSettings
+2026-10-21 20:34:51.642 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationSettingsExtension on FBSSceneSettings
+2026-10-21 20:34:51.643 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationClientSettingsExtension on FBSSceneClientSettings
+2026-10-21 20:34:51.643 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneWindowingControlClientSettings on FBSSceneClientSettings
+2026-10-21 20:34:51.644 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneSettingsCore on FBSSceneSettings
+2026-10-21 20:34:51.646 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneClientSettingsCore on FBSSceneClientSettings
+2026-10-21 20:34:51.660 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneSettings setting counterpart class: UIApplicationSceneSettings
+2026-10-21 20:34:51.661 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneClientSettings setting counterpart class: UIApplicationSceneClientSettings
+2026-10-21 20:34:51.662 Df xash[33165:18dd5] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneTransitionContextCore on FBSSceneTransitionContext
+2026-10-21 20:34:52.364 Df xash[33165:18dd4] [com.apple.UIKit:BackgroundTask] Creating new assertion because there is no existing background assertion.
+2026-10-21 20:34:52.364 Df xash[33165:18dd4] [com.apple.UIKit:BackgroundTask] Creating new background assertion
+2026-10-21 20:34:52.365 Df xash[33165:18dd4] [com.apple.UIKit:BackgroundTask] Created new background assertion <BKSProcessAssertion: 0x600002110b90>
+2026-10-21 20:34:52.366 Df xash[33165:18dd4] [com.apple.UIKit:BackgroundTask] Incrementing reference count for background assertion <BKSProcessAssertion: 0x600002110b90>
+2026-10-21 20:34:52.366 Df xash[33165:18dd4] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x600001710800>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1695 (elapsed = 0).
+2026-10-21 20:34:52.367 Df xash[33165:18dd4] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingContentSizePreferenceClientSettings> on FBSSceneClientSettings
+2026-10-21 20:34:52.367 Df xash[33165:18dd4] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneHostingTraitCollectionPropagationSettings on FBSSceneSettings
+2026-10-21 20:34:52.370 Df xash[33165:18dd4] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationSettings> on FBSSceneSettings
+2026-10-21 20:34:52.371 Df xash[33165:18dd4] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationClientSettings> on FBSSceneClientSettings
+2026-10-21 20:34:52.371 Df xash[33165:18dd4] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingEventDeferringSettings> on FBSSceneSettings
+2026-10-21 20:34:52.372 Df xash[33165:18dd4] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneSettings
+2026-10-21 20:34:52.373 Df xash[33165:18dd4] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneClientSettings
+2026-10-21 20:34:52.374 Df xash[33165:18dd4] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingViewControllerPreferencePropagationClientSettings> on FBSSceneClientSettings
+2026-10-21 20:34:52.374 Df xash[33165:18dd4] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneZoomTransitionSettings> on FBSSceneSettings
+2026-10-21 20:34:52.758 A  xash[33165:18e8c] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:34:53.386 Df xash[33165:18e8d] [com.apple.UIKit:BackgroundTask] Ending background task with UIBackgroundTaskIdentifier: 1
+2026-10-21 20:34:53.386 Df xash[33165:18e8d] [com.apple.UIKit:BackgroundTask] Ending task with identifier 1 and description: <_UIBackgroundTaskInfo: 0x600001710800>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1695 (elapsed = 1), _expireHandler: (null)
+2026-10-21 20:34:53.386 Df xash[33165:18e8d] [com.apple.UIKit:BackgroundTask] Decrementing reference count for assertion <BKSProcessAssertion: 0x600002110b90> (used by background task with identifier 1: <_UIBackgroundTaskInfo: 0x600001710800>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1695 (elapsed = 1))
+2026-10-21 20:34:53.387 Df xash[33165:18e8d] [com.apple.UIKit:BackgroundTask] Will invalidate assertion: <BKSProcessAssertion: 0x600002110b90> for task identifier: 1
+2026-10-21 20:34:53.730 Df xash[33165:18db3] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x10d20aff0> for initial
+2026-10-21 20:34:53.731 Df xash[33165:18db3] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x10d20aff0> for CADisplay KVO
+2026-10-21 20:34:53.736 Df xash[33165:18db3] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 1, category name = (null)
+2026-10-21 20:34:53.737 Df xash[33165:18db3] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 0, category name = (null)
+2026-10-21 20:34:53.754 Df xash[33165:18db3] [com.apple.dt.xctest:Default] Registering for test daemon availability notify post.
+2026-10-21 20:34:53.755 Df xash[33165:18db3] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-21 20:34:53.755 Df xash[33165:18db3] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-21 20:34:53.756 Df xash[33165:18db3] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-21 20:34:53.760 Df xash[33165:18db3] [com.apple.UIKit:UpdateScheduler] Selected display: name=LCD (PurpleMain), id=1
+2026-10-21 20:34:53.767 Df xash[33165:18db3] [com.apple.UIKit:Application] Deactivation reason added: 5; deactivation reasons: 1024 -> 1056; animating application lifecycle event: 1
+2026-10-21 20:34:53.769 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:53.769 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Should send trait collection or coordinate space update, interface style 1 -> 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:53.771 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:53.772 Df xash[33165:18db3] [com.apple.UIKit:HomeAffordanceObservation] Initializing: <_UIHomeAffordanceSceneNotifier: 0x60000290d500>; with scene: <UIWindowScene: 0x10d20df40>
+2026-10-21 20:34:53.772 Df xash[33165:18db3] [com.apple.BacklightServices:scenes] 0x600000c14e40 setDelegate:<0x600000c145d0 _UIBacklightEnvironment> hasDelegate:YES for environment:sceneID:com.eriondigital.cs16-default
+2026-10-21 20:34:53.774 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:53.774 Df xash[33165:18db3] [com.apple.UIKit:EventDeferring] [0x60000290e220] Initialized with scene: <UIWindowScene: 0x10d20df40>; behavior: <_UIEventDeferringBehavior_iOS: 0x60000021b720>; availableForProcess: 1, systemShellManagesKeyboardFocus: 1
+2026-10-21 20:34:53.776 Df xash[33165:18db3] [com.apple.BoardServices:XPCErrors] [C:2] Alloc com.apple.backboard.hid-services.xpc
+2026-10-21 20:34:53.776 Df xash[33165:18db3] [com.apple.xpc:connection] [0x10d108a50] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-10-21 20:34:53.781 Df xash[33165:18e8d] [com.apple.BackBoard:EventDelivery] BKSHIDEventObserver - connection activation
+2026-10-21 20:34:53.781 Df xash[33165:18db3] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x600002611200; process scope; status: target> was:none
+2026-10-21 20:34:53.782 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to LastOneWins
+2026-10-21 20:34:53.782 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Scene target of keyboard event deferring environment did change: 1; scene: UIWindowScene: 0x10d20df40; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:34:53.782 Df xash[33165:18db3] [com.apple.UIKit:EventDeferring] [0x60000290e220] Scene target of event deferring environments did update: scene: 0x10d20df40; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-21 20:34:53.782 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10d20df40; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:34:53.783 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Stack[KeyWindow] 0x600000c14d50: Taking no further action for migration from LastOneWins -> SystemShellManaged as there are no scenes
+2026-10-21 20:34:53.783 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to SystemShellManaged
+2026-10-21 20:34:53.783 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Key window needs update: 0; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x10d20df40; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x0; reason: UIWindowScene: 0x10d20df40: Window scene became target of keyboard environment
+2026-10-21 20:34:53.784 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:53.786 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:53.792 F  xash[33165:18db3] [com.apple.runtime-issues:UIKit App Config] `UIScene` lifecycle will soon be required. Failure to adopt will result in an assert in the future.
+2026-10-21 20:34:53.792 A  xash[33165:18db3] (libsystem_trace.dylib) Activity for state dumps
+2026-10-21 20:34:53.793 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:53.793 Df xash[33165:18db3] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:34:53.795 Df xash[33165:18db3] [com.apple.UIKit:Application] Ignoring already applied deactivation reason: 5; deactivation reasons: 1056
+2026-10-21 20:34:53.795 Df xash[33165:18db3] [com.apple.UIKit:Application] Deactivation reason added: 11; deactivation reasons: 1056 -> 3104; animating application lifecycle event: 1
+2026-10-21 20:34:53.795 Df xash[33165:18db3] [com.apple.KeyboardArbiter:Client] startConnection
+2026-10-21 20:34:53.796 Df xash[33165:18db3] [com.apple.xpc:connection] [0x10d40b370] activating connection: mach=true listener=false peer=false name=com.apple.UIKit.KeyboardManagement.hosted
+2026-10-21 20:34:53.813 Df xash[33165:18db3] [com.apple.UIKit:Application] Deactivation reason removed: 10; deactivation reasons: 3104 -> 2080; animating application lifecycle event: 1
+2026-10-21 20:34:53.814 Df xash[33165:18db3] [com.apple.UIKit:Application] Deactivation reason added: 12; deactivation reasons: 2080 -> 6176; animating application lifecycle event: 1
+2026-10-21 20:34:53.814 Df xash[33165:18db3] [com.apple.UIKit:Application] Deactivation reason removed: 11; deactivation reasons: 6176 -> 4128; animating application lifecycle event: 1
+2026-10-21 20:34:53.814 Df xash[33165:18db3] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneIntelligenceSupportSettings> on FBSSceneSettings
+2026-10-21 20:34:53.815 Df xash[33165:18f01] [com.apple.UIIntelligenceSupport:xpc] establishing connection to agent
+2026-10-21 20:34:53.817 Df xash[33165:18f01] [com.apple.xpc:session] [0x600002112620] Session created.
+2026-10-21 20:34:53.817 Df xash[33165:18f01] [com.apple.xpc:session] [0x600002112620] Session created from connection [0x10d40bc70]
+2026-10-21 20:34:53.817 Df xash[33165:18f01] [com.apple.xpc:connection] [0x10d40bc70] activating connection: mach=true listener=false peer=false name=com.apple.uiintelligencesupport.agent
+2026-10-21 20:34:53.817 Df xash[33165:18f01] [com.apple.xpc:session] [0x600002112620] Session activated
+2026-10-21 20:34:53.818 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:54.034 Df xash[33165:18db3] [com.apple.xpc:connection] [0x10d104e90] activating connection: mach=true listener=false peer=false name=com.apple.lsd.mapdb
+2026-10-21 20:34:54.443 A  xash[33165:18de1] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:34:54.444 A  xash[33165:18de1] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:34:54.446 A  xash[33165:18dd6] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:34:54.501 Df xash[33165:18de1] [com.apple.BackBoard:EventDelivery] BKSHIDEventDeliveryManager - connection activation
+2026-10-21 20:34:54.572 Df xash[33165:18de1] [com.apple.CoreAnalytics:client] No XPC connection in Simulator
+2026-10-21 20:34:54.572 Df xash[33165:18db3] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:1 [870F5C86-6A46-4307-ACB8-16E5320DCF36] (reporting strategy default)>
+2026-10-21 20:34:54.572 E  xash[33165:18de1] [com.apple.app_launch_measurement:General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+2026-10-21 20:34:54.572 Df xash[33165:18db3] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:2 [075651C2-64B0-462B-91D8-D7BE969953CA] (reporting strategy default)>
+2026-10-21 20:34:54.572 Df xash[33165:18db3] [com.apple.network:activity] Set activity <nw_activity 50:1 [870F5C86-6A46-4307-ACB8-16E5320DCF36] (reporting strategy default)> as the global parent
+2026-10-21 20:34:54.573 Df xash[33165:18db3] [com.apple.UIKit:EventBus] Event Timing Profile for Touch: not found, path="/System/Library/EventTimingProfiles/Sim.Touch.plist"
+2026-10-21 20:34:54.573 Df xash[33165:18db3] [com.apple.UIKit:EventBus] Event Timing Profile for Pencil: not found, path="/System/Library/EventTimingProfiles/Sim.Pencil.plist"
+2026-10-21 20:34:54.574 Df xash[33165:18db3] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:34:54.574 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Should not send trait collection or coordinate space update, interface style 1 -> 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:54.575 Df xash[33165:18db3] [com.apple.Accessibility:AXCommon] Read Per-App on Init: Smart invert = (null)
+2026-10-21 20:34:54.576 Df xash[33165:18db3] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:34:54.577 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:54.579 Df xash[33165:18db3] System Version is 26.2
+2026-10-21 20:34:54.580 A  xash[33165:18db3] (TCC) tcc_send_request_authorization() IPC
+2026-10-21 20:34:54.580 Df xash[33165:18db3] [com.apple.xpc:connection] [0x10d20d1b0] activating connection: mach=true listener=false peer=false name=com.apple.tccd
+2026-10-21 20:34:56.575 Df xash[33165:18db3] [com.apple.xpc:connection] [0x10d20d1b0] invalidated after the last release of the connection object
+2026-10-21 20:34:56.635 Df xash[33165:18db3] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UIApplicationSceneDisplaySettings> on FBSSceneSettings
+2026-10-21 20:34:56.745 Df xash[33165:18db3] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: none -> ( Ll Lr )
+2026-10-21 20:34:56.746 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Key window API is scene-level: YES
+2026-10-21 20:34:56.746 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] UIWindowScene: 0x10d20df40: Window became key in scene: UIWindow: 0x10d417470; contextId: 0xEEA5F938: reason: UIWindowScene: 0x10d20df40: Window requested to become key in scene: 0x10d417470
+2026-10-21 20:34:56.746 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Key window needs update: 1; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x10d20df40; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x10d417470; reason: UIWindowScene: 0x10d20df40: Window requested to become key in scene: 0x10d417470
+2026-10-21 20:34:56.746 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Window did become application key: UIWindow: 0x10d417470; contextId: 0xEEA5F938; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:34:56.746 Df xash[33165:18db3] [com.apple.UIKit:EventDeferring] [0x60000290e220] Begin local event deferring requested for token: 0x600002610600; environments: 1; reason: UIWindowScene: 0x10d20df40: Begin event deferring in keyboardFocus for window: 0x10d417470
+2026-10-21 20:34:56.751 Df xash[33165:18dd4] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x600002611200; token: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default; status: ancestor> was:target
+2026-10-21 20:34:56.808 Df xash[33165:18db3] [PrototypeTools:domain] Not observing PTDefaults on customer install.
+2026-10-21 20:34:56.896 Df xash[33165:18e8c] [com.apple.xpc:connection] [0x10d107450] activating connection: mach=true listener=false peer=false name=com.apple.fontservicesd
+2026-10-21 20:34:56.903 Df xash[33165:18db3] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Ll Lr ) -> ( Lr )
+2026-10-21 20:34:56.904 Df xash[33165:18db3] [com.apple.UIKit:UpdateScheduler] Target list changed: <CADisplay:LCD PurpleMain>
+2026-10-21 20:34:56.908 Df xash[33165:18db3] [com.apple.UIKit:UIFocusSystemSceneComponent] Override focusSystemState: (ENABLED) for reason(s): {(
+    "<_UIAlertControllerPhoneTVMacView 0x10d847a00>"
+)}
+2026-10-21 20:34:56.909 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:56.913 Df xash[33165:18db3] [com.apple.UIKit:UIFocus] Failed to update focus with context <UIFocusUpdateContext: 0x60000300bcc0; previouslyFocusedItem: (nil); nextFocusedItem: (nil); focusHeading: None>. No additional info available.
+2026-10-21 20:34:57.581 Df xash[33165:18db3] [com.apple.UIKit:UIAlertControllerStackManager] _willShowAlertController: <UIAlertController: 0x10d83f000>
+2026-10-21 20:34:57.581 Df xash[33165:18db3] [com.apple.UIKit:UIAlertControllerStackManager] _addAlertControllerToStack: Adding Alert to stack : <UIAlertController: 0x10d83f000>
+2026-10-21 20:34:57.618 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:57.618 Df xash[33165:18db3] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:34:57.618 Df xash[33165:18db3] [com.apple.UIKit:Application] Deactivation reason removed: 12; deactivation reasons: 4128 -> 32; animating application lifecycle event: 1
+2026-10-21 20:34:57.619 Df xash[33165:18db3] [com.apple.KeyboardArbiter:Client] Send setDeactivating: N (-DeactivationReason:SuspendedEventsOnly)
+2026-10-21 20:34:57.619 Df xash[33165:18db3] [com.apple.UIKit:Application] Deactivation reason removed: 5; deactivation reasons: 32 -> 0; animating application lifecycle event: 0
+2026-10-21 20:34:57.633 Df xash[33165:18db3] [com.apple.UIKit:UIFocus] Failed to update focus with context <UIFocusUpdateContext: 0x600003000750; previouslyFocusedItem: (nil); nextFocusedItem: (nil); focusHeading: None>. No additional info available.
+2026-10-21 20:34:57.634 Df xash[33165:18db3] [com.apple.KeyboardArbiter:Client] startConnection
+2026-10-21 20:34:57.635 Df xash[33165:18db3] [com.apple.UIKit:EventDeferring] [0x60000290e220] Scene target of event deferring environments did update: scene: 0x10d20df40; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-21 20:34:57.635 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10d20df40; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:34:57.936 Df xash[33165:18db3] Imported game files from /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Data/Application/0A11BD20-A9E4-4448-8E1C-0271ABEABF85/Documents/valve.zip
+2026-10-21 20:34:57.971 Df xash[33165:18db3] Imported game files from /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Data/Application/0A11BD20-A9E4-4448-8E1C-0271ABEABF85/Documents/cstrike_2.zip
+2026-10-21 20:34:57.980 Df xash[33165:18db3] [com.apple.KeyboardArbiter:Client] handleKeyboardChange: set currentKeyboard:N (wasKeyboard:N)
+2026-10-21 20:34:57.987 Df xash[33165:18db3] [com.apple.UIKit:KeyboardArbiterClientLog] isWritingToolsHandlingKeyboardTracking:Y (WT ready:Y, Arbiter ready:Y)
+2026-10-21 20:34:58.022 Df xash[33165:18db3] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Lr ) -> ( Ll Lr )
+2026-10-21 20:34:58.027 Df xash[33165:18db3] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Ll Lr ) -> ( Lr )
+2026-10-21 20:34:58.046 Df xash[33165:18db3] [com.apple.UIKit:UIFocus] Failed to update focus with context <UIFocusUpdateContext: 0x600003000480; previouslyFocusedItem: (nil); nextFocusedItem: (nil); focusHeading: None>. No additional info available.
+2026-10-21 20:34:58.048 Df xash[33165:18db3] [com.apple.UIKit:UIAlertControllerStackManager] _alertControllerWillDisappear: will hide alert : <UIAlertControllerStackManager: 0x600000214860>
+2026-10-21 20:34:58.049 Df xash[33165:18db3] [com.apple.UIKit:UIAlertControllerStackManager] _removeAlertControllerFromStack: Removing Alert from stack : <UIAlertController: 0x10d83f000>
+2026-10-21 20:34:58.054 Df xash[33165:18db3] [com.apple.network:activity] <nw_activity 50:1 [870F5C86-6A46-4307-ACB8-16E5320DCF36] (global parent) (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 7596ms
+2026-10-21 20:34:58.055 Df xash[33165:18db3] [com.apple.network:activity] <nw_activity 50:2 [075651C2-64B0-462B-91D8-D7BE969953CA] (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 7597ms
+2026-10-21 20:34:58.055 Df xash[33165:18db3] [com.apple.network:activity] Unsetting the global parent activity <nw_activity 50:1 [870F5C86-6A46-4307-ACB8-16E5320DCF36] (global parent) (reporting strategy default) complete (reason success)>
+2026-10-21 20:34:58.150 Df xash[33165:18db3] [com.apple.network:activity] Unset the global parent activity
+2026-10-21 20:34:58.150 E  xash[33165:18e6f] [com.apple.app_launch_measurement:General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+2026-10-21 20:34:58.460 Df xash[33165:18db3] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Lr ) -> ( Ll Lr )
+2026-10-21 20:34:58.462 Df xash[33165:18db3] [com.apple.UIKit:UIFocusSystemSceneComponent] Override focusSystemState: (DISABLED) for reason(s): <_UIAlertControllerPhoneTVMacView: 0x10d847a00; frame = (302 150.667; 270 80); layer = <CALayer: 0x600000c2d710>>
+2026-10-21 20:34:58.468 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:58.472 Df xash[33165:18db3] [com.apple.UIKit:UIAlertControllerStackManager] _didHideAlertController: <UIAlertController: 0x10d83f000>
+2026-10-21 20:34:58.474 Df xash[33165:18db3] [com.apple.runningboard:connection] Creating side-channel connection to com.apple.runningboard
+2026-10-21 20:34:58.474 Df xash[33165:18db3] [com.apple.xpc:connection] [0x10d211090] activating connection: mach=true listener=false peer=false name=com.apple.runningboard
+2026-10-21 20:34:58.475 Df xash[33165:18db3] [com.apple.runningboard:process] Hit the server for a process handle 1a248b2e0000818d that resolved to: [app<com.eriondigital.cs16((null))>:33165]
+2026-10-21 20:34:58.477 Df xash[33165:18db3] [com.apple.UIKit:EventDeferring] [0x60000290e220] End local event deferring requested for token: 0x600002610600; environments: 1; reason: UIWindowScene: 0x10d20df40: end key window deferring for window hiding: 0x10d417470
+2026-10-21 20:34:58.478 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] UIWindowScene: 0x10d20df40: Window became key in scene: (nil): 0x0; contextId: 0x0: reason: <UIWindowScene: 0x10d20df40>: Key window changed visibility: 0x10d417470
+2026-10-21 20:34:58.478 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Key window needs update: 1; currentKeyWindowScene: 0x10d20df40; evaluatedKeyWindowScene: 0x10d20df40; currentApplicationKeyWindow: 0x10d417470; evaluatedApplicationKeyWindow: 0x0; reason: <UIWindowScene: 0x10d20df40>: Key window changed visibility: 0x10d417470
+2026-10-21 20:34:58.478 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Window did become application key: (nil): 0x0; contextId: 0x0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:34:58.478 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Window resigning application key: UIWindow: 0x10d417470; contextId: 0xEEA5F938; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:34:58.478 Df xash[33165:18db3] Game data found in /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Data/Application/0A11BD20-A9E4-4448-8E1C-0271ABEABF85/Documents
+2026-10-21 20:34:58.479 Df xash[33165:18db3] Launching with: -dev 2 -game cstrike -dll @yapb -log
+2026-10-21 20:34:58.479 Df xash[33165:18e8d] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x600002611200; token: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default; status: target> was:ancestor
+2026-10-21 20:34:58.486 Df xash[33165:18db3] Xash: Console initialized.
+2026-10-21 20:34:58.594 Df xash[33165:18db3] [com.apple.gamecontroller:Session] Creating the shared game controller session...
+2026-10-21 20:34:58.603 Df xash[33165:18db3] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x600002602d00; process scope; status: target> was:none
+2026-10-21 20:34:58.603 A  xash[33165:18db3] (GameController) [GCDeviceSession] Activate
+2026-10-21 20:34:58.605 Df xash[33165:18db3] Xash: SDL: [Error] Unknown pixel format
+2026-10-21 20:34:58.606 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.606 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.607 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.607 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.608 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.608 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.609 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.609 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.609 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.610 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.610 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.611 Df xash[33165:18db3] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:34:58.613 F  xash[33165:19002] [com.apple.locationd.Legacy:Generic_deprecated] could not read user kCFPreferencesCurrentUser uid/gid
+2026-10-21 20:34:58.613 A  xash[33165:19002] (libsystem_trace.dylib) Activity for state dumps
+2026-10-21 20:34:58.616 E  xash[33165:19002] [com.apple.locationd.Core:Core] {"msg":"file does not exist... clearing", "file":/Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.2.simruntime/Contents/Resources/RuntimeRoot/private/var/Managed Preferences/kCFPreferencesCurrentUser/com.apple.CoreMotion.plist, "error":Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.CoreMotion.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.2.simruntime/Contents/Resources/RuntimeRoot/private/var/Managed Preferences/kCFPreferencesCurrentUser/com.apple.CoreMotion.plist, NSURL=file:///Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS%2026.2.simruntime/Contents/Resources/RuntimeRoot/private/var/Managed%20Preferences/kCFPreferencesCurrentUser/com.apple.CoreMotion.plist, NSUnderlyingError=0x600000c31590 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}}
+2026-10-21 20:34:58.618 A  xash[33165:19002] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-10-21 20:34:58.619 Df xash[33165:18db3] IOS_GetDocsDir: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Data/Application/0A11BD20-A9E4-4448-8E1C-0271ABEABF85/Documents
+2026-10-21 20:34:58.619 Df xash[33165:18db3] IOS_GetExecDir: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app
+2026-10-21 20:34:58.635 Df xash[33165:18db3] Xash: filesystem_stdio: custom pool allocation functions found
+2026-10-21 20:34:58.636 Df xash[33165:18db3] Xash: filesystem_stdio: custom memory allocation functions found
+2026-10-21 20:34:58.636 Df xash[33165:18db3] Xash: filesystem_stdio: custom platform-specific functions found
+2026-10-21 20:34:58.637 Df xash[33165:18db3] Xash: FS_LoadProgs: filesystem_stdio successfully loaded
+2026-10-21 20:34:58.637 Df xash[33165:18db3] Xash: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Data/Application/0A11BD20-A9E4-4448-8E1C-0271ABEABF85/Documents is working directory now
+2026-10-21 20:34:58.639 Df xash[33165:18db3] Xash: Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/
+2026-10-21 20:34:58.640 Df xash[33165:18db3] Xash: Adding directory: ./
+2026-10-21 20:34:58.641 Df xash[33165:18db3] Xash: FS_InitStdio: done
+2026-10-21 20:34:58.642 Df xash[33165:18db3] Xash: Program args:
+2026-10-21 20:34:58.642 Df xash[33165:18db3] Xash: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/xash
+2026-10-21 20:34:58.642 Df xash[33165:18db3] Xash: -dev
+2026-10-21 20:34:58.642 Df xash[33165:18db3] Xash: 2
+2026-10-21 20:34:58.643 Df xash[33165:18db3] Xash: -game
+2026-10-21 20:34:58.643 Df xash[33165:18db3] Xash: cstrike
+2026-10-21 20:34:58.643 Df xash[33165:18db3] Xash: -dll
+2026-10-21 20:34:58.643 Df xash[33165:18db3] Xash: @yapb
+2026-10-21 20:34:58.643 Df xash[33165:18db3] Xash: -log
+2026-10-21 20:34:58.644 Df xash[33165:18db3] Xash:
+2026-10-21 20:34:58.644 Df xash[33165:18db3] Xash: Developer level: 2
+2026-10-21 20:34:58.645 Df xash[33165:18db3] Xash: execing cstrike/vfs.cfg
+2026-10-21 20:34:58.645 Df xash[33165:18db3] Xash: couldn't exec cstrike/vfs.cfg
+2026-10-21 20:34:58.646 Df xash[33165:18db3] Xash: FS_LoadGameInfo( cstrike, 0x0, english )
+2026-10-21 20:34:58.646 Df xash[33165:18db3] Xash: FS_Rescan( Counter-Strike, 0x0, english )
+2026-10-21 20:34:58.676 Df xash[33165:18db3] Xash: Adding ZIP: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/valve/extras.pk3 (146 files)
+2026-10-21 20:34:58.676 Df xash[33165:18db3] Xash: FS_AddGameHierarchy( valve )
+2026-10-21 20:34:58.677 Df xash[33165:18db3] Xash: Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/valve/
+2026-10-21 20:34:58.678 Df xash[33165:18db3] Xash: Adding WAD: valve/gfx.wad (1 files)
+2026-10-21 20:34:58.679 Df xash[33165:18db3] Xash: Adding directory: valve/
+2026-10-21 20:34:58.679 Df xash[33165:18db3] Xash: FS_AddGameHierarchy( cstrike )
+2026-10-21 20:34:58.740 Df xash[33165:18db3] Xash: Adding ZIP: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/cstrike/extras.pk3 (217 files)
+2026-10-21 20:34:58.741 Df xash[33165:18db3] Xash: Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/cstrike/
+2026-10-21 20:34:58.742 Df xash[33165:18db3] Xash: Adding directory: cstrike_downloads/
+2026-10-21 20:34:58.742 Df xash[33165:18db3] Xash: Adding directory: cstrike/
+2026-10-21 20:34:58.743 Df xash[33165:18db3] Xash: Adding directory: cstrike/custom/
+2026-10-21 20:34:58.746 Df xash[33165:18db3] Xash: Warning: FS_LoadImage: couldn't load "gfx/palette"
+2026-10-21 20:34:58.748 Df xash[33165:18db3] Xash: Host_InitDecals: 0 decals
+2026-10-21 20:34:58.749 Df xash[33165:18db3] Xash: Joystick: SDL GameController API
+2026-10-21 20:34:58.756 Df xash[33165:18db3] Xash: Touch_Init()
+2026-10-21 20:34:58.756 Df xash[33165:18db3] Xash: Base networking initialized.
+2026-10-21 20:34:58.758 Df xash[33165:18db3] Xash: Cannot load xashcomm.lst
+2026-10-21 20:34:58.794 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_auto_start"
+2026-10-21 20:34:58.795 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_auto_save"
+2026-10-21 20:34:58.796 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_distance"
+2026-10-21 20:34:58.796 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_max_jump_height"
+2026-10-21 20:34:58.797 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_fps"
+2026-10-21 20:34:58.797 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_clean_paths_on_finish"
+2026-10-21 20:34:58.798 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_optimize_nodes_on_finish"
+2026-10-21 20:34:58.798 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_mark_goals_on_finish"
+2026-10-21 20:34:58.799 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_debug"
+2026-10-21 20:34:58.799 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_debug_goal"
+2026-10-21 20:34:58.800 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_user_follow_percent"
+2026-10-21 20:34:58.800 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_user_max_followers"
+2026-10-21 20:34:58.801 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_jasonmode"
+2026-10-21 20:34:58.801 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_radio_mode"
+2026-10-21 20:34:58.802 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_economics_rounds"
+2026-10-21 20:34:58.803 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_economics_disrespect_percent"
+2026-10-21 20:34:58.803 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_darkness"
+2026-10-21 20:34:58.804 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_avoid_grenades"
+2026-10-21 20:34:58.804 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_tkpunish"
+2026-10-21 20:34:58.805 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_freeze_bots"
+2026-10-21 20:34:58.805 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_spraypaints"
+2026-10-21 20:34:58.806 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botbuy"
+2026-10-21 20:34:58.806 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_destroy_breakables_around"
+2026-10-21 20:34:58.807 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_object_pickup_radius"
+2026-10-21 20:34:58.807 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_object_destroy_radius"
+2026-10-21 20:34:58.808 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chatter_path"
+2026-10-21 20:34:58.808 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_attack_monsters"
+2026-10-21 20:34:58.809 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_custom_items"
+2026-10-21 20:34:58.809 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_ammo_and_kits"
+2026-10-21 20:34:58.810 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_best"
+2026-10-21 20:34:58.811 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_objectives"
+2026-10-21 20:34:58.812 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chat"
+2026-10-21 20:34:58.813 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chat_percent"
+2026-10-21 20:34:58.814 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_shoots_thru_walls"
+2026-10-21 20:34:58.815 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_enemies"
+2026-10-21 20:34:58.815 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_enemy_rendering"
+2026-10-21 20:34:58.816 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_enemy_invincibility"
+2026-10-21 20:34:58.817 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_stab_close_enemies"
+2026-10-21 20:34:58.818 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_use_engine_pvs_check"
+2026-10-21 20:34:58.818 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_use_hitbox_enemy_targeting"
+2026-10-21 20:34:58.819 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_aim_trace_consider_glass"
+2026-10-21 20:34:58.819 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_bind_menu_key"
+2026-10-21 20:34:58.820 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_cvars_on_changelevel"
+2026-10-21 20:34:58.821 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_password"
+2026-10-21 20:34:58.822 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_password_key"
+2026-10-21 20:34:58.822 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_bots_kill_on_endround"
+2026-10-21 20:34:58.823 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_csdm_mode"
+2026-10-21 20:34:58.824 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_map_prefix_game_mode"
+2026-10-21 20:34:58.825 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_threadpool_workers"
+2026-10-21 20:34:58.825 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_grenadier_mode"
+2026-10-21 20:34:58.826 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_enemies_after_spawn_time"
+2026-10-21 20:34:58.826 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_breakable_health_limit"
+2026-10-21 20:34:58.827 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_base_min"
+2026-10-21 20:34:58.828 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_base_max"
+2026-10-21 20:34:58.828 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_count_real_players"
+2026-10-21 20:34:58.829 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_updater_interval"
+2026-10-21 20:34:58.829 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_fixcamp"
+2026-10-21 20:34:58.830 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_url"
+2026-10-21 20:34:58.831 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_url_upload"
+2026-10-21 20:34:58.832 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_auto_save_count"
+2026-10-21 20:34:58.833 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_draw_distance"
+2026-10-21 20:34:58.834 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_auto_collect_db"
+2026-10-21 20:34:58.835 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_version"
+2026-10-21 20:34:58.836 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autovacate"
+2026-10-21 20:34:58.836 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autovacate_keep_slots"
+2026-10-21 20:34:58.837 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_kick_after_player_connect"
+2026-10-21 20:34:58.838 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota"
+2026-10-21 20:34:58.838 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_mode"
+2026-10-21 20:34:58.839 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_match"
+2026-10-21 20:34:58.840 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_think_fps"
+2026-10-21 20:34:58.842 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autokill_delay"
+2026-10-21 20:34:58.843 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_first_human_restart"
+2026-10-21 20:34:58.844 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_after_player"
+2026-10-21 20:34:58.845 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_team"
+2026-10-21 20:34:58.846 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_delay"
+2026-10-21 20:34:58.847 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_name_prefix"
+2026-10-21 20:34:58.847 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty"
+2026-10-21 20:34:58.848 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_min"
+2026-10-21 20:34:58.849 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_max"
+2026-10-21 20:34:58.850 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_auto"
+2026-10-21 20:34:58.850 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_auto_balance_interval"
+2026-10-21 20:34:58.851 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_show_avatars"
+2026-10-21 20:34:58.852 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_show_latency"
+2026-10-21 20:34:58.852 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_save_bots_names"
+2026-10-21 20:34:58.853 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botskin_t"
+2026-10-21 20:34:58.854 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botskin_ct"
+2026-10-21 20:34:58.854 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_preferred_personality"
+2026-10-21 20:34:58.855 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_language"
+2026-10-21 20:34:58.856 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_bots"
+2026-10-21 20:34:58.856 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_stay_min"
+2026-10-21 20:34:58.857 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_stay_max"
+2026-10-21 20:34:58.858 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_restricted_weapons"
+2026-10-21 20:34:58.858 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_has_team_semiclip"
+2026-10-21 20:34:58.859 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_slope_height"
+2026-10-21 20:34:58.859 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_heuristic_mode"
+2026-10-21 20:34:58.860 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_floyd_memory_limit"
+2026-10-21 20:34:58.861 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_dijkstra_simple_distance"
+2026-10-21 20:34:58.861 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_astar_post_smooth"
+2026-10-21 20:34:58.862 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_randomize_on_round_start"
+2026-10-21 20:34:58.863 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_display_welcome_text"
+2026-10-21 20:34:58.863 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_enable_query_hook"
+2026-10-21 20:34:58.864 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_enable_fake_steamids"
+2026-10-21 20:34:58.865 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_smoke_grenade_checks"
+2026-10-21 20:34:58.865 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_smoke_grenade_radius"
+2026-10-21 20:34:58.866 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_walking_allowed"
+2026-10-21 20:34:58.866 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_allowed"
+2026-10-21 20:34:58.867 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_time_min"
+2026-10-21 20:34:58.867 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_time_max"
+2026-10-21 20:34:58.868 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_random_knife_attacks"
+2026-10-21 20:34:58.868 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_max_nodes_for_predict"
+2026-10-21 20:34:58.869 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_whose_your_daddy"
+2026-10-21 20:34:58.870 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "sv_use_steam_networking"
+2026-10-21 20:34:58.874 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "build"
+2026-10-21 20:34:59.211 Df xash[33165:18db3] Xash: SV_LoadProgs: initailized legacy EntityAPI ver. 140
+2026-10-21 20:34:59.212 Df xash[33165:18db3] Xash: Mod_InitStudioAPI: initailized Server Blending interface ver. 1
+2026-10-21 20:34:59.213 Df xash[33165:18db3] Xash: SV_InitPhysicsAPI: initailized extended PhysicAPI ver. 6
+2026-10-21 20:34:59.216 Df xash[33165:18db3] Xash: SV_AllocStringPool()
+2026-10-21 20:34:59.216 Df xash[33165:18db3] Xash: Dll loaded for game "Counter-Strike"
+2026-10-21 20:34:59.222 Df xash[33165:18db3] Xash: 
+YaPB v4.5.1 successfully loaded for game: Counter-Strike v1.6 @ Xash3D FWGS.
+	Flags: BotVoice, ReGameDLL, SIMD: 4.1 & 4.2.
+2026-10-21 20:34:59.223 Df xash[33165:19032] [com.apple.network:] networkd_settings_read_from_file initialized networkd settings by reading plist directly
+2026-10-21 20:34:59.223 Df xash[33165:18db3] Xash: ReGameDLL version: 5.30.0.1-dev+m
+2026-10-21 20:34:59.223 Df xash[33165:19032] [com.apple.network:] networkd_settings_read_from_file initialized networkd settings by reading plist directly
+2026-10-21 20:34:59.224 Df xash[33165:18db3] Xash: Warning: Unknown command "yb_quota_adding_interval"
+2026-10-21 20:34:59.225 Df xash[33165:18db3] Xash: Warning: Unknown command "yb_quota_maintain_interval"
+2026-10-21 20:34:59.226 Df xash[33165:19032] [com.apple.network:path] nw_path_libinfo_path_check [2FF5F23D-4297-48D6-8F8E-3467EFD000A8 Hostname#ea960f78:80 tcp, legacy-socket, attribution: developer]
+	libinfo check path: satisfied (Path is satisfied), interface: en0
+2026-10-21 20:34:59.226 Df xash[33165:18db3] Xash: execing game_init.cfg
+2026-10-21 20:34:59.229 Df xash[33165:18db3] Xash: couldn't exec game_init.cfg
+2026-10-21 20:34:59.231 Df xash[33165:18db3] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "voice_serverdebug"
+2026-10-21 20:34:59.233 Df xash[33165:18db3] Xash: SV: hull0, player_mins: -16 -16 -36, player_maxs: 16 16 36
+2026-10-21 20:34:59.234 Df xash[33165:18db3] Xash: SV: hull1, player_mins: -16 -16 -18, player_maxs: 16 16 32
+2026-10-21 20:34:59.235 Df xash[33165:18db3] Xash: SV: hull2, player_mins: 0 0 0, player_maxs: 0 0 0
+2026-10-21 20:34:59.238 Df xash[33165:18db3] Xash: Delta_InitFields: couldn't load file delta.lst
+2026-10-21 20:34:59.254 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] UIWindowScene: 0x10d20df40: Window became key in scene: UIWindow: 0x10d248ce0; contextId: 0x362A9EDA: reason: UIWindowScene: 0x10d20df40: Window requested to become key in scene: 0x10d248ce0
+2026-10-21 20:34:59.254 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Key window needs update: 1; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x10d20df40; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x10d248ce0; reason: UIWindowScene: 0x10d20df40: Window requested to become key in scene: 0x10d248ce0
+2026-10-21 20:34:59.255 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Window did become application key: UIWindow: 0x10d248ce0; contextId: 0x362A9EDA; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:34:59.255 Df xash[33165:18db3] [com.apple.UIKit:EventDeferring] [0x60000290e220] Begin local event deferring requested for token: 0x600002613240; environments: 1; reason: UIWindowScene: 0x10d20df40: Begin event deferring in keyboardFocus for window: 0x10d248ce0
+2026-10-21 20:34:59.265 Df xash[33165:18f00] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x600002611200; token: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default; status: ancestor> was:target
+2026-10-21 20:34:59.277 Df xash[33165:18db3] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Ll Lr ) -> ( Lr )
+2026-10-21 20:34:59.278 Df xash[33165:18db3] [com.apple.UIKit:EventDeferring] [0x60000290e220] Scene target of event deferring environments did update: scene: 0x10d20df40; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-21 20:34:59.279 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10d20df40; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:34:59.531 Df xash[33165:18db3] [com.apple.gamecontroller:Session] Connected devices changed (2 added, 0 removed) -> [2] {(
+    <GCController 0x600003d2cf00 'MFi'/'Gamepad'>,
+    <GCKeyboard 0x60000026dc40 'Generic Keyboard'>
+)}
+2026-10-21 20:34:59.538 Df xash[33165:18db3] [com.apple.gamecontroller:Session] Connected devices changed (0 added, 0 removed) -> [2] {(
+    <GCController 0x600003d2cf00 'MFi'/'Gamepad'>,
+    <GCKeyboard 0x60000026dc40 'Generic Keyboard'>
+)}
+2026-10-21 20:34:59.538 Df xash[33165:18db3] [com.apple.gamecontroller:Session] Connected devices changed (0 added, 0 removed) -> [2] {(
+    <GCController 0x600003d2cf00 'MFi'/'Gamepad'>,
+    <GCKeyboard 0x60000026dc40 'Generic Keyboard'>
+)}
+2026-10-21 20:34:59.539 A  xash[33165:18db3] (GameControllerFoundation) [HID Event System Client] Activate
+2026-10-21 20:34:59.540 Df xash[33165:18db3] [com.apple.UIKit:EventDeferring] [0x60000290e220] Scene target of event deferring environments did update: scene: 0x10d20df40; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-21 20:34:59.540 Df xash[33165:18db3] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x10d20df40; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:34:59.559 Df xash[33165:18db3] [com.apple.UIKit:UIFocusSystemSceneComponent] Override focusSystemState: (ENABLED) for reason(s): {(
+    "<_UIAlertControllerPhoneTVMacView 0x10d8bd600>"
+)}
+2026-10-21 20:34:59.560 Df xash[33165:18db3] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:34:59.564 Df xash[33165:18db3] [com.apple.UIKit:UIFocus] Failed to update focus with context <UIFocusUpdateContext: 0x6000030013b0; previouslyFocusedItem: (nil); nextFocusedItem: (nil); focusHeading: None>. No additional info available.
+2026-10-21 20:34:59.617 Df xash[33165:18db3] [com.apple.UIKit:UIAlertControllerStackManager] _willShowAlertController: <UIAlertController: 0x10d81b000>
+2026-10-21 20:34:59.617 Df xash[33165:18db3] [com.apple.UIKit:UIAlertControllerStackManager] _addAlertControllerToStack: Adding Alert to stack : <UIAlertController: 0x10d81b000>
+2026-10-21 20:34:59.643 Df xash[33165:18db3] [com.apple.UIKit:UIFocus] Deferring focus update to item <_UIInterfaceActionCustomViewRepresentationView: 0x10d42b170>. No additional info available.
+2026-10-21 20:34:59.644 Sd xash[33165:0] (4DAE65DB-8343-3CFD-BE64-A755882ACBB6) TCC Authorization Cache
+{
+    kTCCServiceMicrophone =     {
+        "<Credential (0x60000290d1f0) | Requestor>" = "<Authorization Record (0x600003500580) | Service: kTCCServiceMicrophone, AuthRight: Allowed, Reason: System Set, Version: 1, >";
+    };
+}
+2026-10-21 20:35:00.045 Df xash[33165:18db3] [com.apple.UIKit:Orientation] <UIWindowScene: 0x10d20df40> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Lr ) -> ( Ll Lr )
+2026-10-21 20:35:00.055 Df xash[33165:18db3] [com.apple.UIKit:UIFocus] Deferring focus update to item <_UIInterfaceActionCustomViewRepresentationView: 0x10d42b170>. No additional info available.
+2026-10-21 20:35:50.524 Df xash[34839:19e53] [com.apple.xpc:connection] [0x106e04280] activating connection: mach=true listener=false peer=false name=com.apple.cfprefsd.daemon
+2026-10-21 20:35:50.531 A  xash[34839:19e53] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-10-21 20:35:50.533 Df xash[34839:19e54] [com.apple.BoardServices:XPCErrors] [C:1] Alloc com.apple.frontboard.systemappservices
+2026-10-21 20:35:50.536 Df xash[34839:19e54] [com.apple.xpc:connection] [0x106d05d00] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-10-21 20:35:51.176 Df xash[34839:19df2] (libMobileGestalt.dylib) No persisted cache on this platform.
+2026-10-21 20:35:51.184 Df xash[34839:19df2] [com.apple.UIKit:Application] Deactivation reason added: 10; deactivation reasons: 0 -> 1024; animating application lifecycle event: 0
+2026-10-21 20:35:51.185 Df xash[34839:19df2] [com.apple.runningboard:connection] Initializing connection
+2026-10-21 20:35:51.185 Df xash[34839:19df2] [com.apple.runningboard:process] Removing all cached process handles
+2026-10-21 20:35:51.185 Df xash[34839:19df2] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.open
+2026-10-21 20:35:51.185 Df xash[34839:19e54] [com.apple.runningboard:connection] Sending handshake request attempt #1 to server
+2026-10-21 20:35:51.185 Df xash[34839:19e54] [com.apple.runningboard:connection] Creating connection to com.apple.runningboard
+2026-10-21 20:35:51.185 Df xash[34839:19e54] [com.apple.xpc:connection] [0x106c05c90] activating connection: mach=true listener=false peer=false name=com.apple.runningboard
+2026-10-21 20:35:51.185 Df xash[34839:19df2] [com.apple.BoardServices:Injection] activating monitor for service com.apple.frontboard.workspace-service
+2026-10-21 20:35:51.187 A  xash[34839:19e56] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:35:51.188 Df xash[34839:19df2] [com.apple.FrontBoard:Common] FBSWorkspace registering source: com.apple.frontboard.systemappservices
+2026-10-21 20:35:51.189 Df xash[34839:19e54] [com.apple.runningboard:connection] Handshake succeeded
+2026-10-21 20:35:51.189 Df xash[34839:19e54] [com.apple.runningboard:connection] Identity resolved as app<com.eriondigital.cs16((null))>
+2026-10-21 20:35:51.191 Df xash[34839:19df2] [com.apple.FrontBoard:Common] FBSWorkspace connected to endpoint : <BSServiceConnectionEndpoint: 0x600000206e40; target: com.apple.frontboard.systemappservices; service: com.apple.frontboard.workspace-service>
+2026-10-21 20:35:51.192 Df xash[34839:19df2] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x600003000240 com.apple.frontboard.systemappservices> attempting immediate handshake from activate
+2026-10-21 20:35:51.192 Df xash[34839:19df2] [com.apple.FrontBoard:Common] <FBSWorkspaceScenesClient:0x600003000240 com.apple.frontboard.systemappservices> sent handshake
+2026-10-21 20:35:51.192 Df xash[34839:19df2] [com.apple.runningboard:general] Added observer for process assertions expiration warning: <_RBSExpirationWarningClient: 0x6000002101e0>
+2026-10-21 20:35:51.198 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UIApplicationSceneKeyboardSettings on FBSSceneSettings
+2026-10-21 20:35:51.200 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneOcclusionSettings> on FBSSceneSettings
+2026-10-21 20:35:51.202 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneInterfaceProtectionSettings> on FBSSceneSettings
+2026-10-21 20:35:51.203 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferencesHostSettingsExtension on FBSSceneSettings
+2026-10-21 20:35:51.203 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneSafeAreaSettingsExtension on FBSSceneSettings
+2026-10-21 20:35:51.205 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneLayoutPreferenceClientSettingsExtension on FBSSceneClientSettings
+2026-10-21 20:35:51.206 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UIHomeAffordanceHostSceneSettings> on FBSSceneSettings
+2026-10-21 20:35:51.206 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISystemShellSceneHostingEnvironmentSettings on FBSSceneSettings
+2026-10-21 20:35:51.207 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneRenderingEnvironmentSettings on FBSSceneSettings
+2026-10-21 20:35:51.207 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneRenderingEnvironmentClientSettings> on FBSSceneClientSettings
+2026-10-21 20:35:51.208 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneTransitioningHostSettings> on FBSSceneSettings
+2026-10-21 20:35:51.209 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneFocusSystemSettings> on FBSSceneSettings
+2026-10-21 20:35:51.210 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationSettingsExtension on FBSSceneSettings
+2026-10-21 20:35:51.212 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneOrientationClientSettingsExtension on FBSSceneClientSettings
+2026-10-21 20:35:51.213 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneWindowingControlClientSettings on FBSSceneClientSettings
+2026-10-21 20:35:51.216 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneSettingsCore on FBSSceneSettings
+2026-10-21 20:35:51.218 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneClientSettingsCore on FBSSceneClientSettings
+2026-10-21 20:35:51.233 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneSettings setting counterpart class: UIApplicationSceneSettings
+2026-10-21 20:35:51.234 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] UIMutableApplicationSceneClientSettings setting counterpart class: UIApplicationSceneClientSettings
+2026-10-21 20:35:51.234 Df xash[34839:19e56] [com.apple.FrontBoard:SceneExtension] Realizing settings extension FBSSceneTransitionContextCore on FBSSceneTransitionContext
+2026-10-21 20:35:51.938 Df xash[34839:19e52] [com.apple.UIKit:BackgroundTask] Creating new assertion because there is no existing background assertion.
+2026-10-21 20:35:51.938 Df xash[34839:19e52] [com.apple.UIKit:BackgroundTask] Creating new background assertion
+2026-10-21 20:35:51.938 Df xash[34839:19e52] [com.apple.UIKit:BackgroundTask] Created new background assertion <BKSProcessAssertion: 0x60000210df40>
+2026-10-21 20:35:51.940 Df xash[34839:19e52] [com.apple.UIKit:BackgroundTask] Incrementing reference count for background assertion <BKSProcessAssertion: 0x60000210df40>
+2026-10-21 20:35:51.940 Df xash[34839:19e52] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x600001714d40>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1754 (elapsed = 0).
+2026-10-21 20:35:51.941 Df xash[34839:19e52] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingContentSizePreferenceClientSettings> on FBSSceneClientSettings
+2026-10-21 20:35:51.941 Df xash[34839:19e52] [com.apple.FrontBoard:SceneExtension] Realizing settings extension _UISceneHostingTraitCollectionPropagationSettings on FBSSceneSettings
+2026-10-21 20:35:51.943 Df xash[34839:19e52] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationSettings> on FBSSceneSettings
+2026-10-21 20:35:51.944 Df xash[34839:19e52] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingSheetPresentationClientSettings> on FBSSceneClientSettings
+2026-10-21 20:35:51.945 Df xash[34839:19e52] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingEventDeferringSettings> on FBSSceneSettings
+2026-10-21 20:35:51.947 Df xash[34839:19e52] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneSettings
+2026-10-21 20:35:51.947 Df xash[34839:19e52] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <UIKit__UITypedKeyValueSceneSettings> on FBSSceneClientSettings
+2026-10-21 20:35:51.949 Df xash[34839:19e52] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneHostingViewControllerPreferencePropagationClientSettings> on FBSSceneClientSettings
+2026-10-21 20:35:51.951 Df xash[34839:19e52] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneZoomTransitionSettings> on FBSSceneSettings
+2026-10-21 20:35:52.284 Df xash[34839:19df2] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x106b090c0> for initial
+2026-10-21 20:35:52.285 Df xash[34839:19df2] [com.apple.UIKit:UIScreen] Evaluated capturing state as 0 on <UIScreen: 0x106b090c0> for CADisplay KVO
+2026-10-21 20:35:52.288 Df xash[34839:19df2] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 1, category name = (null)
+2026-10-21 20:35:52.288 Df xash[34839:19df2] [com.apple.Accessibility:AXSupportCommon] Read CategoryName: per-app = 0, category name = (null)
+2026-10-21 20:35:52.296 Df xash[34839:19df2] [com.apple.dt.xctest:Default] Registering for test daemon availability notify post.
+2026-10-21 20:35:52.296 Df xash[34839:19df2] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-21 20:35:52.296 Df xash[34839:19df2] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-21 20:35:52.297 Df xash[34839:19df2] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-10-21 20:35:52.298 Df xash[34839:19df2] [com.apple.UIKit:UpdateScheduler] Selected display: name=LCD (PurpleMain), id=1
+2026-10-21 20:35:52.305 Df xash[34839:19df2] [com.apple.UIKit:Application] Deactivation reason added: 5; deactivation reasons: 1024 -> 1056; animating application lifecycle event: 1
+2026-10-21 20:35:52.305 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:35:52.306 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Should send trait collection or coordinate space update, interface style 1 -> 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:35:52.307 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:35:52.307 Df xash[34839:19df2] [com.apple.UIKit:HomeAffordanceObservation] Initializing: <_UIHomeAffordanceSceneNotifier: 0x600002904f50>; with scene: <UIWindowScene: 0x106e074d0>
+2026-10-21 20:35:52.307 Df xash[34839:19df2] [com.apple.BacklightServices:scenes] 0x600000c0a6d0 setDelegate:<0x600000c0a790 _UIBacklightEnvironment> hasDelegate:YES for environment:sceneID:com.eriondigital.cs16-default
+2026-10-21 20:35:52.308 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:35:52.309 Df xash[34839:19df2] [com.apple.UIKit:EventDeferring] [0x6000029013b0] Initialized with scene: <UIWindowScene: 0x106e074d0>; behavior: <_UIEventDeferringBehavior_iOS: 0x600000215f80>; availableForProcess: 1, systemShellManagesKeyboardFocus: 1
+2026-10-21 20:35:52.310 Df xash[34839:19df2] [com.apple.BoardServices:XPCErrors] [C:2] Alloc com.apple.backboard.hid-services.xpc
+2026-10-21 20:35:52.310 Df xash[34839:19df2] [com.apple.xpc:connection] [0x106b0a800] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-10-21 20:35:52.313 Df xash[34839:19df2] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x60000260daa0; process scope; status: target> was:none
+2026-10-21 20:35:52.313 Df xash[34839:19e8c] [com.apple.BackBoard:EventDelivery] BKSHIDEventObserver - connection activation
+2026-10-21 20:35:52.314 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to LastOneWins
+2026-10-21 20:35:52.314 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Scene target of keyboard event deferring environment did change: 1; scene: UIWindowScene: 0x106e074d0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:35:52.314 Df xash[34839:19df2] [com.apple.UIKit:EventDeferring] [0x6000029013b0] Scene target of event deferring environments did update: scene: 0x106e074d0; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-21 20:35:52.315 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x106e074d0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:35:52.315 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Stack[KeyWindow] 0x600000c170f0: Taking no further action for migration from LastOneWins -> SystemShellManaged as there are no scenes
+2026-10-21 20:35:52.316 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPhone to SystemShellManaged
+2026-10-21 20:35:52.316 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Key window needs update: 0; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x106e074d0; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x0; reason: UIWindowScene: 0x106e074d0: Window scene became target of keyboard environment
+2026-10-21 20:35:52.317 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:35:52.318 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:35:52.321 F  xash[34839:19df2] [com.apple.runtime-issues:UIKit App Config] `UIScene` lifecycle will soon be required. Failure to adopt will result in an assert in the future.
+2026-10-21 20:35:52.321 A  xash[34839:19df2] (libsystem_trace.dylib) Activity for state dumps
+2026-10-21 20:35:52.322 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:35:52.324 Df xash[34839:19df2] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:35:52.325 Df xash[34839:19df2] [com.apple.UIKit:Application] Ignoring already applied deactivation reason: 5; deactivation reasons: 1056
+2026-10-21 20:35:52.326 Df xash[34839:19df2] [com.apple.UIKit:Application] Deactivation reason added: 11; deactivation reasons: 1056 -> 3104; animating application lifecycle event: 1
+2026-10-21 20:35:52.327 Df xash[34839:19df2] [com.apple.KeyboardArbiter:Client] startConnection
+2026-10-21 20:35:52.329 Df xash[34839:19df2] [com.apple.xpc:connection] [0x106b09530] activating connection: mach=true listener=false peer=false name=com.apple.UIKit.KeyboardManagement.hosted
+2026-10-21 20:35:52.338 Df xash[34839:19df2] [com.apple.UIKit:Application] Deactivation reason removed: 10; deactivation reasons: 3104 -> 2080; animating application lifecycle event: 1
+2026-10-21 20:35:52.339 Df xash[34839:19df2] [com.apple.UIKit:Application] Deactivation reason added: 12; deactivation reasons: 2080 -> 6176; animating application lifecycle event: 1
+2026-10-21 20:35:52.339 Df xash[34839:19df2] [com.apple.UIKit:Application] Deactivation reason removed: 11; deactivation reasons: 6176 -> 4128; animating application lifecycle event: 1
+2026-10-21 20:35:52.340 Df xash[34839:19df2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UISceneIntelligenceSupportSettings> on FBSSceneSettings
+2026-10-21 20:35:52.342 Df xash[34839:19e91] [com.apple.UIIntelligenceSupport:xpc] establishing connection to agent
+2026-10-21 20:35:52.343 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:35:52.344 Df xash[34839:19e91] [com.apple.xpc:session] [0x60000210b750] Session created.
+2026-10-21 20:35:52.344 A  xash[34839:19e90] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:35:52.352 Df xash[34839:19e91] [com.apple.xpc:session] [0x60000210b750] Session created from connection [0x106c0c340]
+2026-10-21 20:35:52.353 Df xash[34839:19e91] [com.apple.xpc:connection] [0x106c0c340] activating connection: mach=true listener=false peer=false name=com.apple.uiintelligencesupport.agent
+2026-10-21 20:35:52.353 Df xash[34839:19e91] [com.apple.xpc:session] [0x60000210b750] Session activated
+2026-10-21 20:35:52.358 A  xash[34839:19e90] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:35:52.383 A  xash[34839:19e91] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:35:52.468 A  xash[34839:19e91] (RunningBoardServices) didChangeInheritances
+2026-10-21 20:35:52.971 Df xash[34839:19e91] [com.apple.UIKit:BackgroundTask] Ending background task with UIBackgroundTaskIdentifier: 1
+2026-10-21 20:35:52.972 Df xash[34839:19e91] [com.apple.UIKit:BackgroundTask] Ending task with identifier 1 and description: <_UIBackgroundTaskInfo: 0x600001714d40>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1754 (elapsed = 1), _expireHandler: (null)
+2026-10-21 20:35:52.972 Df xash[34839:19e91] [com.apple.UIKit:BackgroundTask] Decrementing reference count for assertion <BKSProcessAssertion: 0x60000210df40> (used by background task with identifier 1: <_UIBackgroundTaskInfo: 0x600001714d40>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1754 (elapsed = 1))
+2026-10-21 20:35:52.972 Df xash[34839:19e91] [com.apple.UIKit:BackgroundTask] Will invalidate assertion: <BKSProcessAssertion: 0x60000210df40> for task identifier: 1
+2026-10-21 20:35:55.433 Df xash[34839:19df2] [com.apple.xpc:connection] [0x106b0a350] activating connection: mach=true listener=false peer=false name=com.apple.lsd.mapdb
+2026-10-21 20:36:04.323 Df xash[34839:19e6b] [com.apple.BackBoard:EventDelivery] BKSHIDEventDeliveryManager - connection activation
+2026-10-21 20:36:04.701 Df xash[34839:19df2] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:1 [6C96C63A-E7A1-401E-BF78-FD3717F354A1] (reporting strategy default)>
+2026-10-21 20:36:04.701 Df xash[34839:19df2] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:2 [12FFF571-7E59-42C6-A20C-9A0FAA1BA0F3] (reporting strategy default)>
+2026-10-21 20:36:04.701 Df xash[34839:19df2] [com.apple.network:activity] Set activity <nw_activity 50:1 [6C96C63A-E7A1-401E-BF78-FD3717F354A1] (reporting strategy default)> as the global parent
+2026-10-21 20:36:04.702 Df xash[34839:19df2] [com.apple.UIKit:EventBus] Event Timing Profile for Touch: not found, path="/System/Library/EventTimingProfiles/Sim.Touch.plist"
+2026-10-21 20:36:04.702 Df xash[34839:19df2] [com.apple.UIKit:EventBus] Event Timing Profile for Pencil: not found, path="/System/Library/EventTimingProfiles/Sim.Pencil.plist"
+2026-10-21 20:36:04.703 Df xash[34839:19df2] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:36:04.704 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Should not send trait collection or coordinate space update, interface style 1 -> 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:36:04.705 Df xash[34839:19df2] [com.apple.Accessibility:AXCommon] Read Per-App on Init: Smart invert = (null)
+2026-10-21 20:36:04.706 Df xash[34839:19df2] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:36:04.707 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:36:04.708 Df xash[34839:19df2] System Version is 26.2
+2026-10-21 20:36:04.709 A  xash[34839:19df2] (TCC) tcc_send_request_authorization() IPC
+2026-10-21 20:36:04.709 Df xash[34839:19df2] [com.apple.xpc:connection] [0x106b0b000] activating connection: mach=true listener=false peer=false name=com.apple.tccd
+2026-10-21 20:36:04.715 Df xash[34839:19df2] [com.apple.xpc:connection] [0x106b0b000] invalidated after the last release of the connection object
+2026-10-21 20:36:04.716 Df xash[34839:19df2] Game data found in /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Data/Application/0A11BD20-A9E4-4448-8E1C-0271ABEABF85/Documents
+2026-10-21 20:36:04.717 Df xash[34839:19df2] Launching with: -dev 2 +maxplayers 6 +map tr_1 -game cstrike -dll @yapb -log
+2026-10-21 20:36:04.719 Df xash[34839:19df2] Xash: Console initialized.
+2026-10-21 20:36:07.891 Df xash[34839:19df2] [com.apple.gamecontroller:Session] Creating the shared game controller session...
+2026-10-21 20:36:08.085 Df xash[34839:19df2] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x600002601920; process scope; status: target> was:none
+2026-10-21 20:36:08.085 A  xash[34839:19df2] (GameController) [GCDeviceSession] Activate
+2026-10-21 20:36:08.086 Df xash[34839:19df2] Xash: SDL: [Error] Unknown pixel format
+2026-10-21 20:36:08.087 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.087 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.088 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.088 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.089 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.089 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.090 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.090 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.091 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.091 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.092 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.092 Df xash[34839:19df2] Xash: SDL: [Error] CreateSystemCursor is not currently supported
+2026-10-21 20:36:08.094 F  xash[34839:1a4b8] [com.apple.locationd.Legacy:Generic_deprecated] could not read user kCFPreferencesCurrentUser uid/gid
+2026-10-21 20:36:08.094 A  xash[34839:1a4b8] (libsystem_trace.dylib) Activity for state dumps
+2026-10-21 20:36:08.244 E  xash[34839:1a4b8] [com.apple.locationd.Core:Core] {"msg":"file does not exist... clearing", "file":/Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.2.simruntime/Contents/Resources/RuntimeRoot/private/var/Managed Preferences/kCFPreferencesCurrentUser/com.apple.CoreMotion.plist, "error":Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.CoreMotion.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.2.simruntime/Contents/Resources/RuntimeRoot/private/var/Managed Preferences/kCFPreferencesCurrentUser/com.apple.CoreMotion.plist, NSURL=file:///Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS%2026.2.simruntime/Contents/Resources/RuntimeRoot/private/var/Managed%20Preferences/kCFPreferencesCurrentUser/com.apple.CoreMotion.plist, NSUnderlyingError=0x600000c240f0 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}}
+2026-10-21 20:36:08.246 A  xash[34839:1a4b8] (CoreFoundation) Loading Preferences From User Session CFPrefsD
+2026-10-21 20:36:08.247 Df xash[34839:19df2] IOS_GetDocsDir: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Data/Application/0A11BD20-A9E4-4448-8E1C-0271ABEABF85/Documents
+2026-10-21 20:36:08.247 Df xash[34839:19df2] IOS_GetExecDir: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app
+2026-10-21 20:36:08.260 Df xash[34839:19df2] Xash: filesystem_stdio: custom pool allocation functions found
+2026-10-21 20:36:08.261 Df xash[34839:19df2] Xash: filesystem_stdio: custom memory allocation functions found
+2026-10-21 20:36:08.261 Df xash[34839:19df2] Xash: filesystem_stdio: custom platform-specific functions found
+2026-10-21 20:36:08.262 Df xash[34839:19df2] Xash: FS_LoadProgs: filesystem_stdio successfully loaded
+2026-10-21 20:36:08.263 Df xash[34839:19df2] Xash: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Data/Application/0A11BD20-A9E4-4448-8E1C-0271ABEABF85/Documents is working directory now
+2026-10-21 20:36:08.265 Df xash[34839:19df2] Xash: Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/
+2026-10-21 20:36:08.265 Df xash[34839:19df2] Xash: Adding directory: ./
+2026-10-21 20:36:08.268 Df xash[34839:19df2] Xash: FS_InitStdio: done
+2026-10-21 20:36:08.268 Df xash[34839:19df2] Xash: Program args:
+2026-10-21 20:36:08.268 Df xash[34839:19df2] Xash: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/xash
+2026-10-21 20:36:08.269 Df xash[34839:19df2] Xash: -dev
+2026-10-21 20:36:08.269 Df xash[34839:19df2] Xash: 2
+2026-10-21 20:36:08.269 Df xash[34839:19df2] Xash: +maxplayers
+2026-10-21 20:36:08.269 Df xash[34839:19df2] Xash: 6
+2026-10-21 20:36:08.270 Df xash[34839:19df2] Xash: +map
+2026-10-21 20:36:08.270 Df xash[34839:19df2] Xash: tr_1
+2026-10-21 20:36:08.270 Df xash[34839:19df2] Xash: -game
+2026-10-21 20:36:08.270 Df xash[34839:19df2] Xash: cstrike
+2026-10-21 20:36:08.271 Df xash[34839:19df2] Xash: -dll
+2026-10-21 20:36:08.271 Df xash[34839:19df2] Xash: @yapb
+2026-10-21 20:36:08.271 Df xash[34839:19df2] Xash: -log
+2026-10-21 20:36:08.272 Df xash[34839:19df2] Xash:
+2026-10-21 20:36:08.272 Df xash[34839:19df2] Xash: Developer level: 2
+2026-10-21 20:36:08.273 Df xash[34839:19df2] Xash: execing cstrike/vfs.cfg
+2026-10-21 20:36:08.274 Df xash[34839:19df2] Xash: couldn't exec cstrike/vfs.cfg
+2026-10-21 20:36:08.274 Df xash[34839:19df2] Xash: FS_LoadGameInfo( cstrike, 0x0, english )
+2026-10-21 20:36:08.275 Df xash[34839:19df2] Xash: FS_Rescan( Counter-Strike, 0x0, english )
+2026-10-21 20:36:08.303 Df xash[34839:19df2] Xash: Adding ZIP: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/valve/extras.pk3 (146 files)
+2026-10-21 20:36:08.304 Df xash[34839:19df2] Xash: FS_AddGameHierarchy( valve )
+2026-10-21 20:36:08.304 Df xash[34839:19df2] Xash: Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/valve/
+2026-10-21 20:36:08.306 Df xash[34839:19df2] Xash: Adding WAD: valve/gfx.wad (1 files)
+2026-10-21 20:36:08.306 Df xash[34839:19df2] Xash: Adding directory: valve/
+2026-10-21 20:36:08.307 Df xash[34839:19df2] Xash: FS_AddGameHierarchy( cstrike )
+2026-10-21 20:36:08.365 Df xash[34839:19df2] Xash: Adding ZIP: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/cstrike/extras.pk3 (217 files)
+2026-10-21 20:36:08.366 Df xash[34839:19df2] Xash: Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/2E116998-D7D0-41B6-A506-1E219B3BCFEC/data/Containers/Bundle/Application/AC7620A3-E158-49C2-A167-8988CB653C0B/CS16.app/cstrike/
+2026-10-21 20:36:08.367 Df xash[34839:19df2] Xash: Adding directory: cstrike_downloads/
+2026-10-21 20:36:08.367 Df xash[34839:19df2] Xash: Adding directory: cstrike/
+2026-10-21 20:36:08.368 Df xash[34839:19df2] Xash: Adding directory: cstrike/custom/
+2026-10-21 20:36:08.372 Df xash[34839:19df2] Xash: Warning: FS_LoadImage: couldn't load "gfx/palette"
+2026-10-21 20:36:08.373 Df xash[34839:19df2] Xash: Host_InitDecals: 0 decals
+2026-10-21 20:36:08.374 Df xash[34839:19df2] Xash: Joystick: SDL GameController API
+2026-10-21 20:36:08.378 Df xash[34839:19df2] Xash: Touch_Init()
+2026-10-21 20:36:08.379 Df xash[34839:19df2] Xash: Base networking initialized.
+2026-10-21 20:36:08.380 Df xash[34839:19df2] Xash: Cannot load xashcomm.lst
+2026-10-21 20:36:08.397 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_auto_start"
+2026-10-21 20:36:08.398 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_auto_save"
+2026-10-21 20:36:08.398 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_distance"
+2026-10-21 20:36:08.399 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_max_jump_height"
+2026-10-21 20:36:08.399 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_fps"
+2026-10-21 20:36:08.400 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_clean_paths_on_finish"
+2026-10-21 20:36:08.400 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_optimize_nodes_on_finish"
+2026-10-21 20:36:08.401 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_mark_goals_on_finish"
+2026-10-21 20:36:08.401 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_debug"
+2026-10-21 20:36:08.402 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_debug_goal"
+2026-10-21 20:36:08.402 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_user_follow_percent"
+2026-10-21 20:36:08.403 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_user_max_followers"
+2026-10-21 20:36:08.403 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_jasonmode"
+2026-10-21 20:36:08.404 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_radio_mode"
+2026-10-21 20:36:08.404 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_economics_rounds"
+2026-10-21 20:36:08.405 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_economics_disrespect_percent"
+2026-10-21 20:36:08.405 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_darkness"
+2026-10-21 20:36:08.406 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_avoid_grenades"
+2026-10-21 20:36:08.406 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_tkpunish"
+2026-10-21 20:36:08.407 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_freeze_bots"
+2026-10-21 20:36:08.407 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_spraypaints"
+2026-10-21 20:36:08.408 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botbuy"
+2026-10-21 20:36:08.408 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_destroy_breakables_around"
+2026-10-21 20:36:08.409 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_object_pickup_radius"
+2026-10-21 20:36:08.409 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_object_destroy_radius"
+2026-10-21 20:36:08.410 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chatter_path"
+2026-10-21 20:36:08.410 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_attack_monsters"
+2026-10-21 20:36:08.411 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_custom_items"
+2026-10-21 20:36:08.411 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_ammo_and_kits"
+2026-10-21 20:36:08.412 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_best"
+2026-10-21 20:36:08.412 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_objectives"
+2026-10-21 20:36:08.413 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chat"
+2026-10-21 20:36:08.413 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chat_percent"
+2026-10-21 20:36:08.414 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_shoots_thru_walls"
+2026-10-21 20:36:08.414 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_enemies"
+2026-10-21 20:36:08.415 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_enemy_rendering"
+2026-10-21 20:36:08.415 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_enemy_invincibility"
+2026-10-21 20:36:08.416 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_stab_close_enemies"
+2026-10-21 20:36:08.416 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_use_engine_pvs_check"
+2026-10-21 20:36:08.417 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_use_hitbox_enemy_targeting"
+2026-10-21 20:36:08.417 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_aim_trace_consider_glass"
+2026-10-21 20:36:08.418 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_bind_menu_key"
+2026-10-21 20:36:08.418 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_cvars_on_changelevel"
+2026-10-21 20:36:08.419 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_password"
+2026-10-21 20:36:08.419 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_password_key"
+2026-10-21 20:36:08.420 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_bots_kill_on_endround"
+2026-10-21 20:36:08.420 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_csdm_mode"
+2026-10-21 20:36:08.421 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_map_prefix_game_mode"
+2026-10-21 20:36:08.421 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_threadpool_workers"
+2026-10-21 20:36:08.421 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_grenadier_mode"
+2026-10-21 20:36:08.422 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_enemies_after_spawn_time"
+2026-10-21 20:36:08.422 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_breakable_health_limit"
+2026-10-21 20:36:08.423 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_base_min"
+2026-10-21 20:36:08.423 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_base_max"
+2026-10-21 20:36:08.424 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_count_real_players"
+2026-10-21 20:36:08.424 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_updater_interval"
+2026-10-21 20:36:08.425 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_fixcamp"
+2026-10-21 20:36:08.425 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_url"
+2026-10-21 20:36:08.426 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_url_upload"
+2026-10-21 20:36:08.426 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_auto_save_count"
+2026-10-21 20:36:08.427 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_draw_distance"
+2026-10-21 20:36:08.427 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_auto_collect_db"
+2026-10-21 20:36:08.428 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_version"
+2026-10-21 20:36:08.428 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autovacate"
+2026-10-21 20:36:08.429 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autovacate_keep_slots"
+2026-10-21 20:36:08.429 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_kick_after_player_connect"
+2026-10-21 20:36:08.430 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota"
+2026-10-21 20:36:08.430 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_mode"
+2026-10-21 20:36:08.431 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_match"
+2026-10-21 20:36:08.431 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_think_fps"
+2026-10-21 20:36:08.432 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autokill_delay"
+2026-10-21 20:36:08.432 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_first_human_restart"
+2026-10-21 20:36:08.433 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_after_player"
+2026-10-21 20:36:08.433 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_team"
+2026-10-21 20:36:08.434 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_delay"
+2026-10-21 20:36:08.434 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_name_prefix"
+2026-10-21 20:36:08.435 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty"
+2026-10-21 20:36:08.435 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_min"
+2026-10-21 20:36:08.436 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_max"
+2026-10-21 20:36:08.436 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_auto"
+2026-10-21 20:36:08.437 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_auto_balance_interval"
+2026-10-21 20:36:08.437 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_show_avatars"
+2026-10-21 20:36:08.438 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_show_latency"
+2026-10-21 20:36:08.438 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_save_bots_names"
+2026-10-21 20:36:08.439 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botskin_t"
+2026-10-21 20:36:08.439 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botskin_ct"
+2026-10-21 20:36:08.440 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_preferred_personality"
+2026-10-21 20:36:08.440 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_language"
+2026-10-21 20:36:08.441 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_bots"
+2026-10-21 20:36:08.441 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_stay_min"
+2026-10-21 20:36:08.442 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_stay_max"
+2026-10-21 20:36:08.442 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_restricted_weapons"
+2026-10-21 20:36:08.443 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_has_team_semiclip"
+2026-10-21 20:36:08.443 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_slope_height"
+2026-10-21 20:36:08.444 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_heuristic_mode"
+2026-10-21 20:36:08.444 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_floyd_memory_limit"
+2026-10-21 20:36:08.445 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_dijkstra_simple_distance"
+2026-10-21 20:36:08.445 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_astar_post_smooth"
+2026-10-21 20:36:08.446 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_randomize_on_round_start"
+2026-10-21 20:36:08.446 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_display_welcome_text"
+2026-10-21 20:36:08.447 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_enable_query_hook"
+2026-10-21 20:36:08.447 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_enable_fake_steamids"
+2026-10-21 20:36:08.448 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_smoke_grenade_checks"
+2026-10-21 20:36:08.448 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_smoke_grenade_radius"
+2026-10-21 20:36:08.449 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_walking_allowed"
+2026-10-21 20:36:08.449 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_allowed"
+2026-10-21 20:36:08.450 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_time_min"
+2026-10-21 20:36:08.450 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_time_max"
+2026-10-21 20:36:08.451 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_random_knife_attacks"
+2026-10-21 20:36:08.451 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_max_nodes_for_predict"
+2026-10-21 20:36:08.452 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_whose_your_daddy"
+2026-10-21 20:36:08.452 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "sv_use_steam_networking"
+2026-10-21 20:36:08.454 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "build"
+2026-10-21 20:36:08.505 Df xash[34839:19df2] Xash: SV_LoadProgs: initailized legacy EntityAPI ver. 140
+2026-10-21 20:36:08.505 Df xash[34839:19df2] Xash: Mod_InitStudioAPI: initailized Server Blending interface ver. 1
+2026-10-21 20:36:08.506 Df xash[34839:19df2] Xash: SV_InitPhysicsAPI: initailized extended PhysicAPI ver. 6
+2026-10-21 20:36:08.508 Df xash[34839:19df2] Xash: SV_AllocStringPool()
+2026-10-21 20:36:08.509 Df xash[34839:19df2] Xash: Dll loaded for game "Counter-Strike"
+2026-10-21 20:36:08.511 Df xash[34839:19df2] Xash: 
+YaPB v4.5.1 successfully loaded for game: Counter-Strike v1.6 @ Xash3D FWGS.
+	Flags: BotVoice, ReGameDLL, SIMD: 4.1 & 4.2.
+2026-10-21 20:36:08.511 Df xash[34839:1a4c0] [com.apple.network:] networkd_settings_read_from_file initialized networkd settings by reading plist directly
+2026-10-21 20:36:08.512 Df xash[34839:1a4c0] [com.apple.network:] networkd_settings_read_from_file initialized networkd settings by reading plist directly
+2026-10-21 20:36:08.512 Df xash[34839:19df2] Xash: ReGameDLL version: 5.30.0.1-dev+m
+2026-10-21 20:36:08.513 Df xash[34839:19df2] Xash: Warning: Unknown command "yb_quota_adding_interval"
+2026-10-21 20:36:08.513 Df xash[34839:1a4c0] [com.apple.network:path] nw_path_libinfo_path_check [B3CF55B5-31D9-479B-A08B-FC25C47E56BA Hostname#3563edcc:80 tcp, legacy-socket, attribution: developer]
+	libinfo check path: satisfied (Path is satisfied), interface: en0
+2026-10-21 20:36:08.513 Df xash[34839:19df2] Xash: Warning: Unknown command "yb_quota_maintain_interval"
+2026-10-21 20:36:08.514 Df xash[34839:19df2] Xash: execing game_init.cfg
+2026-10-21 20:36:08.515 Df xash[34839:19df2] Xash: couldn't exec game_init.cfg
+2026-10-21 20:36:08.517 Df xash[34839:19df2] Xash: Warning: SV_CvarGetPointer: server tried to get non-existent cvar "voice_serverdebug"
+2026-10-21 20:36:08.517 Df xash[34839:19df2] Xash: SV: hull0, player_mins: -16 -16 -36, player_maxs: 16 16 36
+2026-10-21 20:36:08.518 Df xash[34839:19df2] Xash: SV: hull1, player_mins: -16 -16 -18, player_maxs: 16 16 32
+2026-10-21 20:36:08.518 Df xash[34839:19df2] Xash: SV: hull2, player_mins: 0 0 0, player_maxs: 0 0 0
+2026-10-21 20:36:08.520 Df xash[34839:19df2] Xash: Delta_InitFields: couldn't load file delta.lst
+2026-10-21 20:36:08.599 Df xash[34839:19df2] [PrototypeTools:domain] Not observing PTDefaults on customer install.
+2026-10-21 20:36:08.678 Df xash[34839:19df2] [com.apple.FrontBoard:SceneExtension] Realizing settings extension <_UIApplicationSceneDisplaySettings> on FBSSceneSettings
+2026-10-21 20:36:09.356 Df xash[34839:19df2] [com.apple.UIKit:Orientation] <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: none -> ( Ll Lr )
+2026-10-21 20:36:09.357 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Key window API is scene-level: YES
+2026-10-21 20:36:09.357 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] UIWindowScene: 0x106e074d0: Window became key in scene: UIWindow: 0x106b15c60; contextId: 0xF2989C19: reason: UIWindowScene: 0x106e074d0: Window requested to become key in scene: 0x106b15c60
+2026-10-21 20:36:09.357 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Key window needs update: 1; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x106e074d0; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x106b15c60; reason: UIWindowScene: 0x106e074d0: Window requested to become key in scene: 0x106b15c60
+2026-10-21 20:36:09.357 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Window did become application key: UIWindow: 0x106b15c60; contextId: 0xF2989C19; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:36:09.358 Df xash[34839:19df2] [com.apple.UIKit:EventDeferring] [0x6000029013b0] Begin local event deferring requested for token: 0x60000260cf60; environments: 1; reason: UIWindowScene: 0x106e074d0: Begin event deferring in keyboardFocus for window: 0x106b15c60
+2026-10-21 20:36:09.364 Df xash[34839:19e6b] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x60000260daa0; token: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default; status: ancestor> was:target
+2026-10-21 20:36:09.634 Df xash[34839:19e64] [com.apple.xpc:connection] [0x106b06990] activating connection: mach=true listener=false peer=false name=com.apple.fontservicesd
+2026-10-21 20:36:09.645 Df xash[34839:19df2] [com.apple.UIKit:Orientation] <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Ll Lr ) -> ( Lr )
+2026-10-21 20:36:09.646 Df xash[34839:19df2] [com.apple.UIKit:UpdateScheduler] Target list changed: <CADisplay:LCD PurpleMain>
+2026-10-21 20:36:09.647 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:36:09.648 Df xash[34839:19df2] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.eriondigital.cs16-default  persistentID: BD06535E-F6FB-4603-BD4B-7E42DC59B379
+2026-10-21 20:36:09.648 Df xash[34839:19df2] [com.apple.UIKit:Application] Deactivation reason removed: 12; deactivation reasons: 4128 -> 32; animating application lifecycle event: 1
+2026-10-21 20:36:09.648 Df xash[34839:19df2] [com.apple.KeyboardArbiter:Client] Send setDeactivating: N (-DeactivationReason:SuspendedEventsOnly)
+2026-10-21 20:36:09.649 Df xash[34839:19df2] [com.apple.UIKit:Application] Deactivation reason removed: 5; deactivation reasons: 32 -> 0; animating application lifecycle event: 0
+2026-10-21 20:36:09.649 A  xash[34839:19df2] (GameController) Notify ApplicationDidBecomeActive
+2026-10-21 20:36:09.656 Df xash[34839:19df2] [com.apple.UIKit:UIFocusSystemSceneComponent] Override focusSystemState: (ENABLED) for reason(s): {(
+    "<_UIAlertControllerPhoneTVMacView 0x108031000>"
+)}
+2026-10-21 20:36:09.658 Df xash[34839:19df2] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379)
+2026-10-21 20:36:09.663 Df xash[34839:19df2] [com.apple.UIKit:UIFocus] Failed to update focus with context <UIFocusUpdateContext: 0x600003007de0; previouslyFocusedItem: (nil); nextFocusedItem: (nil); focusHeading: None>. No additional info available.
+2026-10-21 20:36:10.609 Df xash[34839:19df2] [com.apple.UIKit:UIAlertControllerStackManager] _willShowAlertController: <UIAlertController: 0x107079000>
+2026-10-21 20:36:10.610 Df xash[34839:19df2] [com.apple.UIKit:UIAlertControllerStackManager] _addAlertControllerToStack: Adding Alert to stack : <UIAlertController: 0x107079000>
+2026-10-21 20:36:11.020 Df xash[34839:19df2] [com.apple.KeyboardArbiter:Client] startConnection
+2026-10-21 20:36:11.026 Df xash[34839:19df2] [com.apple.UIKit:UIFocus] Deferring focus update to item <_UIInterfaceActionCustomViewRepresentationView: 0x106b17330>. No additional info available.
+2026-10-21 20:36:11.843 Df xash[34839:19df2] [com.apple.gamecontroller:Session] Connected devices changed (2 added, 0 removed) -> [2] {(
+    <GCController 0x600003d2ce10 'MFi'/'Gamepad'>,
+    <GCKeyboard 0x600000266a80 'Generic Keyboard'>
+)}
+2026-10-21 20:36:11.843 Df xash[34839:19df2] [com.apple.CoreAnalytics:client] No XPC connection in Simulator
+2026-10-21 20:36:11.844 Df xash[34839:19df2] [com.apple.gamecontroller:Session] Connected devices changed (0 added, 0 removed) -> [2] {(
+    <GCController 0x600003d2ce10 'MFi'/'Gamepad'>,
+    <GCKeyboard 0x600000266a80 'Generic Keyboard'>
+)}
+2026-10-21 20:36:11.844 Df xash[34839:19df2] [com.apple.gamecontroller:Session] Connected devices changed (0 added, 0 removed) -> [2] {(
+    <GCController 0x600003d2ce10 'MFi'/'Gamepad'>,
+    <GCKeyboard 0x600000266a80 'Generic Keyboard'>
+)}
+2026-10-21 20:36:11.844 A  xash[34839:19df2] (GameControllerFoundation) [HID Event System Client] Activate
+2026-10-21 20:36:11.845 Df xash[34839:19df2] [com.apple.UIKit:EventDeferring] [0x6000029013b0] Scene target of event deferring environments did update: scene: 0x106e074d0; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-10-21 20:36:11.845 Df xash[34839:19df2] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x106e074d0; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.eriondigital.cs16-default
+2026-10-21 20:36:11.845 Df xash[34839:19df2] [com.apple.KeyboardArbiter:Client] handleKeyboardChange: set currentKeyboard:N (wasKeyboard:N)
+2026-10-21 20:36:12.208 Df xash[34839:19df2] [com.apple.UIKit:KeyboardArbiterClientLog] isWritingToolsHandlingKeyboardTracking:Y (WT ready:Y, Arbiter ready:Y)
+2026-10-21 20:36:12.209 Df xash[34839:19df2] [com.apple.UIKit:Orientation] <UIWindowScene: 0x106e074d0> (BD06535E-F6FB-4603-BD4B-7E42DC59B379) Scene updated orientation preferences: ( Lr ) -> ( Ll Lr )
+2026-10-21 20:36:12.211 Df xash[34839:19df2] [com.apple.UIKit:UIFocus] Deferring focus update to item <_UIInterfaceActionCustomViewRepresentationView: 0x106b17330>. No additional info available.
+2026-10-21 20:36:12.248 Df xash[34839:19df2] [com.apple.network:activity] <nw_activity 50:1 [6C96C63A-E7A1-401E-BF78-FD3717F354A1] (global parent) (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 26417ms
+2026-10-21 20:36:12.248 Df xash[34839:19df2] [com.apple.network:activity] <nw_activity 50:2 [12FFF571-7E59-42C6-A20C-9A0FAA1BA0F3] (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 26417ms
+2026-10-21 20:36:12.248 Df xash[34839:19df2] [com.apple.network:activity] Unsetting the global parent activity <nw_activity 50:1 [6C96C63A-E7A1-401E-BF78-FD3717F354A1] (global parent) (reporting strategy default) complete (reason success)>
+2026-10-21 20:36:12.248 Df xash[34839:19df2] [com.apple.network:activity] Unset the global parent activity

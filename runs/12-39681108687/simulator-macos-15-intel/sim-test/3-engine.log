@@ -1,0 +1,884 @@
+================================================================================
+Xash3D FWGS 0.21 (4221, d6b54aa-dirty, HEAD, ios-amd64)
+Game started at Oct21 2026 [22:06.07]
+================================================================================
+Console initialized.
+SDL: [Error] Unknown pixel format
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+SDL: [Error] CreateSystemCursor is not currently supported
+filesystem_stdio: custom pool allocation functions found
+filesystem_stdio: custom memory allocation functions found
+filesystem_stdio: custom platform-specific functions found
+FS_LoadProgs: filesystem_stdio successfully loaded
+/Users/runner/Library/Developer/CoreSimulator/Devices/A00B6E69-E8C9-4865-9234-1BB3209E0496/data/Containers/Data/Application/597DE885-7CF7-4D32-AB97-3FDA95D219C2/Documents is working directory now
+Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/A00B6E69-E8C9-4865-9234-1BB3209E0496/data/Containers/Bundle/Application/8578E68A-CDA7-4D87-B60D-C0D0279178ED/CS16.app/
+Adding directory: ./
+FS_InitStdio: done
+Program args: /Users/runner/Library/Developer/CoreSimulator/Devices/A00B6E69-E8C9-4865-9234-1BB3209E0496/data/Containers/Bundle/Application/8578E68A-CDA7-4D87-B60D-C0D0279178ED/CS16.app/xash -dev 2 +maxplayers 6 +map tr_1 -game cstrike -dll dlls/yapb_ios_amd64.dylib -log 
+Developer level: 2
+execing cstrike/vfs.cfg
+couldn't exec cstrike/vfs.cfg
+FS_LoadGameInfo( cstrike, 0x0, english )
+FS_Rescan( Counter-Strike, 0x0, english )
+Adding ZIP: /Users/runner/Library/Developer/CoreSimulator/Devices/A00B6E69-E8C9-4865-9234-1BB3209E0496/data/Containers/Bundle/Application/8578E68A-CDA7-4D87-B60D-C0D0279178ED/CS16.app/valve/extras.pk3 (146 files)
+FS_AddGameHierarchy( valve )
+Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/A00B6E69-E8C9-4865-9234-1BB3209E0496/data/Containers/Bundle/Application/8578E68A-CDA7-4D87-B60D-C0D0279178ED/CS16.app/valve/
+Adding WAD: valve/gfx.wad (1 files)
+Adding directory: valve/
+FS_AddGameHierarchy( cstrike )
+Adding ZIP: /Users/runner/Library/Developer/CoreSimulator/Devices/A00B6E69-E8C9-4865-9234-1BB3209E0496/data/Containers/Bundle/Application/8578E68A-CDA7-4D87-B60D-C0D0279178ED/CS16.app/cstrike/extras.pk3 (216 files)
+Adding directory: /Users/runner/Library/Developer/CoreSimulator/Devices/A00B6E69-E8C9-4865-9234-1BB3209E0496/data/Containers/Bundle/Application/8578E68A-CDA7-4D87-B60D-C0D0279178ED/CS16.app/cstrike/
+Adding directory: cstrike_downloads/
+Adding directory: cstrike/
+Adding directory: cstrike/custom/
+Warning: FS_LoadImage: couldn't load "gfx/palette"
+Host_InitDecals: 0 decals
+Joystick: SDL GameController API
+Touch_Init()
+Base networking initialized.
+Cannot load xashcomm.lst
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_auto_start"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_auto_save"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_distance"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_max_jump_height"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_fps"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_clean_paths_on_finish"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_optimize_nodes_on_finish"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_analyze_mark_goals_on_finish"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_debug"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_debug_goal"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_user_follow_percent"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_user_max_followers"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_jasonmode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_radio_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_economics_rounds"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_economics_disrespect_percent"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_darkness"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_avoid_grenades"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_tkpunish"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_freeze_bots"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_spraypaints"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botbuy"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_destroy_breakables_around"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_object_pickup_radius"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_object_destroy_radius"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chatter_path"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_attack_monsters"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_custom_items"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_ammo_and_kits"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_pickup_best"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_objectives"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chat"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_chat_percent"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_shoots_thru_walls"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_enemies"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_enemy_rendering"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_check_enemy_invincibility"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_stab_close_enemies"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_use_engine_pvs_check"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_use_hitbox_enemy_targeting"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_aim_trace_consider_glass"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_bind_menu_key"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_cvars_on_changelevel"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_password"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_password_key"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_bots_kill_on_endround"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_csdm_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_map_prefix_game_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_threadpool_workers"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_grenadier_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ignore_enemies_after_spawn_time"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_breakable_health_limit"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_base_min"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_base_max"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_count_real_players"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_ping_updater_interval"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_fixcamp"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_url"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_url_upload"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_auto_save_count"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_draw_distance"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_auto_collect_db"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_version"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autovacate"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autovacate_keep_slots"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_kick_after_player_connect"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_match"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_think_fps"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_autokill_delay"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_first_human_restart"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_after_player"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_team"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_join_delay"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_name_prefix"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_min"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_max"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_auto"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_difficulty_auto_balance_interval"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_show_avatars"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_show_latency"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_save_bots_names"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botskin_t"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_botskin_ct"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_preferred_personality"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_language"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_bots"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_stay_min"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_rotate_stay_max"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_restricted_weapons"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_has_team_semiclip"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_graph_slope_height"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_heuristic_mode"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_floyd_memory_limit"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_dijkstra_simple_distance"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_astar_post_smooth"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_path_randomize_on_round_start"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_display_welcome_text"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_enable_query_hook"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_enable_fake_steamids"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_smoke_grenade_checks"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_smoke_grenade_radius"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_walking_allowed"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_allowed"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_time_min"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_camping_time_max"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_random_knife_attacks"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_max_nodes_for_predict"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_whose_your_daddy"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "sv_use_steam_networking"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "build"
+SV_LoadProgs: initailized legacy EntityAPI ver. 140
+Mod_InitStudioAPI: initailized Server Blending interface ver. 1
+SV_InitPhysicsAPI: initailized extended PhysicAPI ver. 6
+SV_AllocStringPool()
+Dll loaded for game "Counter-Strike"
+
+YaPB v4.5.1 successfully loaded for game: Counter-Strike v1.6 @ Xash3D FWGS.
+	Flags: BotVoice, ReGameDLL, SIMD: 4.1 & 4.2.
+
+ReGameDLL version: 5.30.0.1-dev+m
+Warning: Unknown command "yb_quota_adding_interval"
+Warning: Unknown command "yb_quota_maintain_interval"
+execing game_init.cfg
+couldn't exec game_init.cfg
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "voice_serverdebug"
+SV: hull0, player_mins: -16 -16 -36, player_maxs: 16 16 36
+SV: hull1, player_mins: -16 -16 -18, player_maxs: 16 16 32
+SV: hull2, player_mins: 0 0 0, player_maxs: 0 0 0
+execing video.cfg
+couldn't exec video.cfg
+Loading renderer: gles1 -> libref_gles1.dylib
+execing opengl.cfg
+couldn't exec opengl.cfg
+Trying safe opengl mode 0
+bpp 32
+VID_SetScreenResolution: Setting video mode to 874x402 borderless
+Warning: FS_LoadImage: couldn't load "game"
+Warning: FS_LoadImage: couldn't load "game"
+Video: SDL
+Video driver: uikit
+Window size: 874x402 (real 2622x1206)
+Window position: 0x0
+Window mode: fullscreen desktop
+Window bordered: true
+Window resizable: true
+Window maximized: false
+Window display index: 0
+Window display mode: 874x402@60
+Error: GL_GetProcAddress failed for glQueryMatrixxOES
+Error: GL_GetProcAddress failed for glColorMaterial
+Error: GL_GetProcAddress failed for glDebugMessageControlKHR
+Error: GL_GetProcAddress failed for glDebugMessageInsertKHR
+Error: GL_GetProcAddress failed for glDebugMessageCallbackKHR
+Error: GL_GetProcAddress failed for glGetDebugMessageLogKHR
+GL_CheckExtension: OpenGL 1.1.0 - enabled
+Video: Apple Software Renderer
+GL_CheckExtension: multitexture - enabled
+GL_CheckExtension: GL_OES_texture_cube_map - failed
+GL_CheckExtension: GL_EXT_texture_filter_anisotropic - enabled
+GL_CheckExtension: GL_EXT_texture_lod_bias - enabled
+GL_CheckExtension: GL_OES_texture_npot - failed
+GL_CheckExtension: vertex_buffer_object - enabled
+
+GL_VENDOR: Apple Inc.
+GL_RENDERER: Apple Software Renderer
+GL_VERSION: OpenGL ES-CM 1.1 APPLE-23.0.2
+GL_EXTENSIONS: GL_OES_blend_equation_separate GL_OES_blend_func_separate GL_OES_blend_subtract GL_OES_compressed_paletted_texture GL_OES_depth24 GL_OES_draw_texture GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_framebuffer_object GL_OES_mapbuffer GL_OES_matrix_palette GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_read_format GL_OES_rgb8_rgba8 GL_OES_stencil_wrap GL_OES_stencil8 GL_OES_texture_mirrored_repeat GL_OES_vertex_array_object GL_EXT_blend_minmax GL_EXT_debug_label GL_EXT_debug_marker GL_EXT_discard_framebuffer GL_EXT_map_buffer_range GL_EXT_read_format_bgra GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_EXT_texture_storage GL_APPLE_copy_texture_levels GL_APPLE_framebuffer_multisample GL_APPLE_texture_2D_limited_npot GL_APPLE_texture_format_BGRA8888 GL_APPLE_texture_max_level GL_IMG_read_format GL_IMG_texture_compression_pvrtc  GL_ARB_multitexture EXT_texture_env_add
+GL_MAX_TEXTURE_SIZE: 4096
+GL_MAX_TEXTURE_UNITS_ARB: 8
+GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16.0
+
+MODE: 2622x1206
+
+Color 24 bits, Alpha 8 bits, Depth 24 bits, Stencil 8 bits
+Renderer libref_gles1.dylib initialized
+UI_LoadProgs: extended Menu API found
+UI_LoadProgs: extended Menu API initialized
+UI_ApplyCustomColors: colors.lst not found
+Warning: FS_LoadImage: couldn't load "gfx/shell/splash"
+GL_UploadTexture: gfx/shell/cb_empty s&3 [19 x 19]
+GL_UploadTexture: gfx/shell/cb_over s&3 [19 x 19]
+GL_UploadTexture: gfx/shell/cb_down s&3 [19 x 19]
+GL_UploadTexture: gfx/shell/cb_checked s&3 [19 x 19]
+GL_UploadTexture: gfx/shell/cb_disabled s&3 [19 x 19]
+Warning: FS_LoadImage: couldn't load "{GRAF001"
+Rendering Trebuchet MS(40, 500) took 0.018015 seconds
+Rendering Trebuchet MS(31, 500) took 0.013661 seconds
+Rendering Trebuchet MS(25, 500) took 0.008422 seconds
+Rendering Trebuchet MS(18, 500) took 0.005022 seconds
+Rendering Trebuchet MS(62, 500) took 0.022957 seconds
+Rendering Trebuchet MS(40, 1000) took 0.011510 seconds
+Rendering Trebuchet MS(40, 500) took 0.022685 seconds
+Rendering Trebuchet MS(40, 500) took 0.124628 seconds
+Rendering Tahoma(28, 500) took 0.022918 seconds
+Warning: FS_LoadImage: couldn't load "gfx/conback"
+Warning: SCR_RegisterTextures: failed to load loading image
+Warning: FS_LoadImage: couldn't load "gfx/palette"
+Warning: FS_LoadImage: couldn't load "gfx/palette"
+AVI: Not supported
+Using SDL audio driver: coreaudio @ 44100 Hz
+Error: Failed to load vgui_support library: Failed to find library vgui.dylib
+dlopen(vgui.dylib, 0x0002): tried: '/Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.2.simruntime/Contents/Resources/RuntimeRootvgui.dylib' (no such file), '/Users/runner/Library/Developer/CoreSimulator/Devices/A00B6E69-E8C9-4865-9234-1BB3209E0496/data/Containers/Bundle/Application/8578E68A-CDA7-4D87-B60D-C0D0279178ED/CS16.app/vgui.dylib' (no such file), '/Users/runner/Library/Developer/CoreSimulator/Devices/A00B6E69-E8C9-4865-9234-1BB3209E0496/data/Containers/Bundle/Application/8578E68A-CDA7-4D87-B60D-C0D0279178ED/CS16.app/vgui.dylib' (no such file), '/usr/lib/vgui.dylib' (no such file, not in dyld cache), 'vgui.dylib' (no such file), '/Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.2.simruntime/Contents/Resources/RuntimeRoot/usr/lib/vgui.dylib' (no such file)
+Error: VGui_LoadProgs: Failed to find VGUI support API entry point in client module
+CL_LoadProgs: found single callback export (secured client dlls)
+Warning: CL_LoadProgs: failed to get address of HUD_ClipMoveToEntity proc
+Warning: CL_LoadProgs: failed to get address of IN_ClientTouchEvent proc
+Warning: CL_LoadProgs: failed to get address of HUD_GetSoundInterface proc
+Warning: CL_LoadProgs: failed to get address of Voice_StartChannel proc
+Error: Could not load HUD sprite sprites/muzzleflash1.spr
+Error: Could not load HUD sprite sprites/muzzleflash2.spr
+Error: Could not load HUD sprite sprites/muzzleflash3.spr
+Error: Could not load HUD sprite sprites/dot.spr
+Error: Could not load HUD sprite sprites/animglow01.spr
+Error: Could not load HUD sprite sprites/richo1.spr
+Error: Could not load HUD sprite sprites/shellchrome.spr
+R_InitRenderAPI: initailized extended RenderAPI ver. 37
+Mobile_Init: initailized extended MobilityAPI ver. 2
+CL: hull0, player_mins: -16 -16 -36, player_maxs: 16 16 36
+CL: hull1, player_mins: -16 -16 -18, player_maxs: 16 16 18
+CL: hull2, player_mins: 0 0 0, player_maxs: 0 0 0
+Warning: CL_CvarGetPointer: client tried to get non-existent cvar "evdev_grab"
+Localize_AddToDict( resource/valve_english.txt ): couldn't open file. Some strings will not be localized!.
+Localize_AddToDict( resource/cstrike_english.txt ): couldn't open file. Some strings will not be localized!.
+Warning: FS_LoadImage: couldn't load "gfx/vgui/icntlk_pl"
+Warning: FS_LoadImage: couldn't load "gfx/vgui/speaker4"
+Init: CS16Client ver. 4009 initialized.
+Warning: TLS: 4 certificate(s) in 'cacert.pem' failed to parse
+BouncePlayerShell	Range player/pl_shell%d.wav [1; 3]
+BounceWeaponShell	Range weapons/sshell%d.wav [1; 3]
+BounceConcrete  	Range debris/concrete%d.wav [1; 3]
+BounceGlass     	Range debris/glass%d.wav [1; 4]
+BounceMetal     	Range debris/metal%d.wav [1; 6]
+BounceFlesh     	Range debris/flesh%d.wav [1; 7]
+BounceWood      	Range debris/wood%d.wav [1; 4]
+Ricochet        	Range weapons/ric%d.wav [1; 5]
+Explode         	Range weapons/explode%d.wav [3; 5]
+PlayerWaterEnter	List [player/pl_wade1.wav]
+PlayerWaterExit 	List [player/pl_wade2.wav]
+EntityWaterEnter	Range player/pl_wade%d.wav [1; 4]
+EntityWaterExit 	Range player/pl_wade%d.wav [1; 4]
+execing valve.rc
+execing config.cfg
+couldn't exec config.cfg
+execing userconfig.d/touch_defalias.cfg
+execing userconfig.d/userconfig.cfg
+SDL: [Error] Unexpected controller element crc
+Detected "Gamepad" game controller.
+Mapping string: 0500a5d0ac05000004000000fa256d04,Gamepad,a:b0,b:b1,x:b3,y:b4,start:b2,leftstick:b10,rightstick:b13,leftshoulder:b9,rightshoulder:b12,dpup:b8,dpdown:b5,dpleft:b6,dpright:b7,leftx:a11,lefty:a12~,rightx:a16,righty:a17~,lefttrigger:+a13,righttrigger:+a18,crc:d0a5,platform:iOS
+Time to first frame: 12.929 seconds
+Warning: SCR_RegisterTextures: failed to load loading image
+SDL: [Error] Setting the swap interval is not supported
+Error: SDL_GL_SetSwapInterval: Setting the swap interval is not supported
+SV_SetStringArrayMode(0) 0
+31.88 Mb alloced by server packet entities
+Server IPv4 address 192.168.64.12:27015
+Server IPv6 address [::ffff:c0a8:400c]:27015
+Spawn Server: tr_1
+loading maps/tr_1.bsp
+Warning: FS_LoadImage: couldn't load "alpha_sky"
+Warning: FS_LoadImage: couldn't load "solid_sky"
+Error: Unable to find camlens.mip
+Error: Unable to find cstrain0.mip
+Error: Unable to find cstrain1.mip
+Error: Unable to find cstrain2.mip
+Error: Unable to find cstrain4.mip
+Error: Unable to find cstrain5.mip
+Error: Unable to find cstruckdoor.mip
+Error: Unable to find cstruckdoor2.mip
+Error: Unable to find trainingdoor.mip
+Error: Unable to find +0cstrike_ie1lt.mip
+Error: Unable to find +acstrike_ie1lt.mip
+Error: Unable to find cstrike_me4metl.mip
+Error: Unable to find cstrike_oe2vent.mip
+Error: Unable to find cstrike_oe4pnl.mip
+Error: Unable to find cstrike_oe4pnlh.mip
+Error: Unable to find cstrike_wb6pln4.mip
+Error: Unable to find +0fusebox.mip
+Error: Unable to find +0lab1_door7.mip
+Error: Unable to find +0~fifties_lgt2.mip
+Error: Unable to find +0~gymlight.mip
+Error: Unable to find +0~light3a.mip
+Error: Unable to find +0~light6a.mip
+Error: Unable to find +afusebox.mip
+Error: Unable to find +alab1_door7.mip
+Error: Unable to find +a~fifties_lgt2.mip
+Error: Unable to find +a~gymlight.mip
+Error: Unable to find +a~light3a.mip
+Error: Unable to find +a~light6a.mip
+Error: Unable to find -0crete2_flr04.mip
+Error: Unable to find -0crete4_flr01.mip
+Error: Unable to find -0fifties_f01.mip
+Error: Unable to find -0out_crt2a.mip
+Error: Unable to find -0out_dirt2.mip
+Error: Unable to find -0out_w3.mip
+Error: Unable to find -0out_w5b.mip
+Error: Unable to find -1crete2_flr04.mip
+Error: Unable to find -1crete4_flr01.mip
+Error: Unable to find -1fifties_f01.mip
+Error: Unable to find -1out_crt2a.mip
+Error: Unable to find -1out_dirt2.mip
+Error: Unable to find -1out_w3.mip
+Error: Unable to find -1out_w5b.mip
+Error: Unable to find -2crete2_flr04.mip
+Error: Unable to find -2crete4_flr01.mip
+Error: Unable to find -2fifties_f01.mip
+Error: Unable to find -2out_crt2a.mip
+Error: Unable to find -2out_dirt2.mip
+Error: Unable to find -2out_w5b.mip
+Error: Unable to find -3crete2_flr04.mip
+Error: Unable to find -3crete4_flr01.mip
+Error: Unable to find -3fifties_f01.mip
+Error: Unable to find -3out_crt2a.mip
+Error: Unable to find -3out_dirt2.mip
+Error: Unable to find -3out_w5b.mip
+Error: Unable to find -4out_dirt2.mip
+Error: Unable to find aaatrigger.mip
+Error: Unable to find ammo01.mip
+Error: Unable to find ammo02.mip
+Error: Unable to find ammo03.mip
+Error: Unable to find ammo04.mip
+Error: Unable to find basetrim01.mip
+Error: Unable to find bcrate26.mip
+Error: Unable to find black.mip
+Error: Unable to find c1a1_crate1.mip
+Error: Unable to find c1a1_crate2.mip
+Error: Unable to find c1a3ventdr02.mip
+Error: Unable to find c1a4b_w1.mip
+Error: Unable to find c1a4b_w3.mip
+Error: Unable to find c2a3_gar4.mip
+Error: Unable to find con1_wall01p.mip
+Error: Unable to find crate02b.mip
+Error: Unable to find crate03.mip
+Error: Unable to find crate06.mip
+Error: Unable to find crate09.mip
+Error: Unable to find crate09b.mip
+Error: Unable to find crate09c.mip
+Error: Unable to find crate10.mip
+Error: Unable to find crate13.mip
+Error: Unable to find crate25.mip
+Error: Unable to find crete2_flr02.mip
+Error: Unable to find crete2_flr03c.mip
+Error: Unable to find crete3_ceil03c.mip
+Error: Unable to find crete3_flr04.mip
+Error: Unable to find crete3_wall02.mip
+Error: Unable to find crete4b1.mip
+Error: Unable to find crete4_c1.mip
+Error: Unable to find crete4_stp01.mip
+Error: Unable to find crete4_trd01.mip
+Error: Unable to find crete4_trd02.mip
+Error: Unable to find drkmtlt_bord08.mip
+Error: Unable to find drkmtlt_bord11.mip
+Error: Unable to find fifties_dr1.mip
+Error: Unable to find fifties_dr1a.mip
+Error: Unable to find fifties_dr1b.mip
+Error: Unable to find fifties_dr1c.mip
+Error: Unable to find fifties_dr1k.mip
+Error: Unable to find fifties_dsk5b.mip
+Error: Unable to find fifties_dsk5dx.mip
+Error: Unable to find fifties_wall14u.mip
+Error: Unable to find fiftsfile1.mip
+Error: Unable to find fiftsfile1b.mip
+Error: Unable to find fiftsfile2b.mip
+Error: Unable to find flatbed_hlite2.mip
+Error: Unable to find generic014h.mip
+Error: Unable to find generic034.mip
+Error: Unable to find generic034a.mip
+Error: Unable to find generic036.mip
+Error: Unable to find generic039.mip
+Error: Unable to find generic100a.mip
+Error: Unable to find generic101b2.mip
+Error: Unable to find generic111b.mip
+Error: Unable to find generic61.mip
+Error: Unable to find genlocker.mip
+Error: Unable to find glass_bright.mip
+Error: Unable to find lab10_dr1c.mip
+Error: Unable to find lab1_brd3d.mip
+Error: Unable to find lab1_brd8.mip
+Error: Unable to find lab1_cab2.mip
+Error: Unable to find lab1_gad3.mip
+Error: Unable to find lab3_brd2.mip
+Error: Unable to find lab3_w6brd.mip
+Error: Unable to find origin.mip
+Error: Unable to find out_box2.mip
+Error: Unable to find out_box2b.mip
+Error: Unable to find out_box2d.mip
+Error: Unable to find out_gad1.mip
+Error: Unable to find out_gad2.mip
+Error: Unable to find out_roof4.mip
+Error: Unable to find out_w5.mip
+Error: Unable to find out_wall6e.mip
+Error: Unable to find out_wall6f.mip
+Error: Unable to find paper4.mip
+Error: Unable to find picture4.mip
+Error: Unable to find picture5.mip
+Error: Unable to find sign4.mip
+Error: Unable to find sign44a.mip
+Error: Unable to find sign63.mip
+Error: Unable to find silo2_wet4.mip
+Error: Unable to find steel.mip
+Error: Unable to find tnnl_c3d.mip
+Error: Unable to find tnnl_c4.mip
+Error: Unable to find tnnl_flr1a.mip
+Error: Unable to find tnnl_w1b.mip
+Error: Unable to find tnnl_w5.mip
+Error: Unable to find tnnl_w6.mip
+Error: Unable to find train_und2.mip
+Error: Unable to find trk_bed.mip
+Error: Unable to find trk_canvas.mip
+Error: Unable to find trk_dash.mip
+Error: Unable to find trk_hood.mip
+Error: Unable to find trk_indoor.mip
+Error: Unable to find trk_rim.mip
+Error: Unable to find trk_seat.mip
+Error: Unable to find trk_side.mip
+Error: Unable to find trk_tire.mip
+Error: Unable to find trk_tread.mip
+Error: Unable to find trrm_wood2.mip
+Error: Unable to find xcrate10a.mip
+Error: Unable to find xcrate10b.mip
+Error: Unable to find xcrate10c.mip
+Error: Unable to find xcrate10d.mip
+Error: Unable to find xcrate7a.mip
+Error: Unable to find xcrate7b.mip
+Error: Unable to find xcrate7c.mip
+Error: Unable to find yellow.mip
+Error: Unable to find {grate1.mip
+Error: Unable to find {grate2.mip
+Error: Unable to find {grate2a.mip
+Error: Unable to find {grate4a.mip
+Error: Unable to find {ladder3b.mip
+Error: Unable to find ~spotgreen.mip
+lighting: colored
+Building PHS...
+Average leaves visible / audible / total: 153 / 408 / 741
+Uncompressed PHS size: 69.47 Kb
+Compressed PHS size: 53.84 Kb
+PHS building time: 3.33 ms
+Error: Could not load model sprites/laserbeam.spr from disk
+Error: Could not load model sprites/arrow1.spr from disk
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_display_menu_text"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_think_fps_disable"
+execing maps/tr_1_load.cfg
+couldn't exec maps/tr_1_load.cfg
+execing game.cfg
+couldn't exec game.cfg
+Error: Could not load model sprites/voiceicon.spr from disk
+
+GAME SKILL LEVEL:1
+Executing listen server config file
+WARNING: Cannot access bot phrase database 'BotChatter.db'
+WARNING: Cannot access bot profile database 'BotProfile.db'
+Error: Could not load model models/w_kevlar.mdl from disk
+Error: Could not load model models/w_battery.mdl from disk
+Error: Could not load model models/w_antidote.mdl from disk
+Error: Could not load model models/w_security.mdl from disk
+Error: Could not load model models/w_longjump.mdl from disk
+Error: Could not load model models/w_kevlar.mdl from disk
+Error: Could not load model models/w_assault.mdl from disk
+Error: Could not load model models/w_thighpack.mdl from disk
+Error: Could not load model models/v_awp.mdl from disk
+Error: Could not load model models/w_awp.mdl from disk
+Error: Could not load model models/rshell_big.mdl from disk
+Error: Could not load model models/w_9mmclip.mdl from disk
+Error: Could not load model models/v_g3sg1.mdl from disk
+Error: Could not load model models/w_g3sg1.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/v_ak47.mdl from disk
+Error: Could not load model models/w_ak47.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/v_scout.mdl from disk
+Error: Could not load model models/w_scout.mdl from disk
+Error: Could not load model models/rshell_big.mdl from disk
+Error: Could not load model models/w_9mmclip.mdl from disk
+Error: Could not load model models/v_m249.mdl from disk
+Error: Could not load model models/w_m249.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/w_9mmclip.mdl from disk
+Error: Could not load model models/v_m4a1.mdl from disk
+Error: Could not load model models/w_m4a1.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/v_sg552.mdl from disk
+Error: Could not load model models/w_sg552.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/v_aug.mdl from disk
+Error: Could not load model models/w_aug.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/v_sg550.mdl from disk
+Error: Could not load model models/w_sg550.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/w_9mmclip.mdl from disk
+Error: Could not load model models/v_m3.mdl from disk
+Error: Could not load model models/w_m3.mdl from disk
+Error: Could not load model models/shotgunshell.mdl from disk
+Error: Could not load model models/v_xm1014.mdl from disk
+Error: Could not load model models/w_xm1014.mdl from disk
+Error: Could not load model models/shotgunshell.mdl from disk
+Error: Could not load model models/w_shotbox.mdl from disk
+Error: Could not load model models/v_usp.mdl from disk
+Error: Could not load model models/w_usp.mdl from disk
+Error: Could not load model models/shield/v_shield_usp.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/v_mac10.mdl from disk
+Error: Could not load model models/w_mac10.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/v_ump45.mdl from disk
+Error: Could not load model models/w_ump45.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/w_9mmclip.mdl from disk
+Error: Could not load model models/v_fiveseven.mdl from disk
+Error: Could not load model models/w_fiveseven.mdl from disk
+Error: Could not load model models/shield/v_shield_fiveseven.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/v_p90.mdl from disk
+Error: Could not load model models/w_p90.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/w_9mmclip.mdl from disk
+Error: Could not load model models/v_deagle.mdl from disk
+Error: Could not load model models/shield/v_shield_deagle.mdl from disk
+Error: Could not load model models/w_deagle.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/w_9mmclip.mdl from disk
+Error: Could not load model models/v_p228.mdl from disk
+Error: Could not load model models/w_p228.mdl from disk
+Error: Could not load model models/shield/v_shield_p228.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/w_9mmclip.mdl from disk
+Error: Could not load model models/v_knife.mdl from disk
+Error: Could not load model models/shield/v_shield_knife.mdl from disk
+Error: Could not load model models/w_knife.mdl from disk
+Error: Could not load model models/v_glock18.mdl from disk
+Error: Could not load model models/w_glock18.mdl from disk
+Error: Could not load model models/shield/v_shield_glock18.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/v_mp5.mdl from disk
+Error: Could not load model models/w_mp5.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/v_tmp.mdl from disk
+Error: Could not load model models/w_tmp.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/v_elite.mdl from disk
+Error: Could not load model models/w_elite.mdl from disk
+Error: Could not load model models/pshell.mdl from disk
+Error: Could not load model models/w_9mmclip.mdl from disk
+Error: Could not load model models/v_flashbang.mdl from disk
+Error: Could not load model models/shield/v_shield_flashbang.mdl from disk
+Error: Could not load model models/v_hegrenade.mdl from disk
+Error: Could not load model models/shield/v_shield_hegrenade.mdl from disk
+Error: Could not load model models/v_smokegrenade.mdl from disk
+Error: Could not load model models/shield/v_shield_smokegrenade.mdl from disk
+Error: Could not load model models/v_c4.mdl from disk
+Error: Could not load model models/w_backpack.mdl from disk
+Error: Could not load model models/v_galil.mdl from disk
+Error: Could not load model models/w_galil.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/v_famas.mdl from disk
+Error: Could not load model models/w_famas.mdl from disk
+Error: Could not load model models/rshell.mdl from disk
+Error: Could not load model models/w_weaponbox.mdl from disk
+Error: Could not load model sprites/zerogxplode.spr from disk
+Error: Could not load model sprites/WXplo1.spr from disk
+Error: Could not load model sprites/steam1.spr from disk
+Error: Could not load model sprites/bubble.spr from disk
+Error: Could not load model sprites/bloodspray.spr from disk
+Error: Could not load model sprites/blood.spr from disk
+Error: Could not load model sprites/smokepuff.spr from disk
+Error: Could not load model sprites/eexplo.spr from disk
+Error: Could not load model sprites/fexplo.spr from disk
+Error: Could not load model sprites/fexplo1.spr from disk
+Error: Could not load model sprites/radio.spr from disk
+Error: Could not load model sprites/b-tele1.spr from disk
+Error: Could not load model sprites/c-tele1.spr from disk
+Error: Could not load model sprites/ledglow.spr from disk
+Error: Could not load model sprites/laserbeam.spr from disk
+Error: Could not load model sprites/laserdot.spr from disk
+Error: Could not load model models/grenade.mdl from disk
+Error: Could not load model sprites/explode1.spr from disk
+Error: Could not load model models/player.mdl from disk
+Error: Could not load model models/player/leet/leet.mdl from disk
+Error: Could not load model models/player/gign/gign.mdl from disk
+Error: Could not load model models/player/vip/vip.mdl from disk
+Error: Could not load model models/player/gsg9/gsg9.mdl from disk
+Error: Could not load model models/player/guerilla/guerilla.mdl from disk
+Error: Could not load model models/player/arctic/arctic.mdl from disk
+Error: Could not load model models/player/sas/sas.mdl from disk
+Error: Could not load model models/player/terror/terror.mdl from disk
+Error: Could not load model models/player/urban/urban.mdl from disk
+Error: Could not load model models/p_ak47.mdl from disk
+Error: Could not load model models/p_aug.mdl from disk
+Error: Could not load model models/p_awp.mdl from disk
+Error: Could not load model models/p_c4.mdl from disk
+Error: Could not load model models/w_c4.mdl from disk
+Error: Could not load model models/p_deagle.mdl from disk
+Error: Could not load model models/shield/p_shield_deagle.mdl from disk
+Error: Could not load model models/p_flashbang.mdl from disk
+Error: Could not load model models/shield/p_shield_flashbang.mdl from disk
+Error: Could not load model models/p_hegrenade.mdl from disk
+Error: Could not load model models/shield/p_shield_hegrenade.mdl from disk
+Error: Could not load model models/p_glock18.mdl from disk
+Error: Could not load model models/shield/p_shield_glock18.mdl from disk
+Error: Could not load model models/p_p228.mdl from disk
+Error: Could not load model models/shield/p_shield_p228.mdl from disk
+Error: Could not load model models/p_smokegrenade.mdl from disk
+Error: Could not load model models/shield/p_shield_smokegrenade.mdl from disk
+Error: Could not load model models/p_usp.mdl from disk
+Error: Could not load model models/shield/p_shield_usp.mdl from disk
+Error: Could not load model models/p_fiveseven.mdl from disk
+Error: Could not load model models/shield/p_shield_fiveseven.mdl from disk
+Error: Could not load model models/p_knife.mdl from disk
+Error: Could not load model models/shield/p_shield_knife.mdl from disk
+Error: Could not load model models/w_flashbang.mdl from disk
+Error: Could not load model models/w_hegrenade.mdl from disk
+Error: Could not load model models/p_sg550.mdl from disk
+Error: Could not load model models/p_g3sg1.mdl from disk
+Error: Could not load model models/p_m249.mdl from disk
+Error: Could not load model models/p_m3.mdl from disk
+Error: Could not load model models/p_m4a1.mdl from disk
+Error: Could not load model models/p_mac10.mdl from disk
+Error: Could not load model models/p_mp5.mdl from disk
+Error: Could not load model models/p_ump45.mdl from disk
+Error: Could not load model models/p_p90.mdl from disk
+Error: Could not load model models/p_scout.mdl from disk
+Error: Could not load model models/p_sg552.mdl from disk
+Error: Could not load model models/w_smokegrenade.mdl from disk
+Error: Could not load model models/p_tmp.mdl from disk
+Error: Could not load model models/p_elite.mdl from disk
+Error: Could not load model models/p_xm1014.mdl from disk
+Error: Could not load model models/p_galil.mdl from disk
+Error: Could not load model models/p_famas.mdl from disk
+Error: Could not load model models/p_shield.mdl from disk
+Error: Could not load model models/w_shield.mdl from disk
+Error: Could not load model sprites/shadow_circle.spr from disk
+Error: Could not load model sprites/wall_puff1.spr from disk
+Error: Could not load model sprites/wall_puff2.spr from disk
+Error: Could not load model sprites/wall_puff3.spr from disk
+Error: Could not load model sprites/wall_puff4.spr from disk
+Error: Could not load model sprites/black_smoke1.spr from disk
+Error: Could not load model sprites/black_smoke2.spr from disk
+Error: Could not load model sprites/black_smoke3.spr from disk
+Error: Could not load model sprites/black_smoke4.spr from disk
+Error: Could not load model sprites/gas_puff_01.spr from disk
+Error: Could not load model sprites/fast_wallpuff1.spr from disk
+Error: Could not load model sprites/pistol_smoke1.spr from disk
+Error: Could not load model sprites/pistol_smoke2.spr from disk
+Error: Could not load model sprites/rifle_smoke1.spr from disk
+Error: Could not load model sprites/rifle_smoke2.spr from disk
+Error: Could not load model sprites/rifle_smoke3.spr from disk
+Error: Could not load model sprites/smoke.spr from disk
+Error: Could not load model models/hgibs.mdl from disk
+Error: Could not load model models/agibs.mdl from disk
+Can't find decal {RUST003
+Can't find decal {DRIP4
+Can't find decal {DRIPS1
+Can't find decal {OIL1
+Can't find decal {RUST002
+Can't find decal {CRACK1
+Error: Could not load model models/woodgibs.mdl from disk
+Error: Could not load model models/woodgibs.mdl from disk
+Can't find decal {MOSS003
+Can't find decal {RUST002
+Can't find decal {TURN1B
+Can't find decal {TURN1A
+Can't find decal {C1A3_GRN1
+Can't find decal {CRACK1
+Can't find decal {DRIPS1
+Error: Could not load model models/hostage.mdl from disk
+Error: Could not load model sprites/smoke.spr from disk
+Error: Could not load model models/w_kevlar.mdl from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Can't find decal {LIME003
+Can't find decal {WATER2
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Can't find decal {WATER2
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model models/glassgibs.mdl from disk
+Error: Could not load model models/glassgibs.mdl from disk
+Error: Could not load model sprites/flare1.spr from disk
+Can't find decal {AMMO
+Can't find decal {OIL1
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/glow01.spr from disk
+Error: Could not load model sprites/glow01.spr from disk
+Error: Could not load model sprites/glow01.spr from disk
+Error: Could not load model sprites/glow01.spr from disk
+Error: Could not load model sprites/glow01.spr from disk
+Error: Could not load model sprites/animglow01.spr from disk
+Error: Could not load model sprites/animglow01.spr from disk
+Error: Could not load model sprites/animglow01.spr from disk
+Error: Could not load model sprites/animglow01.spr from disk
+Error: Could not load model sprites/glow01.spr from disk
+Error: Could not load model sprites/glow01.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+M_speed = 64.000000
+M_speed = 64.000000
+M_speed = 64.000000
+M_speed = 64.000000
+M_speed = 64.000000
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Error: Could not load model sprites/flare1.spr from disk
+Can't find decal {hrpoint
+
+0 entities inhibited
+ERROR: Failed to load 'maps/tr_1.nav' file navigation map!
+	Navigation file not found or access denied.
+Warning: Couldn't get duration of next chatter sounds: cover_me,cover_me2,need_help2,i_could_use_some_help_over_here,need_help,i_could_use_some_help,im_in_trouble,taking_fire_need_assistance2,help,anyone_see_them ...
+EMPTY!!!!!
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_adding_interval"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "yb_quota_maintain_interval"
+Can't download 'addons/yapb/data/graph/tr_1.graph' from 'http://yapb.jeefo.net/graph/tr_1.graph' to 'cstrike/addons/yapb/data/graph/tr_1.graph'... (404).
+Unable to open Graph file for reading (filename: 'addons/yapb/data/graph/tr_1.graph').
+Starting map analysis.
+SV_SetStringArrayMode(1) 0
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "csdm_active"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "redm_active"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "csdm_version"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "zp_delay"
+Warning: SV_CvarGetPointer: server tried to get non-existent cvar "tutor_enable"
+Gibbed monster is thinking!
+Firing: (startmm)
+Found: multi_manager, firing (startmm)
+Firing: (startshake)
+Found: env_shake, firing (startshake)
+Gibbed monster is thinking!
+TRAIN(tg_1): Speed is 0
+TRAIN(tg_1): Speed is 0
+TRAIN(tg_1): Speed is 0
+TRAIN(tg_1): Speed is 0
+TRAIN(tg_1): Speed is 0
+Firing: (startstop)
+Found: ambient_generic, firing (startstop)
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+Gibbed monster is thinking!
+6 player server started
+level loaded at 3.34 sec
+execing listenserver.cfg
+couldn't exec listenserver.cfg
+Warning: Unknown command "yb_quota_adding_interval"
+Warning: Unknown command "yb_quota_maintain_interval"
+Connected devices: touch joy 
+Trying to connect with modern protocol
+execing mainui.cfg
+couldn't exec mainui.cfg
+Localize_AddToDict( resource/gameui_english.txt ): couldn't open file. Some strings will not be localized!.
+Localize_AddToDict( resource/valve_english.txt ): couldn't open file. Some strings will not be localized!.
+Localize_AddToDict( resource/mainui_english.txt ): couldn't open file. Some strings will not be localized!.
+Localize_AddToDict( resource/cstrike_english.txt ): couldn't open file. Some strings will not be localized!.
+execing touch.cfg
+Spooling demo header.
+ucmd->new()
+
+BUILD 4221 SERVER (0 CRC)
+Server #1
+Serverdata packet received.
+GetSpriteIndex: number_0 sprite not found
+Last 32 messages parsed.
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+0 0000 svc_bad
+3 0000 svc_print
+BAD: 3 0041 svc_serverdata
+Wrote erroneous message to buffer.dat
+Host_Error: Failed to get number_0 sprite index. Check your game data!Server was killed due to an error
+execing maps/tr_1_unload.cfg
+couldn't exec maps/tr_1_unload.cfg

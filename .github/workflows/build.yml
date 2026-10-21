@@ -47,11 +47,25 @@ jobs:
           path: cs16-client
           submodules: recursive
 
-      - name: Cache SDL2
-        uses: actions/cache@v4
+      # SDL is cached as soon as it's built, so a later failing step doesn't throw it away
+      - name: Restore SDL2
+        id: sdl-cache
+        uses: actions/cache/restore@v4
         with:
           path: deps/SDL2.xcframework
           key: sdl2-xcframework-${{ env.SDL_VERSION }}-${{ runner.os }}-${{ runner.arch }}
+
+      - name: Build SDL2
+        if: steps.sdl-cache.outputs.cache-hit != 'true'
+        run: bash scripts/build.sh sdl
+
+      - name: Save SDL2
+        if: steps.sdl-cache.outputs.cache-hit != 'true'
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: deps/SDL2.xcframework
+          key: ${{ steps.sdl-cache.outputs.cache-primary-key }}
 
       - name: Build
         shell: bash
@@ -105,11 +119,25 @@ jobs:
           path: cs16-client
           submodules: recursive
 
-      - name: Cache SDL2
-        uses: actions/cache@v4
+      # SDL is cached as soon as it's built, so a later failing step doesn't throw it away
+      - name: Restore SDL2
+        id: sdl-cache
+        uses: actions/cache/restore@v4
         with:
           path: deps/SDL2.xcframework
           key: sdl2-xcframework-${{ env.SDL_VERSION }}-${{ runner.os }}-${{ runner.arch }}
+
+      - name: Build SDL2
+        if: steps.sdl-cache.outputs.cache-hit != 'true'
+        run: bash scripts/build.sh sdl
+
+      - name: Save SDL2
+        if: steps.sdl-cache.outputs.cache-hit != 'true'
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: deps/SDL2.xcframework
+          key: ${{ steps.sdl-cache.outputs.cache-primary-key }}
 
       - name: Build for the simulator
         shell: bash

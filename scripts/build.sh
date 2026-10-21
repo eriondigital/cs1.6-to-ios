@@ -4,6 +4,7 @@
 #
 #   scripts/build.sh device      -> out/device/CS16-iOS.ipa            (iPhone / iPad)
 #   scripts/build.sh simulator   -> out/simulator/Payload/CS16.app     (iOS Simulator)
+#   scripts/build.sh sdl         -> deps/SDL2.xcframework only (cached by CI)
 #
 # Expects the upstream sources next to this repo's files (the workflow checks them out):
 #   xash3d-fwgs/   https://github.com/FWGS/xash3d-fwgs   (engine)
@@ -26,7 +27,8 @@ MIN_IOS=14.0
 case "$TARGET" in
 	device)    SDK=iphoneos;        WAF_TARGET=--ios;           SDL_SLICE=ios-arm64;                  PLATFORM_NAME=iPhoneOS ;;
 	simulator) SDK=iphonesimulator; WAF_TARGET=--ios-simulator; SDL_SLICE=ios-arm64_x86_64-simulator; PLATFORM_NAME=iPhoneSimulator ;;
-	*) echo "usage: $0 device|simulator" >&2; exit 1 ;;
+	sdl)       SDK=iphoneos;        WAF_TARGET=;                SDL_SLICE=ios-arm64;                  PLATFORM_NAME=iPhoneOS ;;
+	*) echo "usage: $0 device|simulator|sdl" >&2; exit 1 ;;
 esac
 
 # Devices are arm64. The simulator runs the host's architecture, which is x86_64 on Intel Macs.
@@ -52,12 +54,17 @@ if [ ! -d "$DEPS/SDL2.xcframework/$SDL_SLICE/SDL2.framework" ]; then
 	rm -rf "$DEPS/SDL-src" "$DEPS/SDL2.xcframework"
 	mkdir -p "$DEPS"
 	git clone --depth 1 -b "release-$SDL_VERSION" https://github.com/libsdl-org/SDL "$DEPS/SDL-src"
-	( cd "$DEPS/SDL-src/Xcode/SDL" && xcodebuild -scheme xcFramework-iOS -target xcFramework-iOS build -configuration Release )
+	( cd "$DEPS/SDL-src/Xcode/SDL" && xcodebuild -quiet -scheme xcFramework-iOS -target xcFramework-iOS build -configuration Release )
 	cp -R "$DEPS/SDL-src/Xcode/SDL/Products/SDL2.xcframework" "$DEPS/"
 fi
 SDL_FW="$DEPS/SDL2.xcframework/$SDL_SLICE/SDL2.framework"
 ls "$DEPS/SDL2.xcframework"
 test -d "$SDL_FW"
+
+if [ "$TARGET" = sdl ]; then
+	log "SDL ready"
+	exit 0
+fi
 
 # ---------------------------------------------------------------- patches
 log "Applying iOS port changes"
